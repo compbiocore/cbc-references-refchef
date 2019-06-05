@@ -1,2 +1,2 @@
-# oscar-references-refchef
-RefChef references on CCV's Oscar
+# CBC References for RefChef
+RefChef references on CCV's Oscar and Stronghold
