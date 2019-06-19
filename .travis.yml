@@ -1,0 +1,14 @@
+dist: trusty
+os:
+  - linux
+sudo: required
+services:
+  - docker
+
+script:
+  - docker-compose run refchef
+
+branches:
+  except:
+    - master
+    - current
