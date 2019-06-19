@@ -1,0 +1,17 @@
+spur31:
+  metadata:
+    name: spur31
+    species: Strongylocentrotus purpuratus
+    organization: ensembl
+    downloader: jwalla12
+  levels:
+    references:
+    - component: primary
+      complete:
+        status: false
+      commands:
+      - wget -nv ftp://ftp.ensemblgenomes.org/pub/release-43/metazoa/fasta/strongylocentrotus_purpuratus/dna/Strongylocentrotus_purpuratus.Spur_3.1.dna.toplevel.fa.gz
+      - wget -nv ftp://ftp.ensemblgenomes.org/pub/release-43/metazoa/fasta/strongylocentrotus_purpuratus/dna/CHECKSUMS
+      - wget -nv ftp://ftp.ensemblgenomes.org/pub/release-43/metazoa/gtf/strongylocentrotus_purpuratus/Strongylocentrotus_purpuratus.Spur_3.1.43.gtf.gz
+      - wget -nv ftp://ftp.ensemblgenomes.org/pub/release-43/metazoa/gtf/strongylocentrotus_purpuratus/CHECKSUMS
+      - md5sum * > final_checksums.md5
