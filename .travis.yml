@@ -12,3 +12,4 @@ branches:
   except:
     - master
     - current
+    - to-upload
