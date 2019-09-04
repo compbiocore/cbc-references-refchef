@@ -1,0 +1,35 @@
+2019-09-03 15:58:20,501 INFO: 
+        ===========================================
+        REFCHEF 🐶
+        -------------------------------------------
+        - References will be downloaded to: /gpfs/data/shared/databases/refchef_refs
+        - Remote repository for master.yaml False
+        - Local repository for master.yaml /gpfs/data/shared/databases/cbc-references-refchef
+        - Logs files: /gpfs/data/shared/databases/cbc-references-refchef/logs/
+        -------------------------------------------
+        
+2019-09-03 15:58:20,501 DEBUG: parse kwarg method: 2 ...
+2019-09-03 15:58:20,558 INFO: 
+        No references to download.
+                    
+2019-09-03 15:58:20,558 INFO: 
+        -------------------------------------------
+        The folowing references will be downloaded:
+            - index_test1
+        ===========================================
+            
+2019-09-03 15:58:20,578 INFO:  🐶 RefChef... getting reference: index_test1, component: primary
+2019-09-03 15:58:20,578 INFO: Running command "wget -nv https://s3.us-east-2.amazonaws.com/refchef-tests/chr1.fa.gz"
+2019-09-03 15:58:21,711 INFO: Running command "md5sum *.fa.gz > postdownload_checksums.md5"
+2019-09-03 15:58:21,862 INFO: Running command "gunzip *.gz"
+2019-09-03 15:58:23,926 INFO: Running command "md5sum *.fa.gz > final_checksums.md5"
+2019-09-03 15:58:23,972 INFO:  🐶 RefChef... getting index: index_test1, component: bwa_index
+2019-09-03 15:58:23,972 INFO: Running command "wget -nv https://s3.us-east-2.amazonaws.com/refchef-tests/chr1.fa.gz"
+2019-09-03 15:58:24,985 INFO: Running command "md5sum *.fa.gz > postdownload_checksums.md5"
+2019-09-03 15:58:25,136 INFO: Running command "gunzip *.gz"
+2019-09-03 15:58:27,054 INFO: Running command "md5sum *.fa.gz > final_checksums.md5"
+2019-09-03 15:58:27,070 INFO:  🐶 RefChef... getting index: index_test1, component: bwa_index_2
+2019-09-03 15:58:27,070 INFO: Running command "wget -nv https://s3.us-east-2.amazonaws.com/refchef-tests/chr1.fa.gz"
+2019-09-03 15:58:28,170 INFO: Running command "md5sum *.fa.gz > postdownload_checksums.md5"
+2019-09-03 15:58:28,322 INFO: Running command "gunzip *.gz"
+2019-09-03 15:58:30,155 INFO: Running command "md5sum *.fa.gz > final_checksums.md5"
