@@ -1,0 +1,29 @@
+2019-09-04 17:08:08,491 INFO: 
+        ===========================================
+        REFCHEF 🐶
+        -------------------------------------------
+        - References will be downloaded to: /gpfs/data/shared/databases/refchef_refs
+        - Remote repository for master.yaml compbiocore/cbc-references-refchef
+        - Local repository for master.yaml /gpfs/data/shared/databases/cbc-references-refchef
+        - Logs files: /gpfs/data/shared/databases/cbc-references-refchef/logs/
+        -------------------------------------------
+        
+2019-09-04 17:08:08,491 DEBUG: parse kwarg method: 2 ...
+2019-09-04 17:08:08,526 INFO: 
+        No references to download.
+                    
+2019-09-04 17:08:08,526 INFO: 
+        -------------------------------------------
+        The folowing references will be downloaded:
+            - cdubliniensis_cd36
+        ===========================================
+            
+2019-09-04 17:08:08,540 INFO:  🐶 RefChef... getting reference: cdubliniensis_cd36, component: primary
+2019-09-04 17:08:08,540 INFO: Running command "wget http://www.candidagenome.org/download/sequence/C_dubliniensis_CD36/current/C_dubliniensis_CD36_current_chromosomes.fasta.gz"
+2019-09-04 17:08:11,566 INFO: Running command "md5sum * > final_checksums.md5"
+2019-09-04 17:08:11,656 INFO: References processed: ['spur31', 'cdubliniensis_cd36']
+2019-09-04 17:08:11,656 INFO: Location of references: /gpfs/data/shared/databases/refchef_refs
+2019-09-04 17:08:11,739 INFO: 
+         type                name component                  organization                                  uuid
+0  references  cdubliniensis_cd36   primary  http://www.candidagenome.org  3889615c-c609-377c-a49a-2376d7bb4ee1
+1  references              spur31   primary               ensembl metazoa  cc303697-34ce-3cd1-b883-5d709a4f3e09

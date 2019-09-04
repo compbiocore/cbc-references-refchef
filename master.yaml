@@ -28,3 +28,35 @@ spur31:
       - metadata.txt
       - final_checksums.md5
       uuid: cc303697-34ce-3cd1-b883-5d709a4f3e09
+cdubliniensis_cd36:
+  metadata:
+    name: cdubliniensis_cd36
+    common_name: yeast
+    ncbi_taxon_id: 573826
+    organism: Candida dubliniensis CD36
+    organization: http://www.candidagenome.org
+    custom: false
+    description: C. dubliniensis CD36 was sequenced by the Wellcome Trust Sanger Institute
+      (Jackson et al., 2009, Genome Res. 19:2231-2244). Sequence and annotation obtained
+      by CGD from EBI.
+    downloader: joselynn wallace
+    ensembl_release_number: null
+    accession:
+      genbank: null
+      refseq: null
+  levels:
+    references:
+    - component: primary
+      complete:
+        status: true
+        time: '2019-09-04 17:08:11.656257'
+      commands:
+      - wget http://www.candidagenome.org/download/sequence/C_dubliniensis_CD36/current/C_dubliniensis_CD36_current_chromosomes.fasta.gz
+      - md5sum * > final_checksums.md5
+      location: /gpfs/data/shared/databases/refchef_refs/cdubliniensis_cd36/primary
+      files:
+      - C_dubliniensis_CD36_current_chromosomes.fasta.gz
+      - C_dubliniensis_CD36_current_chromosomes.fasta.gz.1
+      - metadata.txt
+      - final_checksums.md5
+      uuid: 3889615c-c609-377c-a49a-2376d7bb4ee1
