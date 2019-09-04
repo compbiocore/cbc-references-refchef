@@ -1,0 +1,22 @@
+2019-09-03 15:47:38,227 INFO: 
+        ===========================================
+        REFCHEF 🐶
+        -------------------------------------------
+        - References will be downloaded to: /gpfs/data/shared/databases/refchef_refs
+        - Remote repository for master.yaml False
+        - Local repository for master.yaml /gpfs/data/shared/databases/cbc-references-refchef
+        - Logs files: /gpfs/data/shared/databases/cbc-references-refchef/logs/
+        -------------------------------------------
+        
+2019-09-03 15:47:38,228 INFO: 
+        -------------------------------------------
+        The folowing references will be downloaded:
+            - spur31
+        ===========================================
+            
+2019-09-03 15:47:38,235 INFO:  🐶 RefChef... getting reference: spur31, component: primary
+2019-09-03 15:47:38,235 INFO: Running command "wget ftp://ftp.ensemblgenomes.org/pub/metazoa/release-43/fasta/strongylocentrotus_purpuratus/dna/CHECKSUMS"
+2019-09-03 15:47:39,365 INFO: Running command "wget ftp://ftp.ensemblgenomes.org/pub/metazoa/release-43/fasta/strongylocentrotus_purpuratus/dna/Strongylocentrotus_purpuratus.Spur_3.1.43.dna.toplevel.fa.gz"
+2019-09-03 15:47:40,399 INFO: Running command "md5sum * > final_checksums.md5"
+2019-09-03 15:47:40,409 INFO: References processed: ['spur31']
+2019-09-03 15:47:40,410 INFO: Location of references: /gpfs/data/shared/databases/refchef_refs
