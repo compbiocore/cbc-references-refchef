@@ -1,0 +1,37 @@
+2019-09-05 09:23:51,564 INFO: 
+        ===========================================
+        REFCHEF 🐶
+        -------------------------------------------
+        - References will be downloaded to: /gpfs/data/shared/databases/refchef_refs
+        - Remote repository for master.yaml compbiocore/cbc-references-refchef
+        - Local repository for master.yaml /gpfs/data/shared/databases/cbc-references-refchef
+        - Logs files: /gpfs/data/shared/databases/cbc-references-refchef/logs/
+        -------------------------------------------
+        
+2019-09-05 09:23:51,565 DEBUG: parse kwarg method: 2 ...
+2019-09-05 09:23:51,636 INFO: 
+        No references to download.
+                    
+2019-09-05 09:23:51,636 INFO: 
+        No references to download.
+                    
+2019-09-05 09:23:51,636 INFO: 
+        -------------------------------------------
+        The folowing references will be downloaded:
+            - broad_bundle_hg19
+        ===========================================
+            
+2019-09-05 09:23:51,658 INFO:  🐶 RefChef... getting reference: broad_bundle_hg19, component: primary
+2019-09-05 09:23:51,658 INFO: Running command "wget --user='gsapubftp-anonymous' 'ftp://ftp.broadinstitute.org/bundle/hg19/*.fasta.gz*'"
+2019-09-05 09:23:51,769 INFO: Running command "wget --user='gsapubftp-anonymous' 'ftp://ftp.broadinstitute.org/bundle/hg19/*.vcf.*'"
+2019-09-05 09:23:52,014 INFO: Running command "ls -a1 .*.done | xargs rm"
+2019-09-05 09:23:52,033 INFO: Running command "md5sum *.gz > postdownload-checksums.md5"
+2019-09-05 09:23:52,058 INFO: Running command "gunzip *.gz"
+2019-09-05 09:23:52,070 INFO: Running command "md5sum *.* > final_checksums.md5"
+2019-09-05 09:24:59,921 INFO: References processed: ['spur31', 'cdubliniensis_cd36', 'broad_bundle_hg19']
+2019-09-05 09:24:59,921 INFO: Location of references: /gpfs/data/shared/databases/refchef_refs
+2019-09-05 09:25:00,042 INFO: 
+         type                name component                  organization                                  uuid
+0  references   broad_bundle_hg19   primary               broad institute  b2588931-2b94-3d8b-9eab-c8fa153af515
+1  references  cdubliniensis_cd36   primary  http://www.candidagenome.org  3889615c-c609-377c-a49a-2376d7bb4ee1
+2  references              spur31   primary               ensembl metazoa  cc303697-34ce-3cd1-b883-5d709a4f3e09

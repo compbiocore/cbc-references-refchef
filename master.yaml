@@ -60,3 +60,90 @@ cdubliniensis_cd36:
       - metadata.txt
       - final_checksums.md5
       uuid: 3889615c-c609-377c-a49a-2376d7bb4ee1
+broad_bundle_hg19:
+  metadata:
+    name: broad_bundle_hg19
+    common_name: human
+    custom: false
+    description: see https://software.broadinstitute.org/gatk/download/bundle
+    downloader: fgelin
+    ncbi_taxon_id: 9606
+    ensembl_release_number: null
+    accession:
+      genbank: null
+      refseq: null
+    organism: Homo sapiens
+    organization: broad institute
+  levels:
+    references:
+    - component: primary
+      complete:
+        status: true
+        time: '2019-09-05 09:24:59.920666'
+      commands:
+      - wget --user='gsapubftp-anonymous' 'ftp://ftp.broadinstitute.org/bundle/hg19/*.fasta.gz*'
+      - wget --user='gsapubftp-anonymous' 'ftp://ftp.broadinstitute.org/bundle/hg19/*.vcf.*'
+      - ls -a1 .*.done | xargs rm
+      - md5sum *.gz > postdownload-checksums.md5
+      - gunzip *.gz
+      - md5sum *.* > final_checksums.md5
+      location: /gpfs/data/shared/databases/refchef_refs/broad_bundle_hg19/primary
+      files:
+      - CEUTrio.HiSeq.WGS.b37.bestPractices.hg19.vcf.idx.gz.md5
+      - NA12878.HiSeq.WGS.bwa.cleaned.raw.subset.hg19.sites.vcf.gz.md5
+      - dbsnp_138.hg19.vcf.idx.gz.md5
+      - 1000G_omni2.5.hg19.sites.vcf.idx.gz.md5
+      - dbsnp_138.hg19.excluding_sites_after_129.vcf
+      - NA12878.HiSeq.WGS.bwa.cleaned.raw.subset.hg19.vcf.idx.gz.md5
+      - ucsc.hg19.dict
+      - CEUTrio.HiSeq.WGS.b37.bestPractices.hg19.vcf
+      - NA12878.HiSeq.WGS.bwa.cleaned.raw.subset.hg19.sites.vcf
+      - 1000G_phase1.indels.hg19.sites.vcf.idx.gz.md5
+      - dbsnp_138.hg19.excluding_sites_after_129.vcf.idx.gz.md5
+      - ucsc.hg19.fasta.fai.gz.md5
+      - NA12878.HiSeq.WGS.bwa.cleaned.raw.subset.hg19.vcf.idx
+      - postdownload-checksums.md5
+      - 1000G_omni2.5.hg19.sites.vcf.gz.md5
+      - 1000G_phase1.indels.hg19.sites.vcf
+      - 1000G_phase1.snps.high_confidence.hg19.sites.vcf.idx.gz.md5
+      - NA12878.HiSeq.WGS.bwa.cleaned.raw.subset.hg19.sites.vcf.idx
+      - NA12878.knowledgebase.snapshot.20131119.hg19.vcf.idx.gz.md5
+      - NA12878.HiSeq.WGS.bwa.cleaned.raw.subset.hg19.vcf.gz.md5
+      - hapmap_3.3.hg19.sites.vcf.gz.md5
+      - 1000G_phase1.indels.hg19.sites.vcf.gz.md5
+      - 1000G_phase1.snps.high_confidence.hg19.sites.vcf.idx
+      - hapmap_3.3.hg19.sites.vcf.idx.gz.md5
+      - Mills_and_1000G_gold_standard.indels.hg19.sites.vcf
+      - Mills_and_1000G_gold_standard.indels.hg19.sites.vcf.idx.gz.md5
+      - CEUTrio.HiSeq.WGS.b37.bestPractices.hg19.vcf.gz.md5
+      - NA12878.HiSeq.WGS.bwa.cleaned.raw.subset.hg19.sites.vcf.idx.gz.md5
+      - hapmap_3.3_hg19_pop_stratified_af.vcf.gz.tbi
+      - 1000G_omni2.5.hg19.sites.vcf.idx
+      - 1000G_phase1.snps.high_confidence.hg19.sites.vcf
+      - 1000G_omni2.5.hg19.sites.vcf
+      - Mills_and_1000G_gold_standard.indels.hg19.sites.vcf.idx
+      - dbsnp_138.hg19.vcf.gz.md5
+      - NA12878.knowledgebase.snapshot.20131119.hg19.vcf
+      - ucsc.hg19.fasta.gz.md5
+      - hapmap_3.3.hg19.sites.vcf.idx
+      - provinence.txt
+      - NA12878.knowledgebase.snapshot.20131119.hg19.vcf.idx
+      - ucsc.hg19.fasta
+      - Mills_and_1000G_gold_standard.indels.hg19.sites.vcf.gz.md5
+      - hapmap_3.3.hg19.sites.vcf
+      - dbsnp_138.hg19.vcf.idx
+      - metadata.txt
+      - hapmap_3.3_hg19_pop_stratified_af.vcf
+      - 1000G_phase1.indels.hg19.sites.vcf.idx
+      - dbsnp_138.hg19.vcf
+      - CEUTrio.HiSeq.WGS.b37.bestPractices.hg19.vcf.idx
+      - final_checksums.md5
+      - dbsnp_138.hg19.excluding_sites_after_129.vcf.idx
+      - NA12878.HiSeq.WGS.bwa.cleaned.raw.subset.hg19.vcf
+      - dbsnp_138.hg19.excluding_sites_after_129.vcf.gz.md5
+      - final-checksums.md5
+      - ucsc.hg19.fasta.fai
+      - 1000G_phase1.snps.high_confidence.hg19.sites.vcf.gz.md5
+      - ucsc.hg19.dict.gz.md5
+      - NA12878.knowledgebase.snapshot.20131119.hg19.vcf.gz.md5
+      uuid: b2588931-2b94-3d8b-9eab-c8fa153af515
