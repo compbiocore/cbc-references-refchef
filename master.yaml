@@ -147,9 +147,9 @@ broad_bundle_hg19:
       - ucsc.hg19.dict.gz.md5
       - NA12878.knowledgebase.snapshot.20131119.hg19.vcf.gz.md5
       uuid: b2588931-2b94-3d8b-9eab-c8fa153af515
-drosophila-melanogaster.bdgp6rel9:
+drosophila-melanogaster-bdgp6rel9:
   metadata:
-    name: drosophila-melanogaster.bdgp6rel9
+    name: drosophila-melanogaster-bdgp6rel9
     common_name: fly
     custom: false
     description: The genome assembly represented here corresponds to GenBank Assembly
@@ -167,7 +167,7 @@ drosophila-melanogaster.bdgp6rel9:
     - component: primary
       complete:
         status: true
-        time: '2019-09-05 16:21:01.548167'
+        time: '2019-09-05 16:23:22.609416'
       commands:
       - wget ftp://ftp.ensembl.org/pub/release-91/fasta/drosophila_melanogaster/dna/Drosophila_melanogaster.BDGP6.dna.toplevel.fa.gz
       - wget ftp://ftp.ensembl.org/pub/release-91/fasta/drosophila_melanogaster/dna/CHECKSUMS
@@ -178,18 +178,14 @@ drosophila-melanogaster.bdgp6rel9:
       - md5sum Drosophila_melanogaster.BDGP6.dna.toplevel.fa >> checksum.md5
       - mkdir Drosophila_melanogaster.BDGP6.rel91
       - md5sum *.* > final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster.bdgp6rel9/primary
+      location: /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/primary
       files:
       - checksum.ensembl
-      - Drosophila_melanogaster.BDGP6.dna.toplevel.fa.gz.1
-      - CHECKSUMS.1
       - checksum.md5
       - Drosophila_melanogaster.BDGP6.rel91
       - CHECKSUMS
       - Drosophila_melanogaster.BDGP6.dna.toplevel.fa.gz
-      - provinence.txt
       - Drosophila_melanogaster.BDGP6.dna.toplevel.fa
-      - slurm-1129742.out
       - metadata.txt
       - final_checksums.md5
       uuid: f00c482a-8550-31b9-89fb-803d4f9edbb5

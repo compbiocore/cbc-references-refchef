@@ -1,6 +1,6 @@
-drosophila-melanogaster.bdgp6rel9:
+drosophila-melanogaster-bdgp6rel9:
   metadata:
-    name: drosophila-melanogaster.bdgp6rel9
+    name: drosophila-melanogaster-bdgp6rel9
     common_name: fly
     custom: no
     description: The genome assembly represented here corresponds to GenBank Assembly ID GCA_000001215.4
