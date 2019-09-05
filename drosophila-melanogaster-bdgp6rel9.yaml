@@ -16,7 +16,7 @@ drosophila-melanogaster.bdgp6rel9:
     references:
     - component: primary
       complete:
-        status: true
+        status: false
       commands:
       - wget ftp://ftp.ensembl.org/pub/release-91/fasta/drosophila_melanogaster/dna/Drosophila_melanogaster.BDGP6.dna.toplevel.fa.gz
       - wget ftp://ftp.ensembl.org/pub/release-91/fasta/drosophila_melanogaster/dna/CHECKSUMS
