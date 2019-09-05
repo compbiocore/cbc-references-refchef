@@ -1,0 +1,26 @@
+broad_bundle_hg19:
+  metadata:
+    name: broad_bundle_hg19
+    common_name: human
+    custom: no
+    description: see https://software.broadinstitute.org/gatk/download/bundle
+    downloader: fgelin
+    ncbi_taxon_id: 9606
+    ensembl_release_number:
+    accession:
+      genbank:
+      refseq:
+    organism: Homo sapiens
+    organization: broad institute  
+  levels:
+    references:
+    - component: primary
+      complete:
+        status: false
+      commands:
+      - wget --user='gsapubftp-anonymous' 'ftp://ftp.broadinstitute.org/bundle/hg19/*.fasta.gz*'
+      - wget --user='gsapubftp-anonymous' 'ftp://ftp.broadinstitute.org/bundle/hg19/*.vcf.*'
+      - ls -a1 .*.done | xargs rm
+      - md5sum *.gz > postdownload-checksums.md5
+      - gunzip *.gz
+      - md5sum *.* > final_checksums.md5
