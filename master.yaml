@@ -189,3 +189,72 @@ drosophila-melanogaster-bdgp6rel9:
       - metadata.txt
       - final_checksums.md5
       uuid: f00c482a-8550-31b9-89fb-803d4f9edbb5
+wbps8_ws256:
+  metadata:
+    name: wbps8_ws256
+    common_name: worm
+    organism: Caenorhabditis elegans
+    organization: wormbase_parasite
+    custom: false
+    downloader: fgelin
+    description: none
+    ncbi_taxon_id: 6239
+    ensembl_release_number: null
+    accession:
+      genbank: null
+      refseq: null
+  levels:
+    references:
+    - component: primary
+      complete:
+        status: true
+        time: '2019-09-17 14:37:07.472786'
+      commands:
+      - wget ftp://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/WBPS8/species/caenorhabditis_elegans/PRJNA13758/caenorhabditis_elegans.PRJNA13758.WBPS8.genomic.fa.gz
+      - gunzip -c caenorhabditis_elegans.PRJNA13758.WBPS8.genomic.fa.gz > caenorhabditis_elegans.PRJNA13758.WBPS8.genomic.fa
+      - md5sum *.* > final_checksums.md5
+      location: /gpfs/data/shared/databases/refchef_refs/wbps8_ws256/primary
+      files:
+      - caenorhabditis_elegans.PRJNA13758.WBPS8.canonical_geneset.gtf.gz.1
+      - caenorhabditis_elegans.PRJNA13758.WBPS8.canonical_geneset.gtf.gz
+      - caenorhabditis_elegans.PRJNA13758.WBPS8.genomic.fa.gz.1
+      - caenorhabditis_elegans.PRJNA13758.WBPS8.genomic.fa
+      - caenorhabditis_elegans.PRJNA13758.WBPS8.genomic.fa.gz
+      - provinence.txt
+      - metadata.txt
+      - caenorhabditis_elegans.PRJNA13758.WBPS8.canonical_geneset.gtf
+      uuid: 27010656-d97a-11e9-9007-40f2e9026890
+    - component: cdna-trandscriptome
+      complete:
+        status: true
+        time: '2019-09-17 14:37:07.515180'
+      commands:
+      - wget ftp://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/WBPS8/species/caenorhabditis_elegans/PRJNA13758/caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.fa.gz
+      - gunzip -c caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.fa.gz >
+        caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.fa
+      - cat caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.fa | awk '{if($1
+        ~ ">" ) {split($1,a,".");$1=a[1]}; print }' > caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.salmon.fa
+      - cat caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.fa | awk '{if($1
+        ~ ">" ) {split($1,a,".");$1=a[1]; split($2,b,"."); $2=b[1];} print }' > caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.salmon2.fa
+      - cat caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.fa | awk '{if($1
+        ~ ">" ) {split($2,b,"."); $2=b[1];} print }' > caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.salmon3.fa
+      - mkdir salmon_index
+      - salmon index -t caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.fa
+        -i salmon_index/c_elegans_PRJNA13758_WBPS8_mRNA_orig_index  --type quasi -k
+        25
+      - salmon index -t caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.salmon2.fa
+        -i salmon_index/c_elegans_PRJNA13758_WBPS8_mRNA_transcripts_index --type quasi
+        -k 25
+      - md5sum *.* > final_checksums.md5
+      location: /gpfs/data/shared/databases/refchef_refs/wbps8_ws256/cdna-trandscriptome
+      files:
+      - caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.salmon.fa
+      - caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.salmon3.fa
+      - caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.fa.gz.1
+      - salmon_index_test
+      - provinence.txt
+      - caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.fa.gz
+      - caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.fa
+      - caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.salmon2.fa
+      - metadata.txt
+      uuid: 2701712c-d97a-11e9-9007-40f2e9026890
