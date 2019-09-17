@@ -1,0 +1,49 @@
+2019-09-17 14:37:07,255 INFO: 
+        ===========================================
+        REFCHEF 🐶
+        -------------------------------------------
+        - References will be downloaded to: /gpfs/data/shared/databases/refchef_refs
+        - Remote repository for master.yaml compbiocore/cbc-references-refchef
+        - Local repository for master.yaml /gpfs/data/shared/databases/cbc-references-refchef
+        - Logs files: /gpfs/data/shared/databases/cbc-references-refchef/logs/
+        -------------------------------------------
+        
+2019-09-17 14:37:07,255 DEBUG: parse kwarg method: 2 ...
+2019-09-17 14:37:07,410 INFO: 
+        No references to download.
+                    
+2019-09-17 14:37:07,410 INFO: 
+        No references to download.
+                    
+2019-09-17 14:37:07,410 INFO: 
+        No references to download.
+                    
+2019-09-17 14:37:07,411 INFO: 
+        No references to download.
+                    
+2019-09-17 14:37:07,411 INFO: 
+        -------------------------------------------
+        The folowing references will be downloaded:
+            - wbps8_ws256
+        ===========================================
+            
+2019-09-17 14:37:07,411 INFO: 
+        -------------------------------------------
+        The folowing references will be downloaded:
+            - wbps8_ws256
+        ===========================================
+            
+2019-09-17 14:37:07,455 INFO:  🐶 RefChef... getting reference: wbps8_ws256, component: primary
+2019-09-17 14:37:07,472 WARNING: No final_checksums.md found. UUID will not correspond to checksum.
+2019-09-17 14:37:07,513 INFO:  🐶 RefChef... getting reference: wbps8_ws256, component: cdna-trandscriptome
+2019-09-17 14:37:07,515 WARNING: No final_checksums.md found. UUID will not correspond to checksum.
+2019-09-17 14:37:07,515 INFO: References processed: ['spur31', 'cdubliniensis_cd36', 'broad_bundle_hg19', 'drosophila-melanogaster-bdgp6rel9', 'wbps8_ws256']
+2019-09-17 14:37:07,515 INFO: Location of references: /gpfs/data/shared/databases/refchef_refs
+2019-09-17 14:37:07,693 INFO: 
+         type                               name            component                  organization                                  uuid
+0  references                  broad_bundle_hg19              primary               broad institute  b2588931-2b94-3d8b-9eab-c8fa153af515
+1  references                 cdubliniensis_cd36              primary  http://www.candidagenome.org  3889615c-c609-377c-a49a-2376d7bb4ee1
+2  references  drosophila-melanogaster-bdgp6rel9              primary                       ensembl  f00c482a-8550-31b9-89fb-803d4f9edbb5
+3  references                             spur31              primary               ensembl metazoa  cc303697-34ce-3cd1-b883-5d709a4f3e09
+4  references                        wbps8_ws256              primary             wormbase_parasite  27010656-d97a-11e9-9007-40f2e9026890
+5  references                        wbps8_ws256  cdna-trandscriptome             wormbase_parasite  2701712c-d97a-11e9-9007-40f2e9026890
