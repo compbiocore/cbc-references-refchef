@@ -1,0 +1,30 @@
+grcm38_p5:
+  metadata:
+    name: grcm38_p5
+    common_name: mouse
+    organization: ensembl
+    downloader: aleith
+    organism: Mus musculus
+    description: corresponds to GenBank Assembly ID GCA_000001635.7
+    ncbi_taxon_id: 10090
+    custom: false
+    ensembl_release_number: 89
+    accession:
+      genbank:
+      refseq:
+  levels:
+    references:
+    - component: primary
+      complete:
+        status: false
+      commands:
+      - wget ftp://ftp.ensembl.org/pub/release-89/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.primary_assembly.fa.gz
+      - gunzip -c Mus_musculus.GRCm38.dna.primary_assembly.fa.gz > Mus_musculus.GRCm38.dna.primary_assembly.fa
+      - md5sum *.* > final_checksums.md5
+    - component: cdna-transcriptome
+      complete:
+        status: false
+      commands:
+      - wget ftp://ftp.ensembl.org/pub/release-89/fasta/mus_musculus/cdna/Mus_musculus.GRCm38.cdna.all.fa.gz
+      - gunzip -c Mus_musculus.GRCm38.cdna.all.fa.gz > Mus_musculus.GRCm38.cdna.all.fa
+      - md5sum *.* > final_checksums.md5
