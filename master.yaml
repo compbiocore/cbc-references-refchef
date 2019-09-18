@@ -289,3 +289,43 @@ grch37_release87:
       - metadata.txt
       - Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz
       uuid: ce1b1916-da1c-11e9-bf4d-40f2e9026674
+grcm38_p5:
+  metadata:
+    name: grcm38_p5
+    common_name: mouse
+    organization: ensembl
+    downloader: aleith
+    organism: Mus musculus
+    description: corresponds to GenBank Assembly ID GCA_000001635.7
+    ncbi_taxon_id: 10090
+    custom: false
+    ensembl_release_number: 89
+    accession:
+      genbank: null
+      refseq: null
+  levels:
+    references:
+    - component: primary
+      complete:
+        status: true
+        time: '2019-09-18 11:57:08.127499'
+      commands:
+      - wget ftp://ftp.ensembl.org/pub/release-89/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.primary_assembly.fa.gz
+      - gunzip -c Mus_musculus.GRCm38.dna.primary_assembly.fa.gz > Mus_musculus.GRCm38.dna.primary_assembly.fa
+      - md5sum *.* > final_checksums.md5
+      location: /gpfs/data/shared/databases/refchef_refs/grcm38_p5/primary
+      files:
+      - metadata.txt
+      uuid: f7c2173c-da2c-11e9-9ae5-40f2e9026674
+    - component: cdna-transcriptome
+      complete:
+        status: true
+        time: '2019-09-18 11:57:08.163906'
+      commands:
+      - wget ftp://ftp.ensembl.org/pub/release-89/fasta/mus_musculus/cdna/Mus_musculus.GRCm38.cdna.all.fa.gz
+      - gunzip -c Mus_musculus.GRCm38.cdna.all.fa.gz > Mus_musculus.GRCm38.cdna.all.fa
+      - md5sum *.* > final_checksums.md5
+      location: /gpfs/data/shared/databases/refchef_refs/grcm38_p5/cdna-transcriptome
+      files:
+      - metadata.txt
+      uuid: f7c26c64-da2c-11e9-9ae5-40f2e9026674
