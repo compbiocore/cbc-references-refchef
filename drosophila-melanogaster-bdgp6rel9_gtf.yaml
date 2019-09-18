@@ -1,0 +1,11 @@
+drosophila-melanogaster-bdgp6rel9:
+  levels:
+    annotations:
+    - component: gtf
+      complete:
+        status: false
+      commands:
+      - wget ftp://ftp.ensembl.org/pub/release-91/gtf/drosophila_melanogaster/Drosophila_melanogaster.BDGP6.91.gtf.gz
+      - wget ftp://ftp.ensembl.org/pub/release-91/gtf/drosophila_melanogaster/CHECKSUMS
+      - gunzip -c Drosophila_melanogaster.BDGP6.91.gtf.gz > Drosophila_melanogaster.BDGP6.91.gtf
+      - md5sum *.* > final_checksums.md5
