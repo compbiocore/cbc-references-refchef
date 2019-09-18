@@ -1,0 +1,13 @@
+2019-09-18 10:01:05,631 INFO: 
+        ===========================================
+        REFCHEF 🐶
+        -------------------------------------------
+        - References will be downloaded to: /gpfs/data/shared/databases/refchef_refs
+        - Remote repository for master.yaml compbiocore/cbc-references-refchef
+        - Local repository for master.yaml /gpfs/data/shared/databases/cbc-references-refchef
+        - Logs files: /gpfs/data/shared/databases/cbc-references-refchef/logs/
+        -------------------------------------------
+        
+2019-09-18 10:01:05,631 DEBUG: parse kwarg method: 2 ...
+2019-09-18 10:01:05,672 ERROR: [Errno 2] No such file or directory: '/gpfs/data/shared/databases/cbc-references-refchef/wbps8_ws256.yaml'
+2019-09-18 10:01:05,672 ERROR: file not found: /gpfs/data/shared/databases/cbc-references-refchef/wbps8_ws256.yaml
