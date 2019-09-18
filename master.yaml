@@ -20,7 +20,7 @@ spur31:
         time: '2019-09-03 15:48:48.715120'
       commands:
       - wget ftp://ftp.ensemblgenomes.org/pub/metazoa/release-43/fasta/strongylocentrotus_purpuratus/dna/CHECKSUMS
-      - wget ftp://ftp.ensemblgenomes.org/pub/metazoa/release-43/fasta/strongylocentrotus_purpuratus/dna/Strongylocentrotus_purpuratus.Spur_3.1.43.dna.toplevel.fa.gz
+      - wget ftp://ftp.ensemblgenomes.org/pub/metazoa/release-43/fasta/strongylocentrotus_purpuratus/dna/Strongylocentrotus_purpuratus.Spur_3.1.dna.toplevel.fa.gz
       - md5sum * > final_checksums.md5
       location: /gpfs/data/shared/databases/refchef_refs/spur31/primary
       files:
@@ -28,6 +28,24 @@ spur31:
       - metadata.txt
       - final_checksums.md5
       uuid: cc303697-34ce-3cd1-b883-5d709a4f3e09
+    annotations:
+    - component: gtf
+      complete:
+        status: true
+        time: '2019-09-18 14:52:56.723157'
+      commands:
+      - wget ftp://ftp.ensemblgenomes.org/pub/metazoa/release-43/gtf/strongylocentrotus_purpuratus/CHECKSUMS
+      - wget ftp://ftp.ensemblgenomes.org/pub/metazoa/release-43/gtf/strongylocentrotus_purpuratus/Strongylocentrotus_purpuratus.Spur_3.1.43.gtf.gz
+      - gunzip -c Strongylocentrotus_purpuratus.Spur_3.1.43.gtf.gz > Strongylocentrotus_purpuratus.Spur_3.1.43.gtf
+      - md5sum * > final_checksums.md5
+      location: /gpfs/data/shared/databases/refchef_refs/spur31/gtf
+      files:
+      - Strongylocentrotus_purpuratus.Spur_3.1.43.gtf
+      - Strongylocentrotus_purpuratus.Spur_3.1.43.gtf.gz
+      - CHECKSUMS
+      - metadata.txt
+      - final_checksums.md5
+      uuid: 6983397c-e268-31e2-bd0d-db7d47c589f9
 cdubliniensis_cd36:
   metadata:
     name: cdubliniensis_cd36
@@ -279,8 +297,7 @@ grch37_release87:
         status: true
         time: '2019-09-18 10:01:26.314885'
       commands:
-      - rsync -avzP rsync://ftp.ensembl.org/ensembl/pub/grch37/release-87/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz
-        .
+      - wget ftp://ftp.ensembl.org/pub/grch37/release-87/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz
       - md5sum *.* > final_checksums.md5
       location: /gpfs/data/shared/databases/refchef_refs/grch37_release87/primary
       files:
