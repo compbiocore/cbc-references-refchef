@@ -207,6 +207,24 @@ drosophila-melanogaster-bdgp6rel9:
       - metadata.txt
       - final_checksums.md5
       uuid: f00c482a-8550-31b9-89fb-803d4f9edbb5
+    annotations:
+    - component: gtf
+      complete:
+        status: true
+        time: '2019-09-18 15:04:10.854805'
+      commands:
+      - wget ftp://ftp.ensembl.org/pub/release-91/gtf/drosophila_melanogaster/Drosophila_melanogaster.BDGP6.91.gtf.gz
+      - wget ftp://ftp.ensembl.org/pub/release-91/gtf/drosophila_melanogaster/CHECKSUMS
+      - gunzip -c Drosophila_melanogaster.BDGP6.91.gtf.gz > Drosophila_melanogaster.BDGP6.91.gtf
+      - md5sum *.* > final_checksums.md5
+      location: /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/gtf
+      files:
+      - Drosophila_melanogaster.BDGP6.91.gtf.gz
+      - Drosophila_melanogaster.BDGP6.91.gtf
+      - CHECKSUMS
+      - metadata.txt
+      - final_checksums.md5
+      uuid: e3e260a5-87ff-36a1-8526-c73a9b03ec44
 wbps8_ws256:
   metadata:
     name: wbps8_ws256
