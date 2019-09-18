@@ -1,0 +1,57 @@
+2019-09-18 14:52:51,447 INFO: 
+        ===========================================
+        REFCHEF 🐶
+        -------------------------------------------
+        - References will be downloaded to: /gpfs/data/shared/databases/refchef_refs
+        - Remote repository for master.yaml compbiocore/cbc-references-refchef
+        - Local repository for master.yaml /gpfs/data/shared/databases/cbc-references-refchef
+        - Logs files: /gpfs/data/shared/databases/cbc-references-refchef/logs/
+        -------------------------------------------
+        
+2019-09-18 14:52:51,447 DEBUG: parse kwarg method: 2 ...
+2019-09-18 14:52:51,668 INFO: 
+        No references to download.
+                    
+2019-09-18 14:52:51,669 INFO: 
+        No references to download.
+                    
+2019-09-18 14:52:51,669 INFO: 
+        No references to download.
+                    
+2019-09-18 14:52:51,669 INFO: 
+        No references to download.
+                    
+2019-09-18 14:52:51,669 INFO: 
+        No references to download.
+                    
+2019-09-18 14:52:51,669 INFO: 
+        No references to download.
+                    
+2019-09-18 14:52:51,669 INFO: 
+        No references to download.
+                    
+2019-09-18 14:52:51,669 INFO: 
+        No references to download.
+                    
+2019-09-18 14:52:51,669 INFO: 
+        No references to download.
+                    
+2019-09-18 14:52:51,743 INFO:  🐶 RefChef... getting annotation: spur31, component: gtf
+2019-09-18 14:52:51,744 INFO: Running command "wget ftp://ftp.ensemblgenomes.org/pub/metazoa/release-43/gtf/strongylocentrotus_purpuratus/CHECKSUMS"
+2019-09-18 14:52:52,957 INFO: Running command "wget ftp://ftp.ensemblgenomes.org/pub/metazoa/release-43/gtf/strongylocentrotus_purpuratus/Strongylocentrotus_purpuratus.Spur_3.1.43.gtf.gz"
+2019-09-18 14:52:55,714 INFO: Running command "gunzip -c Strongylocentrotus_purpuratus.Spur_3.1.43.gtf.gz > Strongylocentrotus_purpuratus.Spur_3.1.43.gtf"
+2019-09-18 14:52:56,379 INFO: Running command "md5sum * > final_checksums.md5"
+2019-09-18 14:52:56,723 INFO: References processed: ['spur31', 'cdubliniensis_cd36', 'broad_bundle_hg19', 'drosophila-melanogaster-bdgp6rel9', 'wbps8_ws256', 'grch37_release87', 'grcm38_p5']
+2019-09-18 14:52:56,724 INFO: Location of references: /gpfs/data/shared/databases/refchef_refs
+2019-09-18 14:52:56,942 INFO: 
+          type                               name            component                  organization                                  uuid
+0   references                  broad_bundle_hg19              primary               broad institute  b2588931-2b94-3d8b-9eab-c8fa153af515
+1   references                 cdubliniensis_cd36              primary  http://www.candidagenome.org  3889615c-c609-377c-a49a-2376d7bb4ee1
+2   references  drosophila-melanogaster-bdgp6rel9              primary                       ensembl  f00c482a-8550-31b9-89fb-803d4f9edbb5
+3   references                   grch37_release87              primary                       ensembl  ce1b1916-da1c-11e9-bf4d-40f2e9026674
+4   references                          grcm38_p5              primary                       ensembl  f7c2173c-da2c-11e9-9ae5-40f2e9026674
+5   references                          grcm38_p5   cdna-transcriptome                       ensembl  f7c26c64-da2c-11e9-9ae5-40f2e9026674
+6   references                             spur31              primary               ensembl metazoa  cc303697-34ce-3cd1-b883-5d709a4f3e09
+7  annotations                             spur31                  gtf               ensembl metazoa  6983397c-e268-31e2-bd0d-db7d47c589f9
+8   references                        wbps8_ws256              primary             wormbase_parasite  27010656-d97a-11e9-9007-40f2e9026890
+9   references                        wbps8_ws256  cdna-trandscriptome             wormbase_parasite  2701712c-d97a-11e9-9007-40f2e9026890
