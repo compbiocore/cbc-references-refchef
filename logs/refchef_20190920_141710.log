@@ -1,0 +1,79 @@
+2019-09-20 14:17:10,516 INFO: 
+        ===========================================
+        REFCHEF 🐶
+        -------------------------------------------
+        - References will be downloaded to: /gpfs/data/shared/databases/refchef_refs
+        - Remote repository for master.yaml compbiocore/cbc-references-refchef
+        - Local repository for master.yaml /gpfs/data/shared/databases/cbc-references-refchef
+        - Logs files: /gpfs/data/shared/databases/cbc-references-refchef/logs/
+        -------------------------------------------
+        
+2019-09-20 14:17:10,517 DEBUG: parse kwarg method: 2 ...
+2019-09-20 14:17:10,716 INFO: 
+        No references to download.
+                    
+2019-09-20 14:17:10,717 INFO: 
+        No references to download.
+                    
+2019-09-20 14:17:10,717 INFO: 
+        No references to download.
+                    
+2019-09-20 14:17:10,717 INFO: 
+        No references to download.
+                    
+2019-09-20 14:17:10,717 INFO: 
+        No references to download.
+                    
+2019-09-20 14:17:10,717 INFO: 
+        No references to download.
+                    
+2019-09-20 14:17:10,717 INFO: 
+        No references to download.
+                    
+2019-09-20 14:17:10,717 INFO: 
+        No references to download.
+                    
+2019-09-20 14:17:10,717 INFO: 
+        No references to download.
+                    
+2019-09-20 14:17:10,717 INFO: 
+        -------------------------------------------
+        The folowing references will be downloaded:
+            - nt_db
+        ===========================================
+            
+2019-09-20 14:17:10,717 INFO: 
+        -------------------------------------------
+        The folowing references will be downloaded:
+            - nr_db
+        ===========================================
+            
+2019-09-20 14:17:10,783 INFO:  🐶 RefChef... getting reference: nt_db, component: blast_db
+2019-09-20 14:17:10,783 INFO: Running command "rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/nt.*.gz ."
+2019-09-20 14:37:45,073 INFO: Running command "rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/nt.*.gz.md5 ."
+2019-09-20 14:37:46,151 INFO: Running command "ls *.gz |xargs -n1 tar -xzf"
+2019-09-20 14:50:09,499 INFO: Running command "md5sum *.* > final_checksums.md5"
+2019-09-20 14:56:20,031 INFO:  🐶 RefChef... getting reference: nr_db, component: blast_db
+2019-09-20 14:56:20,032 INFO: Running command "rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.gz ."
+2019-09-20 15:17:58,285 INFO: Running command "rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.gz.md5 ."
+2019-09-20 15:17:59,223 INFO: Running command "ls *.gz |xargs -n1 tar -xzf"
+2019-09-20 15:52:47,475 INFO: Running command "md5sum *.* > final_checksums.md5"
+2019-09-20 16:06:22,817 INFO: References processed: ['spur31', 'cdubliniensis_cd36', 'broad_bundle_hg19', 'drosophila-melanogaster-bdgp6rel9', 'wbps8_ws256', 'grch37_release87', 'grcm38_p5', 'nt_db', 'nr_db']
+2019-09-20 16:06:22,817 INFO: Location of references: /gpfs/data/shared/databases/refchef_refs
+2019-09-20 16:06:23,481 INFO: 
+           type                               name            component                  organization                                  uuid
+0    references                  broad_bundle_hg19              primary               broad institute  b2588931-2b94-3d8b-9eab-c8fa153af515
+1    references                 cdubliniensis_cd36              primary  http://www.candidagenome.org  3889615c-c609-377c-a49a-2376d7bb4ee1
+2    references  drosophila-melanogaster-bdgp6rel9              primary                       ensembl  f00c482a-8550-31b9-89fb-803d4f9edbb5
+3   annotations  drosophila-melanogaster-bdgp6rel9                  gtf                       ensembl  e3e260a5-87ff-36a1-8526-c73a9b03ec44
+4    references                   grch37_release87              primary                       ensembl  ce1b1916-da1c-11e9-bf4d-40f2e9026674
+5   annotations                   grch37_release87                  gtf                       ensembl  7c0adc0d-a657-3919-8b77-9bb294b7823c
+6    references                          grcm38_p5              primary                       ensembl  f7c2173c-da2c-11e9-9ae5-40f2e9026674
+7    references                          grcm38_p5   cdna-transcriptome                       ensembl  f7c26c64-da2c-11e9-9ae5-40f2e9026674
+8   annotations                          grcm38_p5                  gtf                       ensembl  71964abc-da49-11e9-a511-40f2e9026674
+9    references                              nr_db             blast_db                          ncbi  533942ec-8f84-35bc-b359-184a4f8660d6
+10   references                              nt_db             blast_db                          ncbi  255012ce-ea01-3596-b1b6-6e657c7a7dde
+11   references                             spur31              primary               ensembl metazoa  cc303697-34ce-3cd1-b883-5d709a4f3e09
+12  annotations                             spur31                  gtf               ensembl metazoa  6983397c-e268-31e2-bd0d-db7d47c589f9
+13   references                        wbps8_ws256              primary             wormbase_parasite  27010656-d97a-11e9-9007-40f2e9026890
+14   references                        wbps8_ws256  cdna-trandscriptome             wormbase_parasite  2701712c-d97a-11e9-9007-40f2e9026890

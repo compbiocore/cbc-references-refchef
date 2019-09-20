@@ -20,7 +20,7 @@ nt_db:
       commands:
       - rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/nt.*.gz .
       - rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/nt.*.gz.md5 .
-      - tar xvfz *.tar.gz
+      - ls *.gz |xargs -n1 tar -xzf
       - md5sum *.* > final_checksums.md5
 nr_db:
   metadata:
@@ -44,5 +44,5 @@ nr_db:
       commands:
       - rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.gz .
       - rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.gz.md5 .
-      - tar xvfz *.tar.gz
+      - ls *.gz |xargs -n1 tar -xzf
       - md5sum *.* > final_checksums.md5
