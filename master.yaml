@@ -593,6 +593,12 @@ nt_db:
       - nt.61.tar.gz.md5
       - nt.45.tar.gz
       uuid: 941c36fa-e5ed-346f-bd59-2c0f3bb7a143
+    - component: blast_db
+      complete:
+        status: false
+    commands:
+    - ls nt*.gz | tar -xzf
+    - md5sum *.* >> final_checksums.md5
 nr_db:
   metadata:
     name: nr_db
@@ -894,3 +900,9 @@ nr_db:
       - nr.82.tar.gz.md5
       - nr.104.tar.gz
       uuid: a81da97f-8972-3140-938d-68ee92f6c6c1
+    - component: blast_db
+      complete:
+        status: false
+    commands:
+    - ls nr*.gz | tar -xzf
+    - md5sum *.* >> final_checksums.md5
