@@ -13,15 +13,15 @@ nt_db:
       genbank:
       refseq:
   levels:
-    primary:
+    references:
     - component: blast_db
-    complete: 
-      status: false
-    commands:
-    - rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/nt.*.gz .
-    - rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/nt.*.gz.md5 .
-    - tar xvfz *.tar.gz
-    - md5sum *.* > final_checksums.md5
+      complete: 
+        status: false
+      commands:
+      - rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/nt.*.gz .
+      - rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/nt.*.gz.md5 .
+      - tar xvfz *.tar.gz
+      - md5sum *.* > final_checksums.md5
 nr_db:
   metadata:
     name: nr_db
@@ -37,12 +37,12 @@ nr_db:
       genbank:
       refseq:
   levels:
-    primary:
+    references:
     - component: blast_db
-    complete: 
-      status: false
-    commands:
-    - rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.gz .
-    - rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.gz.md5 .
-    - tar xvfz *.tar.gz
-    - md5sum *.* > final_checksums.md5
+      complete: 
+        status: false
+      commands:
+      - rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.gz .
+      - rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.gz.md5 .
+      - tar xvfz *.tar.gz
+      - md5sum *.* > final_checksums.md5
