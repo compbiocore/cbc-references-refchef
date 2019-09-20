@@ -1,0 +1,48 @@
+nt_db:
+  metadata:
+    name: nt_db
+    common_name: nucleotide blast db
+    ncbi_taxon_id: na
+    organism: na
+    organization: ncbi
+    custom: no
+    description: Partially non-redundant nucleotide sequences from all traditional divisions of GenBank, EMBL, and DDBJ excluding GSS,STS, PAT, EST, HTG, and WGS
+    downloader: joselynn wallace
+    ensembl_release_number: none
+    accession:
+      genbank:
+      refseq:
+  levels:
+    primary:
+    - component: blast_db
+    complete: 
+      status: false
+    commands:
+    - rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/nt.*.gz .
+    - rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/nt.*.gz.md5 .
+    - tar xvfz *.tar.gz
+    - md5sum *.* > final_checksums.md5
+nr_db:
+  metadata:
+    name: nr_db
+    common_name: protein blast db
+    ncbi_taxon_id: na
+    organism: na
+    organization: ncbi
+    custom: no
+    description: Non-redundant protein sequences from GenPept, Swissprot, PIR, PDF, PDB, and NCBI RefSeq
+    downloader: joselynn wallace
+    ensembl_release_number: none
+    accession:
+      genbank:
+      refseq:
+  levels:
+    primary:
+    - component: blast_db
+    complete: 
+      status: false
+    commands:
+    - rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.gz .
+    - rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/nr.*.gz.md5 .
+    - tar xvfz *.tar.gz
+    - md5sum *.* > final_checksums.md5
