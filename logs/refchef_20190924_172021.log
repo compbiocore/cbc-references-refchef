@@ -1,0 +1,75 @@
+2019-09-24 17:20:22,213 INFO: 
+        ===========================================
+        REFCHEF 🐶
+        -------------------------------------------
+        - References will be downloaded to: /gpfs/data/shared/databases/refchef_refs
+        - Remote repository for master.yaml compbiocore/cbc-references-refchef
+        - Local repository for master.yaml /gpfs/data/shared/databases/cbc-references-refchef
+        - Logs files: /gpfs/data/shared/databases/cbc-references-refchef/logs/
+        -------------------------------------------
+        
+2019-09-24 17:20:22,213 DEBUG: parse kwarg method: 2 ...
+2019-09-24 17:20:24,209 INFO: 
+        No references to download.
+                    
+2019-09-24 17:20:24,209 INFO: 
+        No references to download.
+                    
+2019-09-24 17:20:24,209 INFO: 
+        No references to download.
+                    
+2019-09-24 17:20:24,209 INFO: 
+        No references to download.
+                    
+2019-09-24 17:20:24,209 INFO: 
+        No references to download.
+                    
+2019-09-24 17:20:24,209 INFO: 
+        No references to download.
+                    
+2019-09-24 17:20:24,209 INFO: 
+        No references to download.
+                    
+2019-09-24 17:20:24,209 INFO: 
+        No references to download.
+                    
+2019-09-24 17:20:24,209 INFO: 
+        No references to download.
+                    
+2019-09-24 17:20:24,210 INFO: 
+        No references to download.
+                    
+2019-09-24 17:20:24,210 INFO: 
+        No references to download.
+                    
+2019-09-24 17:20:24,210 INFO: 
+        No references to download.
+                    
+2019-09-24 17:20:24,210 INFO: 
+        -------------------------------------------
+        The folowing references will be downloaded:
+            - Genbank_UniVec_2018_11_28
+        ===========================================
+            
+2019-09-24 17:20:24,568 INFO:  🐶 RefChef... getting reference: Genbank_UniVec_2018_11_28, component: primary
+2019-09-24 17:20:24,569 WARNING: No final_checksums.md found. UUID will not correspond to checksum.
+2019-09-24 17:20:24,590 INFO: References processed: ['spur31', 'cdubliniensis_cd36', 'broad_bundle_hg19', 'drosophila-melanogaster-bdgp6rel9', 'wbps8_ws256', 'grch37_release87', 'grcm38_p5', 'nt_db', 'nr_db', 'Genbank_Univec_2018_11_28', 'Genbank_UniVec_2018_11_28']
+2019-09-24 17:20:24,590 INFO: Location of references: /gpfs/data/shared/databases/refchef_refs
+2019-09-24 17:20:25,300 INFO: 
+           type                               name            component                  organization                                  uuid
+0    references          Genbank_UniVec_2018_11_28              primary                          ncbi  1f6816cc-df11-11e9-91ef-40f2e9026674
+1    references                  broad_bundle_hg19              primary               broad institute  b2588931-2b94-3d8b-9eab-c8fa153af515
+2    references                 cdubliniensis_cd36              primary  http://www.candidagenome.org  3889615c-c609-377c-a49a-2376d7bb4ee1
+3    references  drosophila-melanogaster-bdgp6rel9              primary                       ensembl  f00c482a-8550-31b9-89fb-803d4f9edbb5
+4   annotations  drosophila-melanogaster-bdgp6rel9                  gtf                       ensembl  e3e260a5-87ff-36a1-8526-c73a9b03ec44
+5    references                   grch37_release87              primary                       ensembl  ce1b1916-da1c-11e9-bf4d-40f2e9026674
+6   annotations                   grch37_release87                  gtf                       ensembl  7c0adc0d-a657-3919-8b77-9bb294b7823c
+7    references                          grcm38_p5              primary                       ensembl  f7c2173c-da2c-11e9-9ae5-40f2e9026674
+8    references                          grcm38_p5   cdna-transcriptome                       ensembl  f7c26c64-da2c-11e9-9ae5-40f2e9026674
+9   annotations                          grcm38_p5                  gtf                       ensembl  71964abc-da49-11e9-a511-40f2e9026674
+10   references                              nr_db             blast_db                          ncbi  533942ec-8f84-35bc-b359-184a4f8660d6
+11   references                              nt_db             blast_db                          ncbi  255012ce-ea01-3596-b1b6-6e657c7a7dde
+12   references                             spur31              primary               ensembl metazoa  cc303697-34ce-3cd1-b883-5d709a4f3e09
+13  annotations                             spur31                  gtf               ensembl metazoa  6983397c-e268-31e2-bd0d-db7d47c589f9
+14   references                        wbps8_ws256              primary             wormbase_parasite  27010656-d97a-11e9-9007-40f2e9026890
+15   references                        wbps8_ws256  cdna-trandscriptome             wormbase_parasite  2701712c-d97a-11e9-9007-40f2e9026890
