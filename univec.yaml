@@ -1,6 +1,6 @@
-Genbank_Univec_2018_11_28:
+Genbank_UniVec_2018_11_28:
   metadata:
-    name: Univec
+    name: Genbank_UniVec_2018_11_28
     common_name: Vectors
     ncbi_taxon_id: None
     organism: Universal Vectors
