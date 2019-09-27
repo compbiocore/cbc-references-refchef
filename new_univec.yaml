@@ -1,0 +1,24 @@
+Genbank_UniVec_2018_11_28:
+  metadata:
+    name: Genbank_UniVec_2018_11_28
+    common_name: Vectors
+    ncbi_taxon_id: None
+    organism: Universal Vectors
+    organization: ncbi
+    custom: false
+    description: UniVec contains the unique segments, as well as a single copy of
+      each of the shared segments, from all the vector, adapter, linker, and primer
+      sequences that were used to build the database.
+    downloader: Ashok Ragavendran
+    ensembl_release_number: null
+    accession:
+      genbank: null
+      refseq: null
+  levels:
+    references:
+    - component: primary
+      complete:
+        status: false
+      commands:
+      - curl ftp://ftp.ncbi.nlm.nih.gov/pub/UniVec/UniVec > UniVec_2018_11_28.fa
+      - md5 *.* > final_checksums.md5
