@@ -225,6 +225,24 @@ drosophila-melanogaster-bdgp6rel9:
       - metadata.txt
       - final_checksums.md5
       uuid: e3e260a5-87ff-36a1-8526-c73a9b03ec44
+    indices:
+    - component: bwa_index
+      complete:
+        status: true
+        time: '2019-09-27 09:46:16.941266'
+      src: f00c482a-8550-31b9-89fb-803d4f9edbb5
+      commands:
+      - ln -s /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/primary/Drosophila_melanogaster.BDGP6.dna.toplevel.fa
+        /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/bwa_index/Drosophila_melanogaster.BDGP6.dna.toplevel.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/bwa_index
+      - bwa_index Drosophila_melanogaster.BDGP6.dna.toplevel.fa
+      - md5sum *.* > final_checksums.md5
+      location: /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/bwa_index
+      files:
+      - Drosophila_melanogaster.BDGP6.dna.toplevel.fa
+      - metadata.txt
+      - final_checksums.md5
+      uuid: 6206259e-fe61-35a2-9773-6a491c17aa11
 wbps8_ws256:
   metadata:
     name: wbps8_ws256
