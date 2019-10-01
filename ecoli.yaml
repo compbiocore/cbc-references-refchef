@@ -20,4 +20,5 @@ Escherichia_coli_K12:
       commands:
       - wget ftp://ftp.ensemblgenomes.org/pub/bacteria/release-45/fasta/bacteria_90_collection/escherichia_coli_k_12/dna/Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa.gz
       - wget ftp://ftp.ensemblgenomes.org/pub/bacteria/release-45/fasta/bacteria_90_collection/escherichia_coli_k_12/dna/CHECKSUMS
+      - gunzip Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa.gz
       - md5 *.* > final_checksums.md5
