@@ -1,0 +1,22 @@
+  metadata:
+    name: Escherichia_coli_K12
+    common_name: E. coli K12
+    ncbi_taxon_id: 83333
+    organism: Escherichia coli K12
+    organization: ensembl bacteria
+    custom: false
+    description: From ensembl bacteria_90_collection, the genome assembly represented here corresponds to GCA_000800765.1
+    downloader: Joselynn Wallace
+    ensembl_release_number: 45
+    accession:
+      genbank: null
+      refseq: null
+  levels:
+    references:
+    - component: primary
+      complete:
+        status: false
+      commands:
+      - wget ftp://ftp.ensemblgenomes.org/pub/bacteria/release-45/fasta/bacteria_90_collection/escherichia_coli_k_12/dna/Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa.gz
+      - wget ftp://ftp.ensemblgenomes.org/pub/bacteria/release-45/fasta/bacteria_90_collection/escherichia_coli_k_12/dna/CHECKSUMS
+      - md5 *.* > final_checksums.md5
