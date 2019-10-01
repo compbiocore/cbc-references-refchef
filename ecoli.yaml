@@ -1,6 +1,7 @@
+Escherichia_coli_K12:
   metadata:
     name: Escherichia_coli_K12
-    common_name: E. coli K12
+    common_name: E coli K12
     ncbi_taxon_id: 83333
     organism: Escherichia coli K12
     organization: ensembl bacteria
@@ -9,8 +10,8 @@
     downloader: Joselynn Wallace
     ensembl_release_number: 45
     accession:
-      genbank: null
-      refseq: null
+      genbank:
+      refseq:
   levels:
     references:
     - component: primary
