@@ -1,0 +1,25 @@
+S_cerevisiae:
+  metadata:
+    name: S_cerevisiae
+    common_name: yeast
+    ncbi_taxon_id: 4932
+    organism: Saccharomyces cerevisiae
+    organization: ensembl
+    custom: no
+    description: corresponds to genbank id GCA_000146045.2
+    downloader: joselynn wallace
+    ensembl_release_number: 87
+    accession:
+      genbank:
+      refseq:
+  levels:
+    references:
+    - component: primary
+      complete:
+        status: false
+      commands:
+      - wget ftp://ftp.ensembl.org/pub/release-87/fasta/saccharomyces_cerevisiae/dna/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa.gz
+      - wget ftp://ftp.ensembl.org/pub/release-87/fasta/saccharomyces_cerevisiae/dna/CHECKSUMS
+      - md5 *.gz > postdownload-checksums.md5
+      - gunzip *.gz
+      - md5 *.* > final_checksums.md5
