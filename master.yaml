@@ -248,6 +248,29 @@ drosophila-melanogaster-bdgp6rel9:
       - metadata.txt
       - final_checksums.md5
       uuid: 6206259e-fe61-35a2-9773-6a491c17aa11
+    - component: bowtie2_index
+      complete:
+        status: true
+        time: '2019-10-29 16:24:40.073570'
+      src: f00c482a-8550-31b9-89fb-803d4f9edbb5
+      commands:
+      - ln -s /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/primary/Drosophila_melanogaster.BDGP6.dna.toplevel.fa
+        /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/bowtie2_index/Drosophila_melanogaster.BDGP6.dna.toplevel.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/bowtie2_index
+      - bowtie2-build Drosophila_melanogaster.BDGP6.dna.toplevel.fa drosophila-melanogaster-bdgp6rel9
+      - md5sum *.* > final_checksums.md5
+      location: /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/bowtie2_index
+      files:
+      - drosophila-melanogaster-bdgp6rel9.4.bt2
+      - drosophila-melanogaster-bdgp6rel9.2.bt2
+      - drosophila-melanogaster-bdgp6rel9.3.bt2
+      - drosophila-melanogaster-bdgp6rel9.rev.2.bt2
+      - Drosophila_melanogaster.BDGP6.dna.toplevel.fa
+      - drosophila-melanogaster-bdgp6rel9.1.bt2
+      - drosophila-melanogaster-bdgp6rel9.rev.1.bt2
+      - metadata.txt
+      - final_checksums.md5
+      uuid: 6206259e-fe61-35a2-9773-6a491c17aa11
 wbps8_ws256:
   metadata:
     name: wbps8_ws256
@@ -3411,51 +3434,3 @@ Escherichia_coli_K12:
       - metadata.txt
       - final_checksums.md5
       uuid: c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
-    - component: bowtie2_index
-      complete:
-        status: true
-        time: '2019-10-01 14:56:48.504548'
-      src: c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
-      commands:
-      - ln -s /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/primary/Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
-        /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/bowtie2_index/Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/bowtie2_index
-      - bowtie2-build Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa Escherichia_coli_k12
-      - md5 *.* > final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/bowtie2_index
-      files:
-      - Escherichia_coli_k12.rev.1.bt2
-      - Escherichia_coli_k12.1.bt2
-      - Escherichia_coli_k12.4.bt2
-      - Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
-      - Escherichia_coli_k12.3.bt2
-      - Escherichia_coli_k12.2.bt2
-      - Escherichia_coli_k12.rev.2.bt2
-      - metadata.txt
-      - final_checksums.md5
-      uuid: c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
-S_cerevisiae:
-  metadata:
-    name: S_cerevisiae
-    common_name: yeast
-    ncbi_taxon_id: 4932
-    organism: Saccharomyces cerevisiae
-    organization: ensembl
-    custom: false
-    description: corresponds to genbank id GCA_000146045.2
-    downloader: joselynn wallace
-    ensembl_release_number: 87
-    accession:
-      genbank: null
-      refseq: null
-  levels:
-    references:
-    - component: primary
-      complete:
-        status: false
-      commands:
-      - wget ftp://ftp.ensembl.org/pub/release-87/fasta/saccharomyces_cerevisiae/dna/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa.gz
-      - wget ftp://ftp.ensembl.org/pub/release-87/fasta/saccharomyces_cerevisiae/dna/CHECKSUMS
-      - md5 *.gz > postdownload-checksums.md5
-      - gunzip *.gz
-      - md5 *.* > final_checksums.md5

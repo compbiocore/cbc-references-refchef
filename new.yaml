@@ -1,25 +1,13 @@
-S_cerevisiae:
-  metadata:
-    name: S_cerevisiae
-    common_name: yeast
-    ncbi_taxon_id: 4932
-    organism: Saccharomyces cerevisiae
-    organization: ensembl
-    custom: no
-    description: corresponds to genbank id GCA_000146045.2
-    downloader: joselynn wallace
-    ensembl_release_number: 87
-    accession:
-      genbank:
-      refseq:
+drosophila-melanogaster-bdgp6rel9:
   levels:
-    references:
-    - component: primary
+    indices:
+    - component: bowtie2_index
       complete:
         status: false
+      src: f00c482a-8550-31b9-89fb-803d4f9edbb5
       commands:
-      - wget ftp://ftp.ensembl.org/pub/release-87/fasta/saccharomyces_cerevisiae/dna/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa.gz
-      - wget ftp://ftp.ensembl.org/pub/release-87/fasta/saccharomyces_cerevisiae/dna/CHECKSUMS
-      - md5 *.gz > postdownload-checksums.md5
-      - gunzip *.gz
-      - md5 *.* > final_checksums.md5
+      - ln -s /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/primary/Drosophila_melanogaster.BDGP6.dna.toplevel.fa
+        /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/bowtie2_index/Drosophila_melanogaster.BDGP6.dna.toplevel.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/bowtie2_index
+      - bowtie2-build Drosophila_melanogaster.BDGP6.dna.toplevel.fa drosophila-melanogaster-bdgp6rel9
+      - md5sum *.* > final_checksums.md5        
