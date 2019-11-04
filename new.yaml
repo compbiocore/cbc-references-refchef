@@ -1,13 +1,24 @@
-drosophila-melanogaster-bdgp6rel9:
+grcm38_p5:
+  metadata:
+    name: grcm38_p5
+    common_name: mouse
+    organization: ensembl
+    downloader: aleith
+    organism: Mus musculus
+    description: corresponds to GenBank Assembly ID GCA_000001635.7
+    ncbi_taxon_id: 10090
+    custom: false
+    ensembl_release_number: 89
+    accession:
+      genbank: 
+      refseq: 
   levels:
-    indices:
-    - component: bowtie2_index
+    references:
+    - component: primary
       complete:
         status: false
-      src: f00c482a-8550-31b9-89fb-803d4f9edbb5
       commands:
-      - ln -s /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/primary/Drosophila_melanogaster.BDGP6.dna.toplevel.fa
-        /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/bowtie2_index/Drosophila_melanogaster.BDGP6.dna.toplevel.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/bowtie2_index
-      - bowtie2-build Drosophila_melanogaster.BDGP6.dna.toplevel.fa drosophila-melanogaster-bdgp6rel9
-      - md5sum *.* > final_checksums.md5        
+      - wget ftp://ftp.ensembl.org/pub/release-89/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.primary_assembly.fa.gz
+      - md5sum *.* > post_download.md5
+      - gunzip -c Mus_musculus.GRCm38.dna.primary_assembly.fa.gz > Mus_musculus.GRCm38.dna.primary_assembly.fa
+      - md5sum *.* > final_checksums.md5
