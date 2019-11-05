@@ -481,6 +481,23 @@ grcm38_p5:
       - Mus_musculus.GRCm38.dna.primary_assembly.fa.gz.1
       - final_checksums.md5
       uuid: beed20fa-f897-35bf-808d-0c1ee6173274
+    - component: primary
+      complete:
+        status: true
+        time: '2019-11-05 15:24:36.428792'
+      commands:
+      - wget ftp://ftp.ensembl.org/pub/release-89/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.primary_assembly.fa.gz
+      - md5sum *.* > post_download.md5
+      - gunzip -c Mus_musculus.GRCm38.dna.primary_assembly.fa.gz > Mus_musculus.GRCm38.dna.primary_assembly.fa
+      - md5sum *.* > final_checksums.md5
+      location: /gpfs/data/shared/databases/refchef_refs/grcm38_p5/primary
+      files:
+      - Mus_musculus.GRCm38.dna.primary_assembly.fa.gz
+      - post_download.md5
+      - Mus_musculus.GRCm38.dna.primary_assembly.fa
+      - metadata.txt
+      - final_checksums.md5
+      uuid: beed20fa-f897-35bf-808d-0c1ee6173274
     annotations:
     - component: gtf
       complete:
