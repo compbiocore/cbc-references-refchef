@@ -13,12 +13,12 @@ grcm38_p5:
       genbank: 
       refseq: 
   levels:
-    references:
-    - component: primary
+    references:  
+    - component: cdna-transcriptome
       complete:
         status: false
       commands:
-      - wget ftp://ftp.ensembl.org/pub/release-89/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.primary_assembly.fa.gz
+      - wget ftp://ftp.ensembl.org/pub/release-89/fasta/mus_musculus/cdna/Mus_musculus.GRCm38.cdna.all.fa.gz
       - md5sum *.* > post_download.md5
-      - gunzip -c Mus_musculus.GRCm38.dna.primary_assembly.fa.gz > Mus_musculus.GRCm38.dna.primary_assembly.fa
+      - gunzip -c Mus_musculus.GRCm38.cdna.all.fa.gz > Mus_musculus.GRCm38.cdna.all.fa
       - md5sum *.* > final_checksums.md5
