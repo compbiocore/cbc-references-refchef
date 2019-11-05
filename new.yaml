@@ -1,24 +1,23 @@
 grcm38_p5:
-  metadata:
-    name: grcm38_p5
-    common_name: mouse
-    organization: ensembl
-    downloader: aleith
-    organism: Mus musculus
-    description: corresponds to GenBank Assembly ID GCA_000001635.7
-    ncbi_taxon_id: 10090
-    custom: false
-    ensembl_release_number: 89
-    accession:
-      genbank: 
-      refseq: 
   levels: 
-    annotations:
-    - component: gtf
+    indices:
+    - component: bowtie2_index
       complete:
         status: false
+      src: beed20fa-f897-35bf-808d-0c1ee6173274 
       commands:
-      - wget ftp://ftp.ensembl.org/pub/release-89/gtf/mus_musculus/Mus_musculus.GRCm38.89.gtf.gz
-      - wget ftp://ftp.ensembl.org/pub/release-89/gtf/mus_musculus/CHECKSUMS
-      - gunzip -c Mus_musculus.GRCm38.89.gtf.gz > Mus_musculus.GRCm38.89.gtf
-      - md5sum *.* > final_chechsums.md5
+      - ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/primary/Mus_musculus.GRCm38.dna.primary_assembly.fa
+        /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bowtie2_index/Mus_musculus.GRCm38.dna.primary_assembly.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bowtie2_index/
+      - bowtie2-build Drosophila_melanogaster.BDGP6.dna.toplevel.fa grcm38_p5
+      - md5sum *.* > final_checksums.md5
+    - component: bwa_index
+      complete:
+        status: false
+      src: beed20fa-f897-35bf-808d-0c1ee6173274
+      commands:
+      - ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/primary/Mus_musculus.GRCm38.dna.primary_assembly.fa
+        /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bwa_index/Mus_musculus.GRCm38.dna.primary_assembly.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bwa_index/
+      - bwa index Mus_musculus.GRCm38.dna.primary_assembly.fa
+      - md5sum *.* > final_checksums.md5

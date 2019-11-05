@@ -1,0 +1,56 @@
+2019-11-05 15:59:47,007 INFO: 
+        ===========================================
+        REFCHEF 🐶
+        -------------------------------------------
+        - References will be downloaded to: /gpfs/data/shared/databases/refchef_refs
+        - Remote repository for master.yaml compbiocore/cbc-references-refchef
+        - Local repository for master.yaml /gpfs/data/shared/databases/cbc-references-refchef
+        - Logs files: /gpfs/data/shared/databases/cbc-references-refchef/logs/
+        -------------------------------------------
+        
+2019-11-05 15:59:47,007 DEBUG: parse kwarg method: 2 ...
+2019-11-05 15:59:48,297 INFO: 
+        No references to download.
+                    
+2019-11-05 15:59:48,297 INFO: 
+        No references to download.
+                    
+2019-11-05 15:59:48,298 INFO: 
+        No references to download.
+                    
+2019-11-05 15:59:48,298 INFO: 
+        No references to download.
+                    
+2019-11-05 15:59:48,298 INFO: 
+        No references to download.
+                    
+2019-11-05 15:59:48,298 INFO: 
+        No references to download.
+                    
+2019-11-05 15:59:48,298 INFO: 
+        No references to download.
+                    
+2019-11-05 15:59:48,298 INFO: 
+        No references to download.
+                    
+2019-11-05 15:59:48,298 INFO: 
+        No references to download.
+                    
+2019-11-05 15:59:48,298 INFO: 
+        No references to download.
+                    
+2019-11-05 15:59:48,298 INFO: 
+        No references to download.
+                    
+2019-11-05 15:59:48,298 INFO: 
+        No references to download.
+                    
+2019-11-05 15:59:48,537 INFO:  🐶 RefChef... getting index: grcm38_p5, component: bowtie2_index
+2019-11-05 15:59:48,537 INFO: Running command "ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/primary/Mus_musculus.GRCm38.dna.primary_assembly.fa /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bowtie2_index/Mus_musculus.GRCm38.dna.primary_assembly.fa"
+2019-11-05 15:59:48,566 INFO: Running command "cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bowtie2_index/"
+2019-11-05 15:59:48,573 INFO: Running command "bowtie2-build Drosophila_melanogaster.BDGP6.dna.toplevel.fa grcm38_p5"
+2019-11-05 15:59:48,710 INFO: Running command "md5sum *.* > final_checksums.md5"
+2019-11-05 15:59:55,291 INFO:  🐶 RefChef... getting index: grcm38_p5, component: bwa_index
+2019-11-05 15:59:55,291 INFO: Running command "ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/primary/Mus_musculus.GRCm38.dna.primary_assembly.fa /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bwa_index/Mus_musculus.GRCm38.dna.primary_assembly.fa"
+2019-11-05 15:59:55,299 INFO: Running command "cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bwa_index/"
+2019-11-05 15:59:55,305 INFO: Running command "bwa index Mus_musculus.GRCm38.dna.primary_assembly.fa"
