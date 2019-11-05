@@ -455,6 +455,24 @@ grcm38_p5:
       - Mus_musculus.GRCm38.cdna.all.fa.gz
       - final_checksums.md5
       uuid: 54a37969-f245-3a78-aec3-d2c6034bbd27
+    annotations:
+    - component: gtf
+      complete:
+        status: true
+        time: '2019-11-05 15:48:04.689398'
+      commands:
+      - wget ftp://ftp.ensembl.org/pub/release-89/gtf/mus_musculus/Mus_musculus.GRCm38.89.gtf.gz
+      - wget ftp://ftp.ensembl.org/pub/release-89/gtf/mus_musculus/CHECKSUMS
+      - gunzip -c Mus_musculus.GRCm38.89.gtf.gz > Mus_musculus.GRCm38.89.gtf
+      - md5sum *.* > final_chechsums.md5
+      location: /gpfs/data/shared/databases/refchef_refs/grcm38_p5/gtf
+      files:
+      - CHECKSUMS
+      - metadata.txt
+      - Mus_musculus.GRCm38.89.gtf
+      - Mus_musculus.GRCm38.89.gtf.gz
+      - final_chechsums.md5
+      uuid: 907f4f2a-000d-11ea-9a67-40f2e9026674
 nt_db:
   metadata:
     name: nt_db
