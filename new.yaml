@@ -9,15 +9,5 @@ grcm38_p5:
       - ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/primary/Mus_musculus.GRCm38.dna.primary_assembly.fa
         /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bowtie2_index/Mus_musculus.GRCm38.dna.primary_assembly.fa
       - cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bowtie2_index/
-      - bowtie2-build Drosophila_melanogaster.BDGP6.dna.toplevel.fa grcm38_p5
-      - md5sum *.* > final_checksums.md5
-    - component: bwa_index
-      complete:
-        status: false
-      src: beed20fa-f897-35bf-808d-0c1ee6173274
-      commands:
-      - ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/primary/Mus_musculus.GRCm38.dna.primary_assembly.fa
-        /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bwa_index/Mus_musculus.GRCm38.dna.primary_assembly.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bwa_index/
-      - bwa index Mus_musculus.GRCm38.dna.primary_assembly.fa
+      - bowtie2-build Mus_musculus.GRCm38.dna.primary_assembly.fa grcm38_p5
       - md5sum *.* > final_checksums.md5
