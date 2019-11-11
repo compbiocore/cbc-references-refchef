@@ -1,25 +1,13 @@
 grch38_release98:
-  metadata:
-    name: grch38_release98
-    common_name: human
-    organism: Homo sapiens
-    organization: ensembl
-    downloader: joselynn
-    description: corresponds to GenBank Assembly ID GCA_000001405.28
-    ncbi_taxon_id: 9606
-    ensembl_release_number: 98
-    custom: false
-    accession:
-      genbank:  
-      refseq: 
-  levels:
-    references:
-    - component: primary
+  levels: 
+    indices:
+    - component: bowtie2_index
       complete:
         status: false
+      src: fd2286d4-e257-3225-94a7-cd773d331290
       commands:
-      - wget ftp://ftp.ensembl.org/pub/release-98/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz
-      - wget ftp://ftp.ensembl.org/pub/release-98/fasta/homo_sapiens/dna/CHECKSUMS
-      - md5sum *.* > post_download.md5
-      - gunzip -c Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz > Homo_sapiens.GRCh38.dna.primary_assembly.fa
+      - ln -s /gpfs/data/shared/databases/refchef_refs/grch38_release98/primary/Homo_sapiens.GRCh38.dna.primary_assembly.fa
+        /gpfs/data/shared/databases/refchef_refs/grch38_release98/bowtie2_index/Homo_sapiens.GRCh38.dna.primary_assembly.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/grch38_release98/bowtie2_index
+      - bowtie2-build Homo_sapiens.GRCh38.dna.primary_assembly.fa grch38_rel98
       - md5sum *.* > final_checksums.md5
