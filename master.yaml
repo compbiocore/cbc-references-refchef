@@ -388,6 +388,32 @@ grch37_release87:
       - final_checksums.md5
       - Homo_sapiens.GRCh37.87.gtf
       uuid: 7c0adc0d-a657-3919-8b77-9bb294b7823c
+    indices:
+    - component: bowtie2_index
+      complete:
+        status: true
+        time: '2019-11-11 11:26:29.370497'
+      src: ce1b1916-da1c-11e9-bf4d-40f2e9026674
+      commands:
+      - ln -s /gpfs/data/shared/databases/refchef_refs/grch37_release87/primary/Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz
+        /gpfs/data/shared/databases/refchef_refs/grch37_release87/bowtie2_index/Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz
+      - cd /gpfs/data/shared/databases/refchef_refs/grch37_release87/bowtie2_index
+      - gunzip -c Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz > Homo_sapiens.GRCh37.dna.primary_assembly.fa
+      - bowtie2-build Homo_sapiens.GRCh37.dna.primary_assembly.fa grch37_rel87
+      - md5sum *.* > final_checksums.md5
+      location: /gpfs/data/shared/databases/refchef_refs/grch37_release87/bowtie2_index
+      files:
+      - grch37_rel87.3.bt2
+      - grch37_rel87.rev.1.bt2
+      - grch37_rel87.4.bt2
+      - grch37_rel87.2.bt2
+      - grch37_rel87.1.bt2
+      - metadata.txt
+      - Homo_sapiens.GRCh37.dna.primary_assembly.fa
+      - Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz
+      - final_checksums.md5
+      - grch37_rel87.rev.2.bt2
+      uuid: 24b510d3-0a73-3211-98da-274317c2a032
 grcm38_p5:
   metadata:
     name: grcm38_p5

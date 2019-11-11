@@ -1,13 +1,14 @@
-grcm38_p5:
+grch37_release87:
   levels: 
     indices:
     - component: bowtie2_index
       complete:
         status: false
-      src: beed20fa-f897-35bf-808d-0c1ee6173274 
+      src: ce1b1916-da1c-11e9-bf4d-40f2e9026674
       commands:
-      - ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/primary/Mus_musculus.GRCm38.dna.primary_assembly.fa
-        /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bowtie2_index/Mus_musculus.GRCm38.dna.primary_assembly.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bowtie2_index/
-      - bowtie2-build Mus_musculus.GRCm38.dna.primary_assembly.fa grcm38_p5
+      - ln -s /gpfs/data/shared/databases/refchef_refs/grch37_release87/primary/Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz
+        /gpfs/data/shared/databases/refchef_refs/grch37_release87/bowtie2_index/Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz
+      - cd /gpfs/data/shared/databases/refchef_refs/grch37_release87/bowtie2_index
+      - gunzip -c Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz > Homo_sapiens.GRCh37.dna.primary_assembly.fa
+      - bowtie2-build Homo_sapiens.GRCh37.dna.primary_assembly.fa grch37_rel87
       - md5sum *.* > final_checksums.md5

@@ -1,0 +1,81 @@
+2019-11-11 10:47:09,822 INFO: 
+        ===========================================
+        REFCHEF 🐶
+        -------------------------------------------
+        - References will be downloaded to: /gpfs/data/shared/databases/refchef_refs
+        - Remote repository for master.yaml compbiocore/cbc-references-refchef
+        - Local repository for master.yaml /gpfs/data/shared/databases/cbc-references-refchef
+        - Logs files: /gpfs/data/shared/databases/cbc-references-refchef/logs/
+        -------------------------------------------
+        
+2019-11-11 10:47:09,823 DEBUG: parse kwarg method: 2 ...
+2019-11-11 10:47:11,181 INFO: 
+        No references to download.
+                    
+2019-11-11 10:47:11,181 INFO: 
+        No references to download.
+                    
+2019-11-11 10:47:11,181 INFO: 
+        No references to download.
+                    
+2019-11-11 10:47:11,181 INFO: 
+        No references to download.
+                    
+2019-11-11 10:47:11,181 INFO: 
+        No references to download.
+                    
+2019-11-11 10:47:11,181 INFO: 
+        No references to download.
+                    
+2019-11-11 10:47:11,181 INFO: 
+        No references to download.
+                    
+2019-11-11 10:47:11,181 INFO: 
+        No references to download.
+                    
+2019-11-11 10:47:11,181 INFO: 
+        No references to download.
+                    
+2019-11-11 10:47:11,181 INFO: 
+        No references to download.
+                    
+2019-11-11 10:47:11,181 INFO: 
+        No references to download.
+                    
+2019-11-11 10:47:11,181 INFO: 
+        No references to download.
+                    
+2019-11-11 10:47:11,454 INFO:  🐶 RefChef... getting index: grch37_release87, component: bowtie2_index
+2019-11-11 10:47:11,454 INFO: Running command "ln -s /gpfs/data/shared/databases/refchef_refs/grch37_release87/primary/Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz /gpfs/data/shared/databases/refchef_refs/grch37_release87/bowtie2_index/Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz"
+2019-11-11 10:47:11,511 INFO: Running command "cd /gpfs/data/shared/databases/refchef_refs/grch37_release87/bowtie2_index"
+2019-11-11 10:47:11,517 INFO: Running command "gunzip -c Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz > Homo_sapiens.GRCh37.dna.primary_assembly.fa"
+2019-11-11 10:47:34,499 INFO: Running command "bowtie2-build Homo_sapiens.GRCh37.dna.primary_assembly.fa grch37_rel87"
+2019-11-11 11:26:09,809 INFO: Running command "md5sum *.* > final_checksums.md5"
+2019-11-11 11:26:29,421 INFO: References processed: ['spur31', 'cdubliniensis_cd36', 'broad_bundle_hg19', 'drosophila-melanogaster-bdgp6rel9', 'wbps8_ws256', 'grch37_release87', 'grcm38_p5', 'nt_db', 'nr_db', 'Escherichia_coli_K12']
+2019-11-11 11:26:29,421 INFO: Location of references: /gpfs/data/shared/databases/refchef_refs
+2019-11-11 11:26:29,952 INFO: 
+           type  ...                                  uuid
+0    references  ...  c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
+1       indices  ...  c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
+2    references  ...  b2588931-2b94-3d8b-9eab-c8fa153af515
+3    references  ...  3889615c-c609-377c-a49a-2376d7bb4ee1
+4    references  ...  f00c482a-8550-31b9-89fb-803d4f9edbb5
+5   annotations  ...  e3e260a5-87ff-36a1-8526-c73a9b03ec44
+6       indices  ...  6206259e-fe61-35a2-9773-6a491c17aa11
+7       indices  ...  6206259e-fe61-35a2-9773-6a491c17aa11
+8    references  ...  ce1b1916-da1c-11e9-bf4d-40f2e9026674
+9   annotations  ...  7c0adc0d-a657-3919-8b77-9bb294b7823c
+10      indices  ...  24b510d3-0a73-3211-98da-274317c2a032
+11   references  ...  beed20fa-f897-35bf-808d-0c1ee6173274
+12   references  ...  54a37969-f245-3a78-aec3-d2c6034bbd27
+13  annotations  ...  907f4f2a-000d-11ea-9a67-40f2e9026674
+14      indices  ...  482c6e70-389e-3559-8c19-d86cac067060
+15      indices  ...  482c6e70-389e-3559-8c19-d86cac067060
+16   references  ...  533942ec-8f84-35bc-b359-184a4f8660d6
+17   references  ...  255012ce-ea01-3596-b1b6-6e657c7a7dde
+18   references  ...  cc303697-34ce-3cd1-b883-5d709a4f3e09
+19  annotations  ...  6983397c-e268-31e2-bd0d-db7d47c589f9
+20   references  ...  27010656-d97a-11e9-9007-40f2e9026890
+21   references  ...  2701712c-d97a-11e9-9007-40f2e9026890
+
+[22 rows x 5 columns]
