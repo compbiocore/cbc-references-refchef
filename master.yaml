@@ -414,6 +414,30 @@ grch37_release87:
       - final_checksums.md5
       - grch37_rel87.rev.2.bt2
       uuid: 24b510d3-0a73-3211-98da-274317c2a032
+    - component: bwa_index
+      complete:
+        status: true
+        time: '2019-11-11 12:42:06.679344'
+      src: ce1b1916-da1c-11e9-bf4d-40f2e9026674
+      commands:
+      - ln -s /gpfs/data/shared/databases/refchef_refs/grch37_release87/primary/Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz
+        /gpfs/data/shared/databases/refchef_refs/grch37_release87/bwa_index/Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz
+      - cd /gpfs/data/shared/databases/refchef_refs/grch37_release87/bwa_index
+      - gunzip -c Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz > Homo_sapiens.GRCh37.dna.primary_assembly.fa
+      - bwa index Homo_sapiens.GRCh37.dna.primary_assembly.fa
+      - md5sum *.* > final_checksums.md5
+      location: /gpfs/data/shared/databases/refchef_refs/grch37_release87/bwa_index
+      files:
+      - Homo_sapiens.GRCh37.dna.primary_assembly.fa.ann
+      - Homo_sapiens.GRCh37.dna.primary_assembly.fa.sa
+      - Homo_sapiens.GRCh37.dna.primary_assembly.fa.bwt
+      - Homo_sapiens.GRCh37.dna.primary_assembly.fa.amb
+      - metadata.txt
+      - Homo_sapiens.GRCh37.dna.primary_assembly.fa
+      - Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz
+      - final_checksums.md5
+      - Homo_sapiens.GRCh37.dna.primary_assembly.fa.pac
+      uuid: 2161bca8-8c03-3b52-958a-a232158e2c71
 grcm38_p5:
   metadata:
     name: grcm38_p5
