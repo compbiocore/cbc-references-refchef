@@ -1,13 +1,13 @@
 grch38_release98:
   levels: 
     indices:
-    - component: bowtie2_index
+    - component: bwa_index
       complete:
         status: false
       src: fd2286d4-e257-3225-94a7-cd773d331290
       commands:
       - ln -s /gpfs/data/shared/databases/refchef_refs/grch38_release98/primary/Homo_sapiens.GRCh38.dna.primary_assembly.fa
-        /gpfs/data/shared/databases/refchef_refs/grch38_release98/bowtie2_index/Homo_sapiens.GRCh38.dna.primary_assembly.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/grch38_release98/bowtie2_index
-      - bowtie2-build Homo_sapiens.GRCh38.dna.primary_assembly.fa grch38_rel98
+        /gpfs/data/shared/databases/refchef_refs/grch38_release98/bwa_index/Homo_sapiens.GRCh38.dna.primary_assembly.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/grch38_release98/bwa_index
+      - bwa index Homo_sapiens.GRCh38.dna.primary_assembly.fa
       - md5sum *.* > final_checksums.md5
