@@ -1,14 +1,25 @@
-grch37_release87:
-  levels: 
-    indices:
-    - component: bwa_index
+grch38_release98:
+  metadata:
+    name: grch38_release98
+    common_name: human
+    organism: Homo sapiens
+    organization: ensembl
+    downloader: joselynn
+    description: corresponds to GenBank Assembly ID GCA_000001405.28
+    ncbi_taxon_id: 9606
+    ensembl_release_number: 98
+    custom: false
+    accession:
+      genbank:  
+      refseq: 
+  levels:
+    references:
+    - component: primary
       complete:
         status: false
-      src: ce1b1916-da1c-11e9-bf4d-40f2e9026674
       commands:
-      - ln -s /gpfs/data/shared/databases/refchef_refs/grch37_release87/primary/Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz
-        /gpfs/data/shared/databases/refchef_refs/grch37_release87/bwa_index/Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz
-      - cd /gpfs/data/shared/databases/refchef_refs/grch37_release87/bwa_index
-      - gunzip -c Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz > Homo_sapiens.GRCh37.dna.primary_assembly.fa
-      - bwa index Homo_sapiens.GRCh37.dna.primary_assembly.fa
+      - wget ftp://ftp.ensembl.org/pub/release-98/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz
+      - wget ftp://ftp.ensembl.org/pub/release-98/fasta/homo_sapiens/dna/CHECKSUMS
+      - md5sum *.* > post_download.md5
+      - gunzip -c Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz > Homo_sapiens.GRCh38.dna.primary_assembly.fa
       - md5sum *.* > final_checksums.md5
