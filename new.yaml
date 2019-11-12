@@ -1,13 +1,14 @@
-grch38_release98:
+Escherichia_coli_K12:
   levels: 
     indices:
-    - component: bwa_index
+    - component: bowtie2_index
       complete:
         status: false
-      src: fd2286d4-e257-3225-94a7-cd773d331290
+      src: c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
       commands:
-      - ln -s /gpfs/data/shared/databases/refchef_refs/grch38_release98/primary/Homo_sapiens.GRCh38.dna.primary_assembly.fa
-        /gpfs/data/shared/databases/refchef_refs/grch38_release98/bwa_index/Homo_sapiens.GRCh38.dna.primary_assembly.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/grch38_release98/bwa_index
-      - bwa index Homo_sapiens.GRCh38.dna.primary_assembly.fa
+      - ln -s /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/primary/Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
+        /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/bowtie2_index/Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/bowtie2_index
+      - bowtie2-build Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa Escherichia_coli_k12
       - md5sum *.* > final_checksums.md5
+

@@ -3540,6 +3540,29 @@ Escherichia_coli_K12:
       - metadata.txt
       - final_checksums.md5
       uuid: c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
+    - component: bowtie2_index
+      complete:
+        status: true
+        time: '2019-11-12 16:22:13.334529'
+      src: c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
+      commands:
+      - ln -s /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/primary/Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
+        /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/bowtie2_index/Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/bowtie2_index
+      - bowtie2-build Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa Escherichia_coli_k12
+      - md5sum *.* > final_checksums.md5
+      location: /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/bowtie2_index
+      files:
+      - Escherichia_coli_k12.rev.1.bt2
+      - Escherichia_coli_k12.1.bt2
+      - Escherichia_coli_k12.4.bt2
+      - Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
+      - Escherichia_coli_k12.3.bt2
+      - Escherichia_coli_k12.2.bt2
+      - Escherichia_coli_k12.rev.2.bt2
+      - metadata.txt
+      - final_checksums.md5
+      uuid: c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
 grch38_release98:
   metadata:
     name: grch38_release98
