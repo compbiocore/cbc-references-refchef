@@ -1,0 +1,94 @@
+2019-11-05 16:31:32,956 INFO: 
+        ===========================================
+        REFCHEF 🐶
+        -------------------------------------------
+        - References will be downloaded to: /gpfs/data/shared/databases/refchef_refs
+        - Remote repository for master.yaml compbiocore/cbc-references-refchef
+        - Local repository for master.yaml /gpfs/data/shared/databases/cbc-references-refchef
+        - Logs files: /gpfs/data/shared/databases/cbc-references-refchef/logs/
+        -------------------------------------------
+        
+2019-11-05 16:31:32,957 DEBUG: parse kwarg method: 2 ...
+2019-11-05 16:31:34,152 INFO: 
+        No references to download.
+                    
+2019-11-05 16:31:34,152 INFO: 
+        No references to download.
+                    
+2019-11-05 16:31:34,152 INFO: 
+        No references to download.
+                    
+2019-11-05 16:31:34,152 INFO: 
+        No references to download.
+                    
+2019-11-05 16:31:34,152 INFO: 
+        No references to download.
+                    
+2019-11-05 16:31:34,152 INFO: 
+        No references to download.
+                    
+2019-11-05 16:31:34,152 INFO: 
+        No references to download.
+                    
+2019-11-05 16:31:34,153 INFO: 
+        No references to download.
+                    
+2019-11-05 16:31:34,153 INFO: 
+        No references to download.
+                    
+2019-11-05 16:31:34,153 INFO: 
+        No references to download.
+                    
+2019-11-05 16:31:34,153 INFO: 
+        No references to download.
+                    
+2019-11-05 16:31:34,153 INFO: 
+        No references to download.
+                    
+2019-11-05 16:31:34,389 INFO:  🐶 RefChef... getting index: grcm38_p5, component: bowtie2_index
+2019-11-05 16:31:34,389 INFO: Running command "ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/primary/Mus_musculus.GRCm38.dna.primary_assembly.fa /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bowtie2_index/Mus_musculus.GRCm38.dna.primary_assembly.fa"
+2019-11-05 16:31:34,431 INFO: Running command "cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bowtie2_index/"
+2019-11-05 16:31:34,434 INFO: Running command "bowtie2-build Drosophila_melanogaster.BDGP6.dna.toplevel.fa grcm38_p5"
+2019-11-05 16:31:34,673 INFO: Running command "md5sum *.* > final_checksums.md5"
+2019-11-05 16:31:40,508 INFO:  🐶 RefChef... getting index: grcm38_p5, component: bwa_index
+2019-11-05 16:31:40,508 INFO: Running command "ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/primary/Mus_musculus.GRCm38.dna.primary_assembly.fa /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bwa_index/Mus_musculus.GRCm38.dna.primary_assembly.fa"
+2019-11-05 16:31:40,515 INFO: Running command "cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bwa_index/"
+2019-11-05 16:31:40,518 INFO: Running command "bwa index Mus_musculus.GRCm38.dna.primary_assembly.fa"
+2019-11-05 17:13:53,302 INFO: Running command "md5sum *.* > final_checksums.md5"
+2019-11-05 17:14:07,113 INFO:  🐶 RefChef... getting index: grcm38_p5, component: bowtie2_index
+2019-11-05 17:14:07,113 INFO: Running command "ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/primary/Mus_musculus.GRCm38.dna.primary_assembly.fa /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bowtie2_index/Mus_musculus.GRCm38.dna.primary_assembly.fa"
+2019-11-05 17:14:07,120 INFO: Running command "cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bowtie2_index/"
+2019-11-05 17:14:07,124 INFO: Running command "bowtie2-build Drosophila_melanogaster.BDGP6.dna.toplevel.fa grcm38_p5"
+2019-11-05 17:14:07,368 INFO: Running command "md5sum *.* > final_checksums.md5"
+2019-11-05 17:14:12,350 INFO:  🐶 RefChef... getting index: grcm38_p5, component: bwa_index
+2019-11-05 17:14:12,350 INFO: Running command "ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/primary/Mus_musculus.GRCm38.dna.primary_assembly.fa /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bwa_index/Mus_musculus.GRCm38.dna.primary_assembly.fa"
+2019-11-05 17:14:12,357 INFO: Running command "cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bwa_index/"
+2019-11-05 17:14:12,362 INFO: Running command "bwa index Mus_musculus.GRCm38.dna.primary_assembly.fa"
+2019-11-05 17:54:08,745 INFO: Running command "md5sum *.* > final_checksums.md5"
+2019-11-05 17:54:21,619 INFO: References processed: ['spur31', 'cdubliniensis_cd36', 'broad_bundle_hg19', 'drosophila-melanogaster-bdgp6rel9', 'wbps8_ws256', 'grch37_release87', 'grcm38_p5', 'nt_db', 'nr_db', 'Escherichia_coli_K12']
+2019-11-05 17:54:21,619 INFO: Location of references: /gpfs/data/shared/databases/refchef_refs
+2019-11-05 17:54:22,003 INFO: 
+           type                               name            component                  organization                                  uuid
+0    references               Escherichia_coli_K12              primary              ensembl bacteria  c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
+1       indices               Escherichia_coli_K12            bwa_index              ensembl bacteria  c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
+2    references                  broad_bundle_hg19              primary               broad institute  b2588931-2b94-3d8b-9eab-c8fa153af515
+3    references                 cdubliniensis_cd36              primary  http://www.candidagenome.org  3889615c-c609-377c-a49a-2376d7bb4ee1
+4    references  drosophila-melanogaster-bdgp6rel9              primary                       ensembl  f00c482a-8550-31b9-89fb-803d4f9edbb5
+5   annotations  drosophila-melanogaster-bdgp6rel9                  gtf                       ensembl  e3e260a5-87ff-36a1-8526-c73a9b03ec44
+6       indices  drosophila-melanogaster-bdgp6rel9            bwa_index                       ensembl  6206259e-fe61-35a2-9773-6a491c17aa11
+7       indices  drosophila-melanogaster-bdgp6rel9        bowtie2_index                       ensembl  6206259e-fe61-35a2-9773-6a491c17aa11
+8    references                   grch37_release87              primary                       ensembl  ce1b1916-da1c-11e9-bf4d-40f2e9026674
+9   annotations                   grch37_release87                  gtf                       ensembl  7c0adc0d-a657-3919-8b77-9bb294b7823c
+10   references                          grcm38_p5              primary                       ensembl  beed20fa-f897-35bf-808d-0c1ee6173274
+11   references                          grcm38_p5   cdna-transcriptome                       ensembl  54a37969-f245-3a78-aec3-d2c6034bbd27
+12  annotations                          grcm38_p5                  gtf                       ensembl  907f4f2a-000d-11ea-9a67-40f2e9026674
+13      indices                          grcm38_p5        bowtie2_index                       ensembl  482c6e70-389e-3559-8c19-d86cac067060
+14      indices                          grcm38_p5            bwa_index                       ensembl  beed20fa-f897-35bf-808d-0c1ee6173274
+15      indices                          grcm38_p5        bowtie2_index                       ensembl  482c6e70-389e-3559-8c19-d86cac067060
+16      indices                          grcm38_p5            bwa_index                       ensembl  482c6e70-389e-3559-8c19-d86cac067060
+17   references                              nr_db             blast_db                          ncbi  533942ec-8f84-35bc-b359-184a4f8660d6
+18   references                              nt_db             blast_db                          ncbi  255012ce-ea01-3596-b1b6-6e657c7a7dde
+19   references                             spur31              primary               ensembl metazoa  cc303697-34ce-3cd1-b883-5d709a4f3e09
+20  annotations                             spur31                  gtf               ensembl metazoa  6983397c-e268-31e2-bd0d-db7d47c589f9
+21   references                        wbps8_ws256              primary             wormbase_parasite  27010656-d97a-11e9-9007-40f2e9026890
+22   references                        wbps8_ws256  cdna-trandscriptome             wormbase_parasite  2701712c-d97a-11e9-9007-40f2e9026890

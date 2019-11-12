@@ -1,0 +1,55 @@
+2019-11-04 14:12:08,815 INFO: 
+        ===========================================
+        REFCHEF 🐶
+        -------------------------------------------
+        - References will be downloaded to: /gpfs/data/shared/databases/refchef_refs
+        - Remote repository for master.yaml compbiocore/cbc-references-refchef
+        - Local repository for master.yaml /gpfs/data/shared/databases/cbc-references-refchef
+        - Logs files: /gpfs/data/shared/databases/cbc-references-refchef/logs/
+        -------------------------------------------
+        
+2019-11-04 14:12:08,816 DEBUG: parse kwarg method: 2 ...
+2019-11-04 14:12:10,857 INFO: 
+        No references to download.
+                    
+2019-11-04 14:12:10,857 INFO: 
+        No references to download.
+                    
+2019-11-04 14:12:10,858 INFO: 
+        No references to download.
+                    
+2019-11-04 14:12:10,858 INFO: 
+        No references to download.
+                    
+2019-11-04 14:12:10,858 INFO: 
+        No references to download.
+                    
+2019-11-04 14:12:10,858 INFO: 
+        No references to download.
+                    
+2019-11-04 14:12:10,858 INFO: 
+        No references to download.
+                    
+2019-11-04 14:12:10,858 INFO: 
+        No references to download.
+                    
+2019-11-04 14:12:10,858 INFO: 
+        No references to download.
+                    
+2019-11-04 14:12:10,858 INFO: 
+        -------------------------------------------
+        The folowing references will be downloaded:
+            - grcm38_p5
+        ===========================================
+            
+2019-11-04 14:12:10,858 INFO: 
+        No references to download.
+                    
+2019-11-04 14:12:10,858 INFO: 
+        No references to download.
+                    
+2019-11-04 14:12:10,859 INFO: 
+        No references to download.
+                    
+2019-11-04 14:12:11,215 INFO:  🐶 RefChef... getting reference: grcm38_p5, component: primary
+2019-11-04 14:12:11,215 INFO: Running command "wget ftp://ftp.ensembl.org/pub/release-89/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.primary_assembly.fa.gz"
