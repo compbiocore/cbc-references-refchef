@@ -3699,3 +3699,49 @@ saccer3:
       - final_checksums.md5
       - Saccharomyces_cerevisiae.R64-1-1.98.gtf
       uuid: a8d15bf6-7a67-36b7-911d-4daf174f79af
+    indices:
+    - component: bwa_index
+      complete:
+        status: true
+        time: '2019-11-14 14:36:09.687411'
+      src: 2433f3a6-0a29-34bc-8868-2fb9609d4025
+      commands:
+      - ln -s /gpfs/data/shared/databases/refchef_refs/saccer3/primary/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
+        /gpfs/data/shared/databases/refchef_refs/saccer3/bwa_index/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/saccer3/bwa_index
+      - bwa index Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
+      - md5sum *.* > final_checksums.md5
+      location: /gpfs/data/shared/databases/refchef_refs/saccer3/bwa_index
+      files:
+      - Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa.bwt
+      - Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa.pac
+      - Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa.amb
+      - Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa.ann
+      - Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
+      - metadata.txt
+      - final_checksums.md5
+      - Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa.sa
+      uuid: 91b325e3-aaa0-3d8f-af1e-79716e343bfe
+    - component: bowtie2_index
+      complete:
+        status: true
+        time: '2019-11-14 14:36:16.700487'
+      src: 2433f3a6-0a29-34bc-8868-2fb9609d4025
+      commands:
+      - ln -s /gpfs/data/shared/databases/refchef_refs/saccer3/primary/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
+        /gpfs/data/shared/databases/refchef_refs/saccer3/bowtie2_index/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/saccer3/bowtie2_index
+      - bowtie2-build Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa saccer3
+      - md5sum *.* > final_checksums.md5
+      location: /gpfs/data/shared/databases/refchef_refs/saccer3/bowtie2_index
+      files:
+      - saccer3.3.bt2
+      - saccer3.rev.2.bt2
+      - saccer3.1.bt2
+      - saccer3.2.bt2
+      - saccer3.rev.1.bt2
+      - saccer3.4.bt2
+      - Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
+      - metadata.txt
+      - final_checksums.md5
+      uuid: e7428ca2-68e8-3356-90a8-e5016deea499
