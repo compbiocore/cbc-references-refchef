@@ -1,0 +1,94 @@
+2019-11-14 14:24:39,982 INFO: 
+        ===========================================
+        REFCHEF 🐶
+        -------------------------------------------
+        - References will be downloaded to: /gpfs/data/shared/databases/refchef_refs
+        - Remote repository for master.yaml compbiocore/cbc-references-refchef
+        - Local repository for master.yaml /gpfs/data/shared/databases/cbc-references-refchef
+        - Logs files: /gpfs/data/shared/databases/cbc-references-refchef/logs/
+        -------------------------------------------
+        
+2019-11-14 14:24:39,983 DEBUG: parse kwarg method: 2 ...
+2019-11-14 14:24:42,176 INFO: 
+        No references to download.
+                    
+2019-11-14 14:24:42,176 INFO: 
+        No references to download.
+                    
+2019-11-14 14:24:42,177 INFO: 
+        No references to download.
+                    
+2019-11-14 14:24:42,177 INFO: 
+        No references to download.
+                    
+2019-11-14 14:24:42,177 INFO: 
+        No references to download.
+                    
+2019-11-14 14:24:42,177 INFO: 
+        No references to download.
+                    
+2019-11-14 14:24:42,177 INFO: 
+        No references to download.
+                    
+2019-11-14 14:24:42,177 INFO: 
+        No references to download.
+                    
+2019-11-14 14:24:42,177 INFO: 
+        No references to download.
+                    
+2019-11-14 14:24:42,177 INFO: 
+        No references to download.
+                    
+2019-11-14 14:24:42,177 INFO: 
+        No references to download.
+                    
+2019-11-14 14:24:42,177 INFO: 
+        No references to download.
+                    
+2019-11-14 14:24:42,178 INFO: 
+        No references to download.
+                    
+2019-11-14 14:24:42,178 INFO: 
+        -------------------------------------------
+        The folowing references will be downloaded:
+            - saccer3
+        ===========================================
+            
+2019-11-14 14:24:42,604 INFO:  🐶 RefChef... getting reference: saccer3, component: primary
+2019-11-14 14:24:42,604 INFO: Running command "wget ftp://ftp.ensembl.org/pub/release-98/fasta/saccharomyces_cerevisiae/dna/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa.gz"
+2019-11-14 14:24:45,949 INFO: Running command "wget ftp://ftp.ensembl.org/pub/release-98/fasta/saccharomyces_cerevisiae/dna/CHECKSUMS"
+2019-11-14 14:24:47,937 INFO: Running command "md5sum *.* > post_download.md5"
+2019-11-14 14:24:47,956 INFO: Running command "gunzip -c Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa.gz > Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa"
+2019-11-14 14:24:48,081 INFO: Running command "md5sum *.* > final_checksums.md5"
+2019-11-14 14:24:48,228 INFO: References processed: ['spur31', 'cdubliniensis_cd36', 'broad_bundle_hg19', 'drosophila-melanogaster-bdgp6rel9', 'wbps8_ws256', 'grch37_release87', 'grcm38_p5', 'nt_db', 'nr_db', 'Escherichia_coli_K12', 'grch38_release98', 'saccer3']
+2019-11-14 14:24:48,228 INFO: Location of references: /gpfs/data/shared/databases/refchef_refs
+2019-11-14 14:24:49,033 INFO: 
+           type                               name            component                  organization                                  uuid
+0    references               Escherichia_coli_K12              primary              ensembl bacteria  c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
+1       indices               Escherichia_coli_K12            bwa_index              ensembl bacteria  c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
+2       indices               Escherichia_coli_K12        bowtie2_index              ensembl bacteria  c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
+3    references                  broad_bundle_hg19              primary               broad institute  b2588931-2b94-3d8b-9eab-c8fa153af515
+4    references                 cdubliniensis_cd36              primary  http://www.candidagenome.org  3889615c-c609-377c-a49a-2376d7bb4ee1
+5    references  drosophila-melanogaster-bdgp6rel9              primary                       ensembl  f00c482a-8550-31b9-89fb-803d4f9edbb5
+6   annotations  drosophila-melanogaster-bdgp6rel9                  gtf                       ensembl  e3e260a5-87ff-36a1-8526-c73a9b03ec44
+7       indices  drosophila-melanogaster-bdgp6rel9            bwa_index                       ensembl  6206259e-fe61-35a2-9773-6a491c17aa11
+8       indices  drosophila-melanogaster-bdgp6rel9        bowtie2_index                       ensembl  6206259e-fe61-35a2-9773-6a491c17aa11
+9    references                   grch37_release87              primary                       ensembl  ce1b1916-da1c-11e9-bf4d-40f2e9026674
+10  annotations                   grch37_release87                  gtf                       ensembl  7c0adc0d-a657-3919-8b77-9bb294b7823c
+11      indices                   grch37_release87        bowtie2_index                       ensembl  24b510d3-0a73-3211-98da-274317c2a032
+12      indices                   grch37_release87            bwa_index                       ensembl  2161bca8-8c03-3b52-958a-a232158e2c71
+13   references                   grch38_release98              primary                       ensembl  fd2286d4-e257-3225-94a7-cd773d331290
+14      indices                   grch38_release98        bowtie2_index                       ensembl  ae68c4f8-8bec-30c6-8349-28be4036da24
+15      indices                   grch38_release98            bwa_index                       ensembl  fd2286d4-e257-3225-94a7-cd773d331290
+16   references                          grcm38_p5              primary                       ensembl  beed20fa-f897-35bf-808d-0c1ee6173274
+17   references                          grcm38_p5   cdna-transcriptome                       ensembl  54a37969-f245-3a78-aec3-d2c6034bbd27
+18  annotations                          grcm38_p5                  gtf                       ensembl  907f4f2a-000d-11ea-9a67-40f2e9026674
+19      indices                          grcm38_p5            bwa_index                       ensembl  482c6e70-389e-3559-8c19-d86cac067060
+20      indices                          grcm38_p5        bowtie2_index                       ensembl  482c6e70-389e-3559-8c19-d86cac067060
+21   references                              nr_db             blast_db                          ncbi  533942ec-8f84-35bc-b359-184a4f8660d6
+22   references                              nt_db             blast_db                          ncbi  255012ce-ea01-3596-b1b6-6e657c7a7dde
+23   references                            saccer3              primary                       ensembl  2433f3a6-0a29-34bc-8868-2fb9609d4025
+24   references                             spur31              primary               ensembl metazoa  cc303697-34ce-3cd1-b883-5d709a4f3e09
+25  annotations                             spur31                  gtf               ensembl metazoa  6983397c-e268-31e2-bd0d-db7d47c589f9
+26   references                        wbps8_ws256              primary             wormbase_parasite  27010656-d97a-11e9-9007-40f2e9026890
+27   references                        wbps8_ws256  cdna-trandscriptome             wormbase_parasite  2701712c-d97a-11e9-9007-40f2e9026890
