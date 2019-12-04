@@ -1,0 +1,76 @@
+2019-12-04 10:22:12,285 INFO: 
+        ===========================================
+        REFCHEF 🐶
+        -------------------------------------------
+        - References will be downloaded to: /gpfs/data/shared/databases/refchef_refs
+        - Remote repository for master.yaml compbiocore/cbc-references-refchef
+        - Local repository for master.yaml /gpfs/data/shared/databases/cbc-references-refchef
+        - Logs files: /gpfs/data/shared/databases/cbc-references-refchef/logs/
+        -------------------------------------------
+        
+2019-12-04 10:22:12,286 DEBUG: parse kwarg method: 2 ...
+2019-12-04 10:22:13,717 INFO: 
+        No references to download.
+                    
+2019-12-04 10:22:13,717 INFO: 
+        No references to download.
+                    
+2019-12-04 10:22:13,717 INFO: 
+        No references to download.
+                    
+2019-12-04 10:22:13,717 INFO: 
+        No references to download.
+                    
+2019-12-04 10:22:13,717 INFO: 
+        No references to download.
+                    
+2019-12-04 10:22:13,717 INFO: 
+        No references to download.
+                    
+2019-12-04 10:22:13,717 INFO: 
+        No references to download.
+                    
+2019-12-04 10:22:13,717 INFO: 
+        No references to download.
+                    
+2019-12-04 10:22:13,717 INFO: 
+        No references to download.
+                    
+2019-12-04 10:22:13,717 INFO: 
+        No references to download.
+                    
+2019-12-04 10:22:13,717 INFO: 
+        No references to download.
+                    
+2019-12-04 10:22:13,717 INFO: 
+        No references to download.
+                    
+2019-12-04 10:22:13,717 INFO: 
+        No references to download.
+                    
+2019-12-04 10:22:13,717 INFO: 
+        No references to download.
+                    
+2019-12-04 10:22:13,977 INFO:  🐶 RefChef... getting index: grcm38_p5, component: salmon_index
+2019-12-04 10:22:13,978 INFO: Running command "ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/cdna-transcriptome/Mus_musculus.GRCm38.cdna.all.fa /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index/Mus_musculus.GRCm38.cdna.all.fa"
+2019-12-04 10:22:14,000 INFO: Running command "cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index"
+2019-12-04 10:22:14,006 INFO: Running command "cat Mus_musculus.GRCm38.cdna.all.fa | awk '{if($1 ~ ">" ) {split($1,a,".");$1=a[1]}; print }' > Mus_musculus.GRCm38.cdna.all.salmon.fa"
+2019-12-04 10:22:15,821 INFO: Running command "cat Mus_musculus.GRCm38.cdna.all.fa | awk '{if($1 ~ ">" ) {split($1,a,".");$1=a[1]; split($4,b,"."); $4=b[1];} print }' > Mus_musculus.GRCm38.cdna.all.salmon2.fa"
+2019-12-04 10:22:17,800 INFO: Running command "cat Mus_musculus.GRCm38.cdna.all.fa | awk '{if($1 ~ ">" ) {split($4,b,"."); $4=b[1];} print }' > Mus_musculus.GRCm38.cdna.all.salmon3.fa"
+2019-12-04 10:22:19,611 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.fa -i Mus_musculus.GRCm38.cdna.all_orig_index --type quasi -k 25"
+2019-12-04 10:24:34,733 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i Mus_musculus.GRCm38.cdna.all_transcripts_index --type quasi -k 31"
+2019-12-04 10:26:51,013 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_fmd_index --type fmd"
+2019-12-04 10:26:51,037 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.salmon2.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_sal_index --type quasi -k 25"
+2019-12-04 10:29:06,717 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.salmon3.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_sal3_index --type quasi -k 25"
+2019-12-04 10:31:21,360 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_index --type quasi -k 31"
+2019-12-04 10:33:38,573 INFO: Running command "md5sum *.* > final_checksums.md5"
+2019-12-04 10:33:40,950 INFO:  🐶 RefChef... getting index: grcm38_p5, component: salmon_index
+2019-12-04 10:33:40,951 INFO: Running command "ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/cdna-transcriptome/Mus_musculus.GRCm38.cdna.all.fa /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index/Mus_musculus.GRCm38.cdna.all.fa"
+2019-12-04 10:33:40,959 INFO: Running command "cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index"
+2019-12-04 10:33:40,965 INFO: Running command "cat Mus_musculus.GRCm38.cdna.all.fa | awk '{if($1 ~ ">" ) {split($1,a,".");$1=a[1]}; print }' > Mus_musculus.GRCm38.cdna.all.salmon.fa"
+2019-12-04 10:33:42,897 INFO: Running command "cat Mus_musculus.GRCm38.cdna.all.fa | awk '{if($1 ~ ">" ) {split($1,a,".");$1=a[1]; split($4,b,"."); $4=b[1];} print }' > Mus_musculus.GRCm38.cdna.all.salmon2.fa"
+2019-12-04 10:33:44,791 INFO: Running command "cat Mus_musculus.GRCm38.cdna.all.fa | awk '{if($1 ~ ">" ) {split($4,b,"."); $4=b[1];} print }' > Mus_musculus.GRCm38.cdna.all.salmon3.fa"
+2019-12-04 10:33:46,588 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.fa -i Mus_musculus.GRCm38.cdna.all_orig_index --type quasi -k 25"
+2019-12-04 10:36:01,565 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i Mus_musculus.GRCm38.cdna.all_transcripts_index --type quasi -k 31"
+2019-12-04 10:38:17,677 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_fmd_index --type fmd"
+2019-12-04 10:38:17,729 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.salmon2.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_sal_index --type quasi -k 25"

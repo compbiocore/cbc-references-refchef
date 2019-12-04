@@ -1,0 +1,130 @@
+2019-12-04 10:40:05,262 INFO: 
+        ===========================================
+        REFCHEF 🐶
+        -------------------------------------------
+        - References will be downloaded to: /gpfs/data/shared/databases/refchef_refs
+        - Remote repository for master.yaml compbiocore/cbc-references-refchef
+        - Local repository for master.yaml /gpfs/data/shared/databases/cbc-references-refchef
+        - Logs files: /gpfs/data/shared/databases/cbc-references-refchef/logs/
+        -------------------------------------------
+        
+2019-12-04 10:40:05,262 DEBUG: parse kwarg method: 2 ...
+2019-12-04 10:40:06,709 INFO: 
+        No references to download.
+                    
+2019-12-04 10:40:06,709 INFO: 
+        No references to download.
+                    
+2019-12-04 10:40:06,709 INFO: 
+        No references to download.
+                    
+2019-12-04 10:40:06,709 INFO: 
+        No references to download.
+                    
+2019-12-04 10:40:06,709 INFO: 
+        No references to download.
+                    
+2019-12-04 10:40:06,709 INFO: 
+        No references to download.
+                    
+2019-12-04 10:40:06,709 INFO: 
+        No references to download.
+                    
+2019-12-04 10:40:06,709 INFO: 
+        No references to download.
+                    
+2019-12-04 10:40:06,709 INFO: 
+        No references to download.
+                    
+2019-12-04 10:40:06,709 INFO: 
+        No references to download.
+                    
+2019-12-04 10:40:06,709 INFO: 
+        No references to download.
+                    
+2019-12-04 10:40:06,710 INFO: 
+        No references to download.
+                    
+2019-12-04 10:40:06,710 INFO: 
+        No references to download.
+                    
+2019-12-04 10:40:06,710 INFO: 
+        No references to download.
+                    
+2019-12-04 10:40:06,991 INFO:  🐶 RefChef... getting index: grcm38_p5, component: salmon_index
+2019-12-04 10:40:06,991 INFO: Running command "ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/cdna-transcriptome/Mus_musculus.GRCm38.cdna.all.fa /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index/Mus_musculus.GRCm38.cdna.all.fa"
+2019-12-04 10:40:07,015 INFO: Running command "cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index"
+2019-12-04 10:40:07,021 INFO: Running command "cat Mus_musculus.GRCm38.cdna.all.fa | awk '{if($1 ~ ">" ) {split($1,a,".");$1=a[1]}; print }' > Mus_musculus.GRCm38.cdna.all.salmon.fa"
+2019-12-04 10:40:08,842 INFO: Running command "cat Mus_musculus.GRCm38.cdna.all.fa | awk '{if($1 ~ ">" ) {split($1,a,".");$1=a[1]; split($4,b,"."); $4=b[1];} print }' > Mus_musculus.GRCm38.cdna.all.salmon2.fa"
+2019-12-04 10:40:10,748 INFO: Running command "cat Mus_musculus.GRCm38.cdna.all.fa | awk '{if($1 ~ ">" ) {split($4,b,"."); $4=b[1];} print }' > Mus_musculus.GRCm38.cdna.all.salmon3.fa"
+2019-12-04 10:40:12,559 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.fa -i Mus_musculus.GRCm38.cdna.all_orig_index --type quasi -k 25"
+2019-12-04 10:42:27,462 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i Mus_musculus.GRCm38.cdna.all_transcripts_index --type quasi -k 31"
+2019-12-04 10:44:43,555 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_fmd_index --type fmd"
+2019-12-04 10:44:43,592 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.salmon2.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_sal_index --type quasi -k 25"
+2019-12-04 10:46:57,849 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.salmon3.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_sal3_index --type quasi -k 25"
+2019-12-04 10:49:12,287 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_index --type quasi -k 31"
+2019-12-04 10:51:28,289 INFO: Running command "md5sum *.* > final_checksums.md5"
+2019-12-04 10:51:30,768 INFO:  🐶 RefChef... getting index: grcm38_p5, component: salmon_index
+2019-12-04 10:51:30,768 INFO: Running command "ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/cdna-transcriptome/Mus_musculus.GRCm38.cdna.all.fa /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index/Mus_musculus.GRCm38.cdna.all.fa"
+2019-12-04 10:51:30,776 INFO: Running command "cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index"
+2019-12-04 10:51:30,781 INFO: Running command "cat Mus_musculus.GRCm38.cdna.all.fa | awk '{if($1 ~ ">" ) {split($1,a,".");$1=a[1]}; print }' > Mus_musculus.GRCm38.cdna.all.salmon.fa"
+2019-12-04 10:51:32,575 INFO: Running command "cat Mus_musculus.GRCm38.cdna.all.fa | awk '{if($1 ~ ">" ) {split($1,a,".");$1=a[1]; split($4,b,"."); $4=b[1];} print }' > Mus_musculus.GRCm38.cdna.all.salmon2.fa"
+2019-12-04 10:51:34,472 INFO: Running command "cat Mus_musculus.GRCm38.cdna.all.fa | awk '{if($1 ~ ">" ) {split($4,b,"."); $4=b[1];} print }' > Mus_musculus.GRCm38.cdna.all.salmon3.fa"
+2019-12-04 10:51:36,266 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.fa -i Mus_musculus.GRCm38.cdna.all_orig_index --type quasi -k 25"
+2019-12-04 10:53:50,143 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i Mus_musculus.GRCm38.cdna.all_transcripts_index --type quasi -k 31"
+2019-12-04 10:56:06,908 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_fmd_index --type fmd"
+2019-12-04 10:56:06,946 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.salmon2.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_sal_index --type quasi -k 25"
+2019-12-04 10:58:21,079 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.salmon3.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_sal3_index --type quasi -k 25"
+2019-12-04 11:00:35,206 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_index --type quasi -k 31"
+2019-12-04 11:02:51,689 INFO: Running command "md5sum *.* > final_checksums.md5"
+2019-12-04 11:02:53,817 INFO:  🐶 RefChef... getting index: grcm38_p5, component: salmon_index
+2019-12-04 11:02:53,817 INFO: Running command "ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/cdna-transcriptome/Mus_musculus.GRCm38.cdna.all.fa /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index/Mus_musculus.GRCm38.cdna.all.fa"
+2019-12-04 11:02:53,825 INFO: Running command "cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index"
+2019-12-04 11:02:53,831 INFO: Running command "cat Mus_musculus.GRCm38.cdna.all.fa | awk '{if($1 ~ ">" ) {split($1,a,".");$1=a[1]}; print }' > Mus_musculus.GRCm38.cdna.all.salmon.fa"
+2019-12-04 11:02:55,625 INFO: Running command "cat Mus_musculus.GRCm38.cdna.all.fa | awk '{if($1 ~ ">" ) {split($1,a,".");$1=a[1]; split($4,b,"."); $4=b[1];} print }' > Mus_musculus.GRCm38.cdna.all.salmon2.fa"
+2019-12-04 11:02:57,534 INFO: Running command "cat Mus_musculus.GRCm38.cdna.all.fa | awk '{if($1 ~ ">" ) {split($4,b,"."); $4=b[1];} print }' > Mus_musculus.GRCm38.cdna.all.salmon3.fa"
+2019-12-04 11:02:59,350 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.fa -i Mus_musculus.GRCm38.cdna.all_orig_index --type quasi -k 25"
+2019-12-04 11:05:13,916 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i Mus_musculus.GRCm38.cdna.all_transcripts_index --type quasi -k 31"
+2019-12-04 11:07:30,437 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_fmd_index --type fmd"
+2019-12-04 11:07:30,500 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.salmon2.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_sal_index --type quasi -k 25"
+2019-12-04 11:09:45,098 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.salmon3.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_sal3_index --type quasi -k 25"
+2019-12-04 11:11:59,895 INFO: Running command "salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_index --type quasi -k 31"
+2019-12-04 11:14:16,148 INFO: Running command "mkdir /gpfs/data/shared/databases/refchef_refs/grcm38_p5/cdna-transcriptome/salmon_index"
+2019-12-04 11:14:16,159 INFO: Running command "ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index/*.* /gpfs/data/shared/databases/refchef_refs/grcm38_p5/cdna-transcriptome/salmon_index/"
+2019-12-04 11:14:16,199 INFO: Running command "md5sum *.* > final_checksums.md5"
+2019-12-04 11:14:19,106 INFO: References processed: ['spur31', 'cdubliniensis_cd36', 'broad_bundle_hg19', 'drosophila-melanogaster-bdgp6rel9', 'wbps8_ws256', 'grch37_release87', 'grcm38_p5', 'nt_db', 'nr_db', 'Escherichia_coli_K12', 'grch38_release98', 'saccer3']
+2019-12-04 11:14:19,107 INFO: Location of references: /gpfs/data/shared/databases/refchef_refs
+2019-12-04 11:14:19,622 INFO: 
+           type                               name            component                  organization                                  uuid
+0    references               Escherichia_coli_K12              primary              ensembl bacteria  c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
+1       indices               Escherichia_coli_K12            bwa_index              ensembl bacteria  c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
+2       indices               Escherichia_coli_K12        bowtie2_index              ensembl bacteria  c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
+3    references                  broad_bundle_hg19              primary               broad institute  b2588931-2b94-3d8b-9eab-c8fa153af515
+4    references                 cdubliniensis_cd36              primary  http://www.candidagenome.org  3889615c-c609-377c-a49a-2376d7bb4ee1
+5    references  drosophila-melanogaster-bdgp6rel9              primary                       ensembl  f00c482a-8550-31b9-89fb-803d4f9edbb5
+6   annotations  drosophila-melanogaster-bdgp6rel9                  gtf                       ensembl  e3e260a5-87ff-36a1-8526-c73a9b03ec44
+7       indices  drosophila-melanogaster-bdgp6rel9            bwa_index                       ensembl  6206259e-fe61-35a2-9773-6a491c17aa11
+8       indices  drosophila-melanogaster-bdgp6rel9        bowtie2_index                       ensembl  6206259e-fe61-35a2-9773-6a491c17aa11
+9    references                   grch37_release87              primary                       ensembl  ce1b1916-da1c-11e9-bf4d-40f2e9026674
+10  annotations                   grch37_release87                  gtf                       ensembl  7c0adc0d-a657-3919-8b77-9bb294b7823c
+11      indices                   grch37_release87        bowtie2_index                       ensembl  24b510d3-0a73-3211-98da-274317c2a032
+12      indices                   grch37_release87            bwa_index                       ensembl  2161bca8-8c03-3b52-958a-a232158e2c71
+13   references                   grch38_release98              primary                       ensembl  fd2286d4-e257-3225-94a7-cd773d331290
+14      indices                   grch38_release98        bowtie2_index                       ensembl  ae68c4f8-8bec-30c6-8349-28be4036da24
+15      indices                   grch38_release98            bwa_index                       ensembl  fd2286d4-e257-3225-94a7-cd773d331290
+16   references                          grcm38_p5              primary                       ensembl  beed20fa-f897-35bf-808d-0c1ee6173274
+17   references                          grcm38_p5   cdna-transcriptome                       ensembl  54a37969-f245-3a78-aec3-d2c6034bbd27
+18  annotations                          grcm38_p5                  gtf                       ensembl  907f4f2a-000d-11ea-9a67-40f2e9026674
+19      indices                          grcm38_p5         salmon_index                       ensembl  482c6e70-389e-3559-8c19-d86cac067060
+20      indices                          grcm38_p5         salmon_index                       ensembl  482c6e70-389e-3559-8c19-d86cac067060
+21      indices                          grcm38_p5         salmon_index                       ensembl  482c6e70-389e-3559-8c19-d86cac067060
+22   references                              nr_db             blast_db                          ncbi  533942ec-8f84-35bc-b359-184a4f8660d6
+23   references                              nt_db             blast_db                          ncbi  255012ce-ea01-3596-b1b6-6e657c7a7dde
+24   references                            saccer3              primary                       ensembl  2433f3a6-0a29-34bc-8868-2fb9609d4025
+25  annotations                            saccer3                  gtf                       ensembl  a8d15bf6-7a67-36b7-911d-4daf174f79af
+26      indices                            saccer3            bwa_index                       ensembl  91b325e3-aaa0-3d8f-af1e-79716e343bfe
+27      indices                            saccer3        bowtie2_index                       ensembl  e7428ca2-68e8-3356-90a8-e5016deea499
+28   references                             spur31              primary               ensembl metazoa  cc303697-34ce-3cd1-b883-5d709a4f3e09
+29  annotations                             spur31                  gtf               ensembl metazoa  6983397c-e268-31e2-bd0d-db7d47c589f9
+30   references                        wbps8_ws256              primary             wormbase_parasite  27010656-d97a-11e9-9007-40f2e9026890
+31   references                        wbps8_ws256  cdna-trandscriptome             wormbase_parasite  2701712c-d97a-11e9-9007-40f2e9026890

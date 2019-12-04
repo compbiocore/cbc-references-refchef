@@ -1,0 +1,32 @@
+grcm38_p5:
+  levels:
+    indices:
+    - component: salmon_index
+      complete:
+        status: false
+      src: 54a37969-f245-3a78-aec3-d2c6034bbd27
+      commands:
+      - ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/cdna-transcriptome/Mus_musculus.GRCm38.cdna.all.fa
+        /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index/Mus_musculus.GRCm38.cdna.all.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index
+      - cat Mus_musculus.GRCm38.cdna.all.fa | awk '{if($1 ~ ">" ) {split($1,a,".");$1=a[1]};
+        print }' > Mus_musculus.GRCm38.cdna.all.salmon.fa
+      - cat Mus_musculus.GRCm38.cdna.all.fa | awk '{if($1 ~ ">" ) {split($1,a,".");$1=a[1];
+        split($4,b,"."); $4=b[1];} print }' > Mus_musculus.GRCm38.cdna.all.salmon2.fa
+      - cat Mus_musculus.GRCm38.cdna.all.fa | awk '{if($1 ~ ">" ) {split($4,b,".");
+        $4=b[1];} print }' > Mus_musculus.GRCm38.cdna.all.salmon3.fa
+      - salmon index -t Mus_musculus.GRCm38.cdna.all.fa -i Mus_musculus.GRCm38.cdna.all_orig_index
+        --type quasi -k 25
+      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i Mus_musculus.GRCm38.cdna.all_transcripts_index
+        --type quasi -k 31
+      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_fmd_index
+        --type fmd
+      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon2.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_sal_index
+        --type quasi -k 25
+      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon3.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_sal3_index
+        --type quasi -k 25
+      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_index
+        --type quasi -k 31
+      - mkdir /gpfs/data/shared/databases/refchef_refs/grcm38_p5/cdna-transcriptome/salmon_index
+      - ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index/*.* /gpfs/data/shared/databases/refchef_refs/grcm38_p5/cdna-transcriptome/salmon_index/
+      - md5sum *.* > final_checksums.md5
