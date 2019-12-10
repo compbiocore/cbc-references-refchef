@@ -1,32 +1,31 @@
-grcm38_p5:
+silva_arbfiles:
+  metadata:
+    name: silva_arbfiles
+    common_name: silva
+    ncbi_taxon_id: na
+    organism: na
+    organization: arb-silva.de
+    custom: false
+    description: SILVA databases for ARB for small (16S/18S) and large (23S/28S) subunit rRNA
+    downloader: joselynn
+    ensembl_release_number: none
+    accession:
+      genbank:
+      refseq:
   levels:
-    indices:
-    - component: salmon_index
+    references:
+    - component: arb_files
       complete:
         status: false
-      src: 54a37969-f245-3a78-aec3-d2c6034bbd27
       commands:
-      - ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/cdna-transcriptome/Mus_musculus.GRCm38.cdna.all.fa
-        /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index/Mus_musculus.GRCm38.cdna.all.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index
-      - cat Mus_musculus.GRCm38.cdna.all.fa | awk '{if($1 ~ ">" ) {split($1,a,".");$1=a[1]};
-        print }' > Mus_musculus.GRCm38.cdna.all.salmon.fa
-      - cat Mus_musculus.GRCm38.cdna.all.fa | awk '{if($1 ~ ">" ) {split($1,a,".");$1=a[1];
-        split($4,b,"."); $4=b[1];} print }' > Mus_musculus.GRCm38.cdna.all.salmon2.fa
-      - cat Mus_musculus.GRCm38.cdna.all.fa | awk '{if($1 ~ ">" ) {split($4,b,".");
-        $4=b[1];} print }' > Mus_musculus.GRCm38.cdna.all.salmon3.fa
-      - salmon index -t Mus_musculus.GRCm38.cdna.all.fa -i Mus_musculus.GRCm38.cdna.all_orig_index
-        --type quasi -k 25
-      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i Mus_musculus.GRCm38.cdna.all_transcripts_index
-        --type quasi -k 31
-      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_fmd_index
-        --type fmd
-      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon2.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_sal_index
-        --type quasi -k 25
-      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon3.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_sal3_index
-        --type quasi -k 25
-      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_index
-        --type quasi -k 31
-      - mkdir /gpfs/data/shared/databases/refchef_refs/grcm38_p5/cdna-transcriptome/salmon_index
-      - ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index/*.* /gpfs/data/shared/databases/refchef_refs/grcm38_p5/cdna-transcriptome/salmon_index/
+      - wget https://ftp.arb-silva.de/current/ARB_files/SILVA_132_LSUParc_12_12_17_opt.arb.gz
+      - wget https://ftp.arb-silva.de/current/ARB_files/SILVA_132_LSUParc_12_12_17_opt.arb.gz.md5
+      - wget https://ftp.arb-silva.de/current/ARB_files/SILVA_132_LSURef_07_12_17_opt.arb.gz
+      - wget https://ftp.arb-silva.de/current/ARB_files/SILVA_132_LSURef_07_12_17_opt.arb.gz.md5
+      - wget https://ftp.arb-silva.de/current/ARB_files/SILVA_132_SSURef_12_12_17_opt.arb.gz
+      - wget https://ftp.arb-silva.de/current/ARB_files/SILVA_132_SSURef_12_12_17_opt.arb.gz.md5
+      - wget https://ftp.arb-silva.de/current/ARB_files/SILVA_132_SSURef_NR99_13_12_17_opt.arb.gz
+      - wget https://ftp.arb-silva.de/current/ARB_files/SILVA_132_SSURef_NR99_13_12_17_opt.arb.gz.md5
+      - md5sum *.* > post-download.md5
+      - gunzip -k *.gz
       - md5sum *.* > final_checksums.md5

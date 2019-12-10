@@ -1,0 +1,24 @@
+silva_arbfiles:
+  metadata:
+    name: silva_arbfiles
+    common_name: silva
+    ncbi_taxon_id: na
+    organism: na
+    organization: arb-silva.de
+    custom: false
+    description: SILVA databases for ARB for small (16S/18S) and large (23S/28S) subunit rRNA
+    downloader: joselynn
+    ensembl_release_number: none
+    accession:
+      genbank: 
+      refseq: 
+  levels:
+    references:
+    - component: arb_files
+      complete:
+        status: false
+      commands:
+      - rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/refseq_genomic.*.gz .
+      - rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/refseq_genomic.*.gz.md5 .
+      - ls *.gz |xargs -n1 tar -xzf
+      - md5sum *.* > final_checksums.md5

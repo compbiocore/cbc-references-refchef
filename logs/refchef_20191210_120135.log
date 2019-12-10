@@ -1,0 +1,103 @@
+2019-12-10 12:01:35,805 INFO: 
+        ===========================================
+        REFCHEF 🐶
+        -------------------------------------------
+        - References will be downloaded to: /gpfs/data/shared/databases/refchef_refs
+        - Remote repository for master.yaml compbiocore/cbc-references-refchef
+        - Local repository for master.yaml /gpfs/data/shared/databases/cbc-references-refchef
+        - Logs files: /gpfs/data/shared/databases/cbc-references-refchef/logs/
+        -------------------------------------------
+        
+2019-12-10 12:01:35,805 DEBUG: parse kwarg method: 2 ...
+2019-12-10 12:01:38,255 INFO: 
+        No references to download.
+                    
+2019-12-10 12:01:38,255 INFO: 
+        No references to download.
+                    
+2019-12-10 12:01:38,255 INFO: 
+        No references to download.
+                    
+2019-12-10 12:01:38,255 INFO: 
+        No references to download.
+                    
+2019-12-10 12:01:38,256 INFO: 
+        No references to download.
+                    
+2019-12-10 12:01:38,256 INFO: 
+        No references to download.
+                    
+2019-12-10 12:01:38,256 INFO: 
+        No references to download.
+                    
+2019-12-10 12:01:38,256 INFO: 
+        No references to download.
+                    
+2019-12-10 12:01:38,256 INFO: 
+        No references to download.
+                    
+2019-12-10 12:01:38,256 INFO: 
+        No references to download.
+                    
+2019-12-10 12:01:38,256 INFO: 
+        No references to download.
+                    
+2019-12-10 12:01:38,256 INFO: 
+        No references to download.
+                    
+2019-12-10 12:01:38,256 INFO: 
+        No references to download.
+                    
+2019-12-10 12:01:38,256 INFO: 
+        No references to download.
+                    
+2019-12-10 12:01:38,257 INFO: 
+        No references to download.
+                    
+2019-12-10 12:01:38,257 INFO: 
+        No references to download.
+                    
+2019-12-10 12:01:38,257 INFO: 
+        No references to download.
+                    
+2019-12-10 12:01:38,257 INFO: 
+        No references to download.
+                    
+2019-12-10 12:01:38,257 INFO: 
+        No references to download.
+                    
+2019-12-10 12:01:38,257 INFO: 
+        No references to download.
+                    
+2019-12-10 12:01:38,257 INFO: 
+        No references to download.
+                    
+2019-12-10 12:01:38,257 INFO: 
+        -------------------------------------------
+        The folowing references will be downloaded:
+            - silva_arbfiles
+        ===========================================
+            
+2019-12-10 12:01:38,257 INFO: 
+        -------------------------------------------
+        The folowing references will be downloaded:
+            - silva_arbfiles
+        ===========================================
+            
+2019-12-10 12:01:38,776 INFO:  🐶 RefChef... getting reference: silva_arbfiles, component: arb_files
+2019-12-10 12:01:38,777 INFO: Running command "wget https://ftp.arb-silva.de/current/ARB_files/SILVA_*arb.gz"
+2019-12-10 12:01:39,278 INFO: Running command "wget https://ftp.arb-silva.de/current/ARB_files/SILVA_*arb.gz.md5"
+2019-12-10 12:01:39,733 INFO: Running command "md5sum *.* > post-download.md5"
+2019-12-10 12:01:39,749 INFO: Running command "gunzip -c *.gz"
+2019-12-10 12:01:39,760 INFO: Running command "md5sum *.* > final_checksums.md5"
+2019-12-10 12:01:39,769 INFO:  🐶 RefChef... getting reference: silva_arbfiles, component: arb_files
+2019-12-10 12:01:39,769 INFO: Running command "wget https://ftp.arb-silva.de/current/ARB_files/SILVA_132_LSUParc_12_12_17_opt.arb.gz"
+2019-12-10 12:02:11,032 INFO: Running command "wget https://ftp.arb-silva.de/current/ARB_files/SILVA_132_LSUParc_12_12_17_opt.arb.gz.md5"
+2019-12-10 12:02:11,502 INFO: Running command "wget https://ftp.arb-silva.de/current/ARB_files/SILVA_132_LSURef_07_12_17_opt.arb.gz"
+2019-12-10 12:02:17,312 INFO: Running command "wget https://ftp.arb-silva.de/current/ARB_files/SILVA_132_LSURef_07_12_17_opt.arb.gz.md5"
+2019-12-10 12:02:17,784 INFO: Running command "wget https://ftp.arb-silva.de/current/ARB_files/SILVA_132_SSURef_12_12_17_opt.arb.gz"
+2019-12-10 12:03:00,428 INFO: Running command "wget https://ftp.arb-silva.de/current/ARB_files/SILVA_132_SSURef_12_12_17_opt.arb.gz.md5"
+2019-12-10 12:03:00,912 INFO: Running command "wget https://ftp.arb-silva.de/current/ARB_files/SILVA_132_SSURef_NR99_13_12_17_opt.arb.gz"
+2019-12-10 12:03:17,885 INFO: Running command "wget https://ftp.arb-silva.de/current/ARB_files/SILVA_132_SSURef_NR99_13_12_17_opt.arb.gz.md5"
+2019-12-10 12:03:18,357 INFO: Running command "md5sum *.* > post-download.md5"
+2019-12-10 12:03:23,061 INFO: Running command "gunzip -c *.gz"

@@ -1,0 +1,86 @@
+2019-12-10 11:57:40,226 INFO: 
+        ===========================================
+        REFCHEF 🐶
+        -------------------------------------------
+        - References will be downloaded to: /gpfs/data/shared/databases/refchef_refs
+        - Remote repository for master.yaml compbiocore/cbc-references-refchef
+        - Local repository for master.yaml /gpfs/data/shared/databases/cbc-references-refchef
+        - Logs files: /gpfs/data/shared/databases/cbc-references-refchef/logs/
+        -------------------------------------------
+        
+2019-12-10 11:57:40,226 DEBUG: parse kwarg method: 2 ...
+2019-12-10 11:57:42,645 INFO: 
+        No references to download.
+                    
+2019-12-10 11:57:42,645 INFO: 
+        No references to download.
+                    
+2019-12-10 11:57:42,645 INFO: 
+        No references to download.
+                    
+2019-12-10 11:57:42,645 INFO: 
+        No references to download.
+                    
+2019-12-10 11:57:42,645 INFO: 
+        No references to download.
+                    
+2019-12-10 11:57:42,645 INFO: 
+        No references to download.
+                    
+2019-12-10 11:57:42,646 INFO: 
+        No references to download.
+                    
+2019-12-10 11:57:42,646 INFO: 
+        No references to download.
+                    
+2019-12-10 11:57:42,646 INFO: 
+        No references to download.
+                    
+2019-12-10 11:57:42,646 INFO: 
+        No references to download.
+                    
+2019-12-10 11:57:42,646 INFO: 
+        No references to download.
+                    
+2019-12-10 11:57:42,646 INFO: 
+        No references to download.
+                    
+2019-12-10 11:57:42,646 INFO: 
+        No references to download.
+                    
+2019-12-10 11:57:42,646 INFO: 
+        No references to download.
+                    
+2019-12-10 11:57:42,646 INFO: 
+        No references to download.
+                    
+2019-12-10 11:57:42,646 INFO: 
+        No references to download.
+                    
+2019-12-10 11:57:42,647 INFO: 
+        No references to download.
+                    
+2019-12-10 11:57:42,647 INFO: 
+        No references to download.
+                    
+2019-12-10 11:57:42,647 INFO: 
+        No references to download.
+                    
+2019-12-10 11:57:42,647 INFO: 
+        No references to download.
+                    
+2019-12-10 11:57:42,647 INFO: 
+        No references to download.
+                    
+2019-12-10 11:57:42,647 INFO: 
+        -------------------------------------------
+        The folowing references will be downloaded:
+            - silva_arbfiles
+        ===========================================
+            
+2019-12-10 11:57:43,134 INFO:  🐶 RefChef... getting reference: silva_arbfiles, component: arb_files
+2019-12-10 11:57:43,134 INFO: Running command "wget https://ftp.arb-silva.de/current/ARB_files/SILVA_*arb.gz"
+2019-12-10 11:57:43,831 INFO: Running command "wget https://ftp.arb-silva.de/current/ARB_files/SILVA_*arb.gz.md5"
+2019-12-10 11:57:44,292 INFO: Running command "md5sum *.* > post-download.md5"
+2019-12-10 11:57:44,302 INFO: Running command "gunzip -c *.gz"
+2019-12-10 11:57:44,313 INFO: Running command "md5sum *.* > final_checksums.md5"
