@@ -1,17 +1,240 @@
+grch38_release98:
+  levels:
+    indices:
+    - component: bwa_index
+      complete:
+        status: false
+      src: fd2286d4-e257-3225-94a7-cd773d331290
+      commands:
+      - ln -s /gpfs/data/shared/databases/refchef_refs/grch38_release98/primary/Homo_sapiens.GRCh38.dna.primary_assembly.fa
+        /gpfs/data/shared/databases/refchef_refs/grch38_release98/bwa_index/Homo_sapiens.GRCh38.dna.primary_assembly.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/grch38_release98/bwa_index
+      - bwa index Homo_sapiens.GRCh38.dna.primary_assembly.fa
+      - md5sum *.* > final_checksums.md5
+spur42:
+  metadata:
+    name: spur42
+    common_name: purple sea urchin
+    custom: false
+    description: 
+    downloader: joselynn
+    ncbi_taxon_id: 7668
+    ensembl_release_number: 
+    accession:
+      genbank: 
+      refseq: GCF_000002235.4
+    organism: Strongylocentrotus purpuratus
+    organization: refseq
+  levels:
+    references:
+    - component: primary
+      complete:
+        status: false
+      commands:
+      - wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/002/235/GCF_000002235.4_Spur_4.2/md5checksums.txt
+      - wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/002/235/GCF_000002235.4_Spur_4.2/GCF_000002235.4_Spur_4.2_genomic.fna.gz
+      - md5sum *.* > post-download.md5
+      - gunzip -c GCF_000002235.4_Spur_4.2_genomic.fna.gz > GCF_000002235.4_Spur_4.2_genomic.fna
+      - md5sum * > final_checksums.md5
+spur50:
+  metadata:
+    name: spur50
+    common_name: purple sea urchin
+    custom: false
+    description: 
+    downloader: joselynn
+    ncbi_taxon_id: 7668
+    ensembl_release_number: 
+    accession:
+      genbank: 
+      refseq: GCF_000002235.5
+    organism: Strongylocentrotus purpuratus
+    organization: refseq
+  levels:
+    references:
+    - component: primary
+      complete:
+        status: false
+      commands:
+      - wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/002/235/GCF_000002235.5_Spur_5.0/md5checksums.txt
+      - wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/002/235/GCF_000002235.5_Spur_5.0/GCF_000002235.5_Spur_5.0_genomic.fna.gz
+      - md5sum *.* > post-download.md5
+      - gunzip -c GCF_000002235.5_Spur_5.0_genomic.fna.gz > GCF_000002235.5_Spur_5.0_genomic.fna
+      - md5sum * > final_checksums.md5
+grcm38_p6:
+  metadata:
+    name: grcm38_p6
+    common_name: mouse
+    organization: ensembl
+    downloader: joselynn
+    organism: Mus musculus
+    description: 
+    ncbi_taxon_id: 10090
+    custom: false
+    ensembl_release_number: 
+    accession:
+      genbank: 
+      refseq: 
+  levels:
+    references:
+    - component: primary
+      complete:
+        status: false
+      commands:
+      - wget ftp://ftp.ensembl.org/pub/release-98/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.primary_assembly.fa.gz
+      - wget ftp://ftp.ensembl.org/pub/release-98/fasta/mus_musculus/dna/CHECKSUMS
+      - md5sum *.* > post_download.md5
+      - gunzip -c Mus_musculus.GRCm38.dna.primary_assembly.fa.gz > Mus_musculus.GRCm38.dna.primary_assembly.fa
+      - md5sum *.* > final_checksums.md5
+refseq_genomic:
+  metadata:
+    name: refseq_genomic
+    common_name: refseq genomic db
+    ncbi_taxon_id: na
+    organism: na
+    organization: refseq
+    custom: false
+    description: NCBI genomic reference sequences
+    downloader: joselynn wallace
+    ensembl_release_number: none
+    accession:
+      genbank: 
+      refseq: 
+  levels:
+    references:
+    - component: blast_db
+      complete:
+        status: false
+      commands:
+      - rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/refseq_genomic.*.gz .
+      - rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/refseq_genomic.*.gz.md5 .
+      - md5sum *.* > post_download.md5      
+      - ls *.gz |xargs -n1 tar -xzf
+      - md5sum *.* > final_checksums.md5
+refseq_rna:
+  metadata:
+    name: refseq_rna
+    common_name: refseq transcript db
+    ncbi_taxon_id: na
+    organism: na
+    organization: refseq
+    custom: false
+    description: NCBI Transcript reference sequences
+    downloader: joselynn wallace
+    ensembl_release_number: none
+    accession:
+      genbank: 
+      refseq: 
+  levels:
+    references:
+    - component: blast_db
+      complete:
+        status: false
+      commands:
+      - rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/refseq_rna.*.gz .
+      - rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/refseq_rna.*.gz.md5 .
+      - md5sum *.* > post_download.md5
+      - ls *.gz |xargs -n1 tar -xzf
+      - md5sum *.* > final_checksums.md5 
+refseq_protein:
+  metadata:
+    name: refseq_protein
+    common_name: refseq protein db
+    ncbi_taxon_id: na
+    organism: na
+    organization: refseq
+    custom: false
+    description: NCBI protein reference sequences
+    downloader: joselynn wallace
+    ensembl_release_number: none
+    accession:
+      genbank: 
+      refseq: 
+  levels:
+    references:
+    - component: blast_db
+      complete:
+        status: false
+      commands:
+      - rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/refseq_protein.*.gz .
+      - rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/refseq_protein.*.gz.md5 .
+      - md5sum *.* > post_download.md5
+      - ls *.gz |xargs -n1 tar -xzf
+      - md5sum *.* > final_checksums.md5
+pr2_db:
+  metadata:
+    name: pr2_db
+    common_name: Protist Ribosomal Reference database
+    ncbi_taxon_id: na
+    organism: na
+    organization: pr2
+    custom: false
+    description: Protist Ribosomal Reference database (PR2) - SSU rRNA gene database
+    downloader: joselynn wallace
+    ensembl_release_number: none
+    accession:
+      genbank: 
+      refseq: 
+  levels:
+    references:
+    - component: db
+      complete:
+        status: false
+      commands:
+      - wget https://github.com/pr2database/pr2database/releases/download/v4.12.0/pr2_version_4.12.0.sqlite.gz
+      - wget https://github.com/pr2database/pr2database/releases/download/v4.12.0/pr2_version_4.12.0_16S_dada2.fasta.gz
+      - wget https://github.com/pr2database/pr2database/releases/download/v4.12.0/pr2_version_4.12.0_16S_mothur.fasta.gz
+      - wget https://github.com/pr2database/pr2database/releases/download/v4.12.0/pr2_version_4.12.0_16S_mothur.tax.gz
+      - wget https://github.com/pr2database/pr2database/releases/download/v4.12.0/pr2_version_4.12.0_16S_taxo_long.fasta.gz
+      - wget https://github.com/pr2database/pr2database/releases/download/v4.12.0/pr2_version_4.12.0_16S_UTAX.fasta.gz
+      - wget https://github.com/pr2database/pr2database/releases/download/v4.12.0/pr2_version_4.12.0_18S_dada2.fasta.gz
+      - wget https://github.com/pr2database/pr2database/releases/download/v4.12.0/pr2_version_4.12.0_18S_mothur.fasta.gz
+      - wget https://github.com/pr2database/pr2database/releases/download/v4.12.0/pr2_version_4.12.0_18S_mothur.tax.gz
+      - wget https://github.com/pr2database/pr2database/releases/download/v4.12.0/pr2_version_4.12.0_18S_taxo_long.fasta.gz
+      - wget https://github.com/pr2database/pr2database/releases/download/v4.12.0/pr2_version_4.12.0_18S_UTAX.fasta.gz
+      - wget https://github.com/pr2database/pr2database/releases/download/v4.12.0/pr2_version_4.12.0_merged.tsv.gz
+      - md5sum *.* > post_download.md5
+      - ls *.gz |xargs -n1 gunzip
+      - md5sum *.* > final_checksums.md5      
+OM-RGC:
+  metadata:
+    name: OM-RGC
+    common_name: Tara Oceans
+    ncbi_taxon_id: na
+    organism: na
+    organization: 'http://ocean-microbiome.embl.de'
+    custom: false
+    description: Ocean Microbial Reference Catalog
+    downloader: joselynn wallace
+    ensembl_release_number: none
+    accession:
+      genbank: 
+      refseq: 
+  levels:
+    references:
+    - component: primary
+      complete:
+        status: false
+      commands:      
+      - wget ftp://ftp.sra.ebi.ac.uk/vol1/ERA412/ERA412970/tab/OM-RGC_seq.release.tsv.gz
+      - md5sum *.* > post_download.md5      
+      - zcat OM-RGC_seq.release.tsv.gz | perl -lane 'print ">$F[0]\n$F[-1]" unless $.==1' > OM-RGC_seq.release.fna
+      - md5sum *.* > final_checksums.md5      
 silva_arbfiles:
   metadata:
     name: silva_arbfiles
     common_name: silva
     ncbi_taxon_id: na
     organism: na
-    organization: arb-silva.de
+    organization: 'arb-silva.de'
     custom: false
-    description: SILVA databases for ARB for small (16S/18S) and large (23S/28S) subunit rRNA
+    description: SILVA databases for ARB for small (16S/18S) and large (23S/28S) subunit
+      rRNA
     downloader: joselynn
     ensembl_release_number: none
     accession:
-      genbank:
-      refseq:
+      genbank: 
+      refseq: 
   levels:
     references:
     - component: arb_files
@@ -27,5 +250,5 @@ silva_arbfiles:
       - wget https://ftp.arb-silva.de/current/ARB_files/SILVA_132_SSURef_NR99_13_12_17_opt.arb.gz
       - wget https://ftp.arb-silva.de/current/ARB_files/SILVA_132_SSURef_NR99_13_12_17_opt.arb.gz.md5
       - md5sum *.* > post-download.md5
-      - gunzip -k *.gz
-      - md5sum *.* > final_checksums.md5
+      - ls *.gz |xargs -n1 gunzip
+      - md5sum *.* > final_checksums.md5     

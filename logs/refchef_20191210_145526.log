@@ -1,0 +1,187 @@
+2019-12-10 14:55:26,525 INFO: 
+        ===========================================
+        REFCHEF 🐶
+        -------------------------------------------
+        - References will be downloaded to: /gpfs/data/shared/databases/refchef_refs
+        - Remote repository for master.yaml compbiocore/cbc-references-refchef
+        - Local repository for master.yaml /gpfs/data/shared/databases/cbc-references-refchef
+        - Logs files: /gpfs/data/shared/databases/cbc-references-refchef/logs/
+        -------------------------------------------
+        
+2019-12-10 14:55:26,525 DEBUG: parse kwarg method: 2 ...
+2019-12-10 14:55:29,000 INFO: 
+        No references to download.
+                    
+2019-12-10 14:55:29,000 INFO: 
+        No references to download.
+                    
+2019-12-10 14:55:29,000 INFO: 
+        No references to download.
+                    
+2019-12-10 14:55:29,000 INFO: 
+        No references to download.
+                    
+2019-12-10 14:55:29,000 INFO: 
+        No references to download.
+                    
+2019-12-10 14:55:29,001 INFO: 
+        No references to download.
+                    
+2019-12-10 14:55:29,001 INFO: 
+        No references to download.
+                    
+2019-12-10 14:55:29,001 INFO: 
+        No references to download.
+                    
+2019-12-10 14:55:29,001 INFO: 
+        No references to download.
+                    
+2019-12-10 14:55:29,001 INFO: 
+        No references to download.
+                    
+2019-12-10 14:55:29,001 INFO: 
+        No references to download.
+                    
+2019-12-10 14:55:29,001 INFO: 
+        No references to download.
+                    
+2019-12-10 14:55:29,001 INFO: 
+        No references to download.
+                    
+2019-12-10 14:55:29,001 INFO: 
+        No references to download.
+                    
+2019-12-10 14:55:29,002 INFO: 
+        -------------------------------------------
+        The folowing references will be downloaded:
+            - spur42
+        ===========================================
+            
+2019-12-10 14:55:29,002 INFO: 
+        -------------------------------------------
+        The folowing references will be downloaded:
+            - spur50
+        ===========================================
+            
+2019-12-10 14:55:29,002 INFO: 
+        -------------------------------------------
+        The folowing references will be downloaded:
+            - grcm38_p6
+        ===========================================
+            
+2019-12-10 14:55:29,002 INFO: 
+        -------------------------------------------
+        The folowing references will be downloaded:
+            - refseq_genomic
+        ===========================================
+            
+2019-12-10 14:55:29,002 INFO: 
+        -------------------------------------------
+        The folowing references will be downloaded:
+            - refseq_rna
+        ===========================================
+            
+2019-12-10 14:55:29,002 INFO: 
+        -------------------------------------------
+        The folowing references will be downloaded:
+            - refseq_protein
+        ===========================================
+            
+2019-12-10 14:55:29,002 INFO: 
+        -------------------------------------------
+        The folowing references will be downloaded:
+            - pr2_db
+        ===========================================
+            
+2019-12-10 14:55:29,002 INFO: 
+        -------------------------------------------
+        The folowing references will be downloaded:
+            - OM-RGC
+        ===========================================
+            
+2019-12-10 14:55:29,003 INFO: 
+        -------------------------------------------
+        The folowing references will be downloaded:
+            - silva_arbfiles
+        ===========================================
+            
+2019-12-10 14:55:29,003 INFO: 
+        -------------------------------------------
+        The folowing references will be downloaded:
+            - uniprot
+        ===========================================
+            
+2019-12-10 14:55:29,494 INFO:  🐶 RefChef... getting reference: spur42, component: primary
+2019-12-10 14:55:29,494 INFO: Running command "wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/002/235/GCF_000002235.4_Spur_4.2/md5checksums.txt"
+2019-12-10 14:55:30,040 INFO: Running command "wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/002/235/GCF_000002235.4_Spur_4.2/GCF_000002235.4_Spur_4.2_genomic.fna.gz"
+2019-12-10 14:55:41,477 INFO: Running command "md5sum *.* > post-download.md5"
+2019-12-10 14:55:42,121 INFO: Running command "gunzip -c GCF_000002235.4_Spur_4.2_genomic.fna.gz > GCF_000002235.4_Spur_4.2_genomic.fna"
+2019-12-10 14:55:50,353 INFO: Running command "md5sum * > final_checksums.md5"
+2019-12-10 14:55:53,261 INFO:  🐶 RefChef... getting reference: spur50, component: primary
+2019-12-10 14:55:53,262 INFO: Running command "wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/002/235/GCF_000002235.5_Spur_5.0/md5checksums.txt"
+2019-12-10 14:55:53,492 INFO: Running command "wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/002/235/GCF_000002235.5_Spur_5.0/GCF_000002235.5_Spur_5.0_genomic.fna.gz"
+2019-12-10 14:56:05,202 INFO: Running command "md5sum *.* > post-download.md5"
+2019-12-10 14:56:05,833 INFO: Running command "gunzip -c GCF_000002235.5_Spur_5.0_genomic.fna.gz > GCF_000002235.5_Spur_5.0_genomic.fna"
+2019-12-10 14:56:13,695 INFO: Running command "md5sum * > final_checksums.md5"
+2019-12-10 14:56:16,419 INFO:  🐶 RefChef... getting reference: grcm38_p6, component: primary
+2019-12-10 14:56:16,420 INFO: Running command "wget ftp://ftp.ensembl.org/pub/release-98/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.primary_assembly.fa.gz"
+2019-12-10 15:49:03,731 INFO: Running command "wget ftp://ftp.ensembl.org/pub/release-98/fasta/mus_musculus/dna/CHECKSUMS"
+2019-12-10 15:49:06,091 INFO: Running command "md5sum *.* > post_download.md5"
+2019-12-10 15:49:07,886 INFO: Running command "gunzip -c Mus_musculus.GRCm38.dna.primary_assembly.fa.gz > Mus_musculus.GRCm38.dna.primary_assembly.fa"
+2019-12-10 15:49:32,627 INFO: Running command "md5sum *.* > final_checksums.md5"
+2019-12-10 15:49:41,327 INFO:  🐶 RefChef... getting reference: refseq_genomic, component: blast_db
+2019-12-10 15:49:41,328 INFO: Running command "rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/refseq_genomic.*.gz ."
+2019-12-10 17:27:06,038 INFO: Running command "rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/refseq_genomic.*.gz.md5 ."
+2019-12-10 17:27:08,166 INFO: Running command "md5sum *.* > post_download.md5"
+2019-12-10 17:46:01,586 INFO: Running command "ls *.gz |xargs -n1 tar -xzf"
+2019-12-10 19:07:39,537 INFO: Running command "md5sum *.* > final_checksums.md5"
+2019-12-10 19:52:22,458 INFO:  🐶 RefChef... getting reference: refseq_rna, component: blast_db
+2019-12-10 19:52:22,459 INFO: Running command "rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/refseq_rna.*.gz ."
+2019-12-10 19:56:45,959 INFO: Running command "rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/refseq_rna.*.gz.md5 ."
+2019-12-10 19:56:46,549 INFO: Running command "md5sum *.* > post_download.md5"
+2019-12-10 19:57:36,403 INFO: Running command "ls *.gz |xargs -n1 tar -xzf"
+2019-12-10 20:01:13,606 INFO: Running command "md5sum *.* > final_checksums.md5"
+2019-12-10 20:03:15,399 INFO:  🐶 RefChef... getting reference: refseq_protein, component: blast_db
+2019-12-10 20:03:15,400 INFO: Running command "rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/refseq_protein.*.gz ."
+2019-12-10 20:12:05,333 INFO: Running command "rsync --append-verify rsync://ftp.ncbi.nlm.nih.gov/blast/db/refseq_protein.*.gz.md5 ."
+2019-12-10 20:12:06,290 INFO: Running command "md5sum *.* > post_download.md5"
+2019-12-10 20:15:36,185 INFO: Running command "ls *.gz |xargs -n1 tar -xzf"
+2019-12-10 20:33:55,482 INFO: Running command "md5sum *.* > final_checksums.md5"
+2019-12-10 20:42:42,741 INFO:  🐶 RefChef... getting reference: pr2_db, component: db
+2019-12-10 20:42:42,742 INFO: Running command "wget https://github.com/pr2database/pr2database/releases/download/v4.12.0/pr2_version_4.12.0.sqlite.gz"
+2019-12-10 20:42:44,133 INFO: Running command "wget https://github.com/pr2database/pr2database/releases/download/v4.12.0/pr2_version_4.12.0_16S_dada2.fasta.gz"
+2019-12-10 20:42:44,514 INFO: Running command "wget https://github.com/pr2database/pr2database/releases/download/v4.12.0/pr2_version_4.12.0_16S_mothur.fasta.gz"
+2019-12-10 20:42:44,912 INFO: Running command "wget https://github.com/pr2database/pr2database/releases/download/v4.12.0/pr2_version_4.12.0_16S_mothur.tax.gz"
+2019-12-10 20:42:45,267 INFO: Running command "wget https://github.com/pr2database/pr2database/releases/download/v4.12.0/pr2_version_4.12.0_16S_taxo_long.fasta.gz"
+2019-12-10 20:42:45,657 INFO: Running command "wget https://github.com/pr2database/pr2database/releases/download/v4.12.0/pr2_version_4.12.0_16S_UTAX.fasta.gz"
+2019-12-10 20:42:46,059 INFO: Running command "wget https://github.com/pr2database/pr2database/releases/download/v4.12.0/pr2_version_4.12.0_18S_dada2.fasta.gz"
+2019-12-10 20:42:47,096 INFO: Running command "wget https://github.com/pr2database/pr2database/releases/download/v4.12.0/pr2_version_4.12.0_18S_mothur.fasta.gz"
+2019-12-10 20:42:47,978 INFO: Running command "wget https://github.com/pr2database/pr2database/releases/download/v4.12.0/pr2_version_4.12.0_18S_mothur.tax.gz"
+2019-12-10 20:42:48,443 INFO: Running command "wget https://github.com/pr2database/pr2database/releases/download/v4.12.0/pr2_version_4.12.0_18S_taxo_long.fasta.gz"
+2019-12-10 20:42:49,283 INFO: Running command "wget https://github.com/pr2database/pr2database/releases/download/v4.12.0/pr2_version_4.12.0_18S_UTAX.fasta.gz"
+2019-12-10 20:42:50,196 INFO: Running command "wget https://github.com/pr2database/pr2database/releases/download/v4.12.0/pr2_version_4.12.0_merged.tsv.gz"
+2019-12-10 20:42:51,670 INFO: Running command "md5sum *.* > post_download.md5"
+2019-12-10 20:42:52,503 INFO: Running command "ls *.gz |xargs -n1 gunzip -k"
+2019-12-10 20:42:52,563 INFO: Running command "md5sum *.* > final_checksums.md5"
+2019-12-10 20:42:53,398 INFO:  🐶 RefChef... getting reference: OM-RGC, component: primary
+2019-12-10 20:42:53,398 INFO: Running command "wget ftp://ftp.sra.ebi.ac.uk/vol1/ERA412/ERA412970/tab/OM-RGC_seq.release.tsv.gz"
+2019-12-10 22:01:34,621 INFO: Running command "md5sum *.* > post_download.md5"
+2019-12-10 22:01:53,688 INFO: Running command "zcat OM-RGC_seq.release.tsv.gz | perl -lane 'print ">$F[0]\n$F[-1]" unless $.==1' > OM-RGC_seq.release.fna"
+2019-12-10 22:06:56,386 INFO: Running command "md5sum *.* > final_checksums.md5"
+2019-12-10 22:08:13,496 INFO:  🐶 RefChef... getting reference: silva_arbfiles, component: arb_files
+2019-12-10 22:08:13,497 INFO: Running command "wget https://ftp.arb-silva.de/current/ARB_files/SILVA_132_LSUParc_12_12_17_opt.arb.gz"
+2019-12-10 22:08:45,845 INFO: Running command "wget https://ftp.arb-silva.de/current/ARB_files/SILVA_132_LSUParc_12_12_17_opt.arb.gz.md5"
+2019-12-10 22:08:46,316 INFO: Running command "wget https://ftp.arb-silva.de/current/ARB_files/SILVA_132_LSURef_07_12_17_opt.arb.gz"
+2019-12-10 22:08:51,916 INFO: Running command "wget https://ftp.arb-silva.de/current/ARB_files/SILVA_132_LSURef_07_12_17_opt.arb.gz.md5"
+2019-12-10 22:08:52,393 INFO: Running command "wget https://ftp.arb-silva.de/current/ARB_files/SILVA_132_SSURef_12_12_17_opt.arb.gz"
+2019-12-10 22:09:36,476 INFO: Running command "wget https://ftp.arb-silva.de/current/ARB_files/SILVA_132_SSURef_12_12_17_opt.arb.gz.md5"
+2019-12-10 22:09:36,963 INFO: Running command "wget https://ftp.arb-silva.de/current/ARB_files/SILVA_132_SSURef_NR99_13_12_17_opt.arb.gz"
+2019-12-10 22:09:50,185 INFO: Running command "wget https://ftp.arb-silva.de/current/ARB_files/SILVA_132_SSURef_NR99_13_12_17_opt.arb.gz.md5"
+2019-12-10 22:09:50,653 INFO: Running command "md5sum *.* > post-download.md5"
+2019-12-10 22:09:55,496 INFO: Running command "ls *.gz |xargs -n1 gunzip -k"
+2019-12-10 22:09:55,524 INFO: Running command "md5sum *.* > final_checksums.md5"
+2019-12-10 22:10:00,234 INFO:  🐶 RefChef... getting index: grch38_release98, component: bwa_index
+2019-12-10 22:10:00,235 INFO: Running command "ln -s /gpfs/data/shared/databases/refchef_refs/grch38_release98/primary/Homo_sapiens.GRCh38.dna.primary_assembly.fa /gpfs/data/shared/databases/refchef_refs/grch38_release98/bwa_index/Homo_sapiens.GRCh38.dna.primary_assembly.fa"
+2019-12-10 22:10:00,246 INFO: Running command "cd /gpfs/data/shared/databases/refchef_refs/grch38_release98/bwa_index"
+2019-12-10 22:10:00,252 INFO: Running command "bwa index Homo_sapiens.GRCh38.dna.primary_assembly.fa"
+2019-12-10 22:10:00,260 INFO: Running command "md5sum *.* > final_checksums.md5"
