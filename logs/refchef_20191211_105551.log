@@ -1,0 +1,86 @@
+2019-12-11 10:55:52,198 INFO: 
+        ===========================================
+        REFCHEF 🐶
+        -------------------------------------------
+        - References will be downloaded to: /gpfs/data/shared/databases/refchef_refs
+        - Remote repository for master.yaml compbiocore/cbc-references-refchef
+        - Local repository for master.yaml /gpfs/data/shared/databases/cbc-references-refchef
+        - Logs files: /gpfs/data/shared/databases/cbc-references-refchef/logs/
+        -------------------------------------------
+        
+2019-12-11 10:55:52,199 DEBUG: parse kwarg method: 2 ...
+2019-12-11 10:55:57,485 INFO: 
+        No references to download.
+                    
+2019-12-11 10:55:57,485 INFO: 
+        No references to download.
+                    
+2019-12-11 10:55:57,485 INFO: 
+        No references to download.
+                    
+2019-12-11 10:55:57,485 INFO: 
+        No references to download.
+                    
+2019-12-11 10:55:57,485 INFO: 
+        No references to download.
+                    
+2019-12-11 10:55:57,485 INFO: 
+        No references to download.
+                    
+2019-12-11 10:55:57,486 INFO: 
+        No references to download.
+                    
+2019-12-11 10:55:57,486 INFO: 
+        No references to download.
+                    
+2019-12-11 10:55:57,486 INFO: 
+        No references to download.
+                    
+2019-12-11 10:55:57,486 INFO: 
+        No references to download.
+                    
+2019-12-11 10:55:57,486 INFO: 
+        No references to download.
+                    
+2019-12-11 10:55:57,486 INFO: 
+        No references to download.
+                    
+2019-12-11 10:55:57,486 INFO: 
+        No references to download.
+                    
+2019-12-11 10:55:57,486 INFO: 
+        No references to download.
+                    
+2019-12-11 10:55:57,486 INFO: 
+        No references to download.
+                    
+2019-12-11 10:55:57,486 INFO: 
+        No references to download.
+                    
+2019-12-11 10:55:57,486 INFO: 
+        No references to download.
+                    
+2019-12-11 10:55:57,487 INFO: 
+        No references to download.
+                    
+2019-12-11 10:55:57,487 INFO: 
+        No references to download.
+                    
+2019-12-11 10:55:57,487 INFO: 
+        No references to download.
+                    
+2019-12-11 10:55:57,487 INFO: 
+        No references to download.
+                    
+2019-12-11 10:55:57,487 INFO: 
+        No references to download.
+                    
+2019-12-11 10:55:57,487 INFO: 
+        No references to download.
+                    
+2019-12-11 10:55:57,487 INFO: 
+        -------------------------------------------
+        The folowing references will be downloaded:
+            - uniprot
+        ===========================================
+            

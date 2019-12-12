@@ -8411,3 +8411,48 @@ silva_arbfiles:
       - metadata.txt
       - final_checksums.md5
       uuid: 646321f7-4ab2-3421-9dfb-fe74c455fcc1
+uniprot:
+  metadata:
+    name: uniprot
+    common_name: none
+    ncbi_taxon_id: na
+    organism: na
+    organization: uniprot.org
+    custom: false
+    description: none
+    downloader: joselynn
+    ensembl_release_number: null
+    accession:
+      genbank: null
+      refseq: null
+  levels:
+    references:
+    - component: primary
+      complete:
+        status: true
+        time: '2019-12-11 21:21:21.617438'
+      commands:
+      - wget ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.dat.gz
+      - wget ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz
+      - wget ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.xml.gz
+      - wget ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_trembl.dat.gz
+      - wget ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_trembl.fasta.gz
+      - wget ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_trembl.xml.gz
+      - wget ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot.xsd
+      - wget ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/reldate.txt
+      - md5sum *.* post-download.md5
+      - ls *.gz |xargs -n1 gunzip
+      - md5sum *.* > final_checksums.md5
+      location: /gpfs/data/shared/databases/refchef_refs/uniprot/primary
+      files:
+      - uniprot.xsd
+      - uniprot_trembl.fasta.gz
+      - uniprot_sprot.xml
+      - reldate.txt
+      - uniprot_sprot.dat
+      - uniprot_trembl.xml
+      - metadata.txt
+      - final_checksums.md5
+      - uniprot_trembl.dat
+      - uniprot_sprot.fasta
+      uuid: 36c1a962-d1e6-3852-a177-047435e79855
