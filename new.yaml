@@ -1,0 +1,22 @@
+rnor60:
+  metadata:
+    name: rnor60
+    common_name: rat
+    custom: false
+    description: see also GCA_000001895.4
+    downloader: joselynn
+    ncbi_taxon_id: 10116
+    ensembl_release_number: 98
+    accession:
+      genbank: 
+      refseq: 
+    organism: Rattus norvegicus
+    organization: ensembl
+  levels:
+    references:
+    - component: primary
+      complete:
+        status: false
+      commands:
+      - wget ftp://ftp.ensembl.org/pub/release-98/fasta/rattus_norvegicus/dna/Rattus_norvegicus.Rnor_6.0.dna.toplevel.fa.gz
+      - wget ftp://ftp.ensembl.org/pub/release-98/fasta/rattus_norvegicus/dna/CHECKSUMS

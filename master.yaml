@@ -8456,3 +8456,30 @@ uniprot:
       - uniprot_trembl.dat
       - uniprot_sprot.fasta
       uuid: 36c1a962-d1e6-3852-a177-047435e79855
+rnor60:
+  metadata:
+    name: rnor60
+    common_name: rat
+    custom: false
+    description: see also GCA_000001895.4
+    downloader: joselynn
+    ncbi_taxon_id: 10116
+    ensembl_release_number: 98
+    accession:
+      genbank: null
+      refseq: null
+    organism: Rattus norvegicus
+    organization: ensembl
+  levels:
+    references:
+    - component: primary
+      complete:
+        status: true
+        time: '2019-12-12 10:02:32.332483'
+      commands:
+      - wget ftp://ftp.ensembl.org/pub/release-98/fasta/rattus_norvegicus/dna/Rattus_norvegicus.Rnor_6.0.dna.toplevel.fa.gz
+      - wget ftp://ftp.ensembl.org/pub/release-98/fasta/rattus_norvegicus/dna/CHECKSUMS
+      location: /gpfs/data/shared/databases/refchef_refs/rnor60/primary
+      files:
+      - metadata.txt
+      uuid: 6c55654e-1cf0-11ea-a829-40f2e9026674
