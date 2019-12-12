@@ -1,0 +1,12 @@
+rnor60:
+  levels:
+    annotations:
+    - component: gff3
+      complete:
+        status: false
+      commands:
+      - wget ftp://ftp.ensembl.org/pub/release-98/gff3/rattus_norvegicus/Rattus_norvegicus.Rnor_6.0.98.gff3.gz
+      - wget ftp://ftp.ensembl.org/pub/release-98/gff3/rattus_norvegicus/CHECKSUMS
+      - md5sum *.* > post-download.md5
+      - gunzip -c Rattus_norvegicus.Rnor_6.0.98.gff3.gz > Rattus_norvegicus.Rnor_6.0.98.gff3
+      - md5sum *.* > final_checksums.md5          
