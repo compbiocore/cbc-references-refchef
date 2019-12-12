@@ -20,3 +20,16 @@ rnor60:
       commands:
       - wget ftp://ftp.ensembl.org/pub/release-98/fasta/rattus_norvegicus/dna/Rattus_norvegicus.Rnor_6.0.dna.toplevel.fa.gz
       - wget ftp://ftp.ensembl.org/pub/release-98/fasta/rattus_norvegicus/dna/CHECKSUMS
+      - md5sum *.* > post-download.md5
+      - gunzip -c Rattus_norvegicus.Rnor_6.0.dna.toplevel.fa.gz > Rattus_norvegicus.Rnor_6.0.dna.toplevel.fa
+      - md5sum *.* > final_checksums.md5      
+    annotations:
+    - component: gtf
+      complete:
+        status: false
+      commands:
+      - wget ftp://ftp.ensembl.org/pub/release-98/gtf/rattus_norvegicus/Rattus_norvegicus.Rnor_6.0.98.gtf.gz
+      - wget ftp://ftp.ensembl.org/pub/release-98/gtf/rattus_norvegicus/CHECKSUMS
+      - md5sum *.* > post-download.md5
+      - gunzip -c Rattus_norvegicus.Rnor_6.0.98.gtf.gz > Rattus_norvegicus.Rnor_6.0.98.gtf
+      - md5sum *.* > final_checksums.md5
