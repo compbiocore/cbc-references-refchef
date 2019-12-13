@@ -8539,12 +8539,11 @@ rnor60:
       - metadata.txt
       - final_checksums.md5
       uuid: d9a57af3-210c-3c02-8964-6118fb91f4f0
-  indices:
-  - component: gmap_db
-    complete:
-      status: false
-    commands:
-    - /gpfs/runtime/cbc_conda/cbc_conda_v1_root/envs/bioflows/bin/gmap_make_ref.sh
-      gsnap_2017-01-14_rnor60 /gpfs/data/shared/databases/refchef_refs/rnor60/primary/Rattus_norvegicus.Rnor_6.0.dna.toplevel.fa
-      /gpfs/data/shared/databases/refchef_refs/rnor60/Rattus_norvegicus.Rnor_6.0.98.gtf
-    - md5sum *.* > final_checksums.md5
+    indices:
+    - component: gmap_db
+      complete:
+        status: false
+      commands:
+      - gsnap_2017-01-14_rnor60 /gpfs/data/shared/databases/refchef_refs/rnor60/primary/Rattus_norvegicus.Rnor_6.0.dna.toplevel.fa
+        /gpfs/data/shared/databases/refchef_refs/rnor60/Rattus_norvegicus.Rnor_6.0.98.gtf
+      - md5sum *.* > final_checksums.md5

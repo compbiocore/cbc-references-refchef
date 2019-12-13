@@ -1,12 +1,9 @@
 rnor60:
-  levels:
-    annotations:
-    - component: gff3
+    indices:
+    - component: gmap_db
       complete:
         status: false
       commands:
-      - wget ftp://ftp.ensembl.org/pub/release-98/gff3/rattus_norvegicus/Rattus_norvegicus.Rnor_6.0.98.gff3.gz
-      - wget ftp://ftp.ensembl.org/pub/release-98/gff3/rattus_norvegicus/CHECKSUMS
-      - md5sum *.* > post-download.md5
-      - gunzip -c Rattus_norvegicus.Rnor_6.0.98.gff3.gz > Rattus_norvegicus.Rnor_6.0.98.gff3
-      - md5sum *.* > final_checksums.md5          
+      - /gpfs/runtime/cbc_conda/cbc_conda_v1_root/envs/bioflows/bin/gmap_make_ref.sh gsnap_2017-01-14_rnor60 /gpfs/data/shared/databases/refchef_refs/rnor60/primary/Rattus_norvegicus.Rnor_6.0.dna.toplevel.fa
+        /gpfs/data/shared/databases/refchef_refs/rnor60/Rattus_norvegicus.Rnor_6.0.98.gtf
+      - md5sum *.* > final_checksums.md5

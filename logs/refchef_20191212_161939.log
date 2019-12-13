@@ -1,0 +1,95 @@
+2019-12-12 16:19:39,626 INFO: 
+        ===========================================
+        REFCHEF 🐶
+        -------------------------------------------
+        - References will be downloaded to: /gpfs/data/shared/databases/refchef_refs
+        - Remote repository for master.yaml compbiocore/cbc-references-refchef
+        - Local repository for master.yaml /gpfs/data/shared/databases/cbc-references-refchef
+        - Logs files: /gpfs/data/shared/databases/cbc-references-refchef/logs/
+        -------------------------------------------
+        
+2019-12-12 16:19:39,626 DEBUG: parse kwarg method: 2 ...
+2019-12-12 16:19:42,670 INFO: 
+        No references to download.
+                    
+2019-12-12 16:19:42,671 INFO: 
+        No references to download.
+                    
+2019-12-12 16:19:42,671 INFO: 
+        No references to download.
+                    
+2019-12-12 16:19:42,671 INFO: 
+        No references to download.
+                    
+2019-12-12 16:19:42,671 INFO: 
+        No references to download.
+                    
+2019-12-12 16:19:42,671 INFO: 
+        No references to download.
+                    
+2019-12-12 16:19:42,671 INFO: 
+        No references to download.
+                    
+2019-12-12 16:19:42,671 INFO: 
+        No references to download.
+                    
+2019-12-12 16:19:42,671 INFO: 
+        No references to download.
+                    
+2019-12-12 16:19:42,671 INFO: 
+        No references to download.
+                    
+2019-12-12 16:19:42,671 INFO: 
+        No references to download.
+                    
+2019-12-12 16:19:42,671 INFO: 
+        No references to download.
+                    
+2019-12-12 16:19:42,671 INFO: 
+        No references to download.
+                    
+2019-12-12 16:19:42,671 INFO: 
+        No references to download.
+                    
+2019-12-12 16:19:42,671 INFO: 
+        No references to download.
+                    
+2019-12-12 16:19:42,671 INFO: 
+        No references to download.
+                    
+2019-12-12 16:19:42,671 INFO: 
+        No references to download.
+                    
+2019-12-12 16:19:42,671 INFO: 
+        No references to download.
+                    
+2019-12-12 16:19:42,671 INFO: 
+        No references to download.
+                    
+2019-12-12 16:19:42,671 INFO: 
+        No references to download.
+                    
+2019-12-12 16:19:42,671 INFO: 
+        No references to download.
+                    
+2019-12-12 16:19:42,671 INFO: 
+        No references to download.
+                    
+2019-12-12 16:19:42,671 INFO: 
+        No references to download.
+                    
+2019-12-12 16:19:42,671 INFO: 
+        No references to download.
+                    
+2019-12-12 16:19:42,671 INFO: 
+        No references to download.
+                    
+2019-12-12 16:19:42,671 INFO: 
+        No references to download.
+                    
+2019-12-12 16:19:43,164 INFO:  🐶 RefChef... getting index: rnor60, component: gmap_db
+2019-12-12 16:19:43,164 INFO: Running command "gsnap_2017-01-14_rnor60 /gpfs/data/shared/databases/refchef_refs/rnor60/primary/Rattus_norvegicus.Rnor_6.0.dna.toplevel.fa /gpfs/data/shared/databases/refchef_refs/rnor60/Rattus_norvegicus.Rnor_6.0.98.gtf"
+2019-12-12 16:19:43,171 INFO: Running command "md5sum *.* > final_checksums.md5"
+2019-12-12 16:19:43,179 INFO:  🐶 RefChef... getting index: rnor60, component: gmap_db
+2019-12-12 16:19:43,179 INFO: Running command "gsnap_2017-01-14_rnor60 /gpfs/data/shared/databases/refchef_refs/rnor60/primary/Rattus_norvegicus.Rnor_6.0.dna.toplevel.fa /gpfs/data/shared/databases/refchef_refs/rnor60/Rattus_norvegicus.Rnor_6.0.98.gtf"
+2019-12-12 16:19:43,184 INFO: Running command "md5sum *.* > final_checksums.md5"
