@@ -8664,3 +8664,34 @@ Genbank_bacteria_all_2018_11_20_15_34_part2:
       - metadata.txt
       - final_checksums.md5
       uuid: 5445c326-80f1-3037-92cb-b72f3d4e8526
+Genbank_bacteria_all_2018_11_20_15_34_part3:
+  metadata:
+    name: Genbank_bacteria_all_2018_11_20_15_34_part3
+    common_name: None
+    ncbi_taxon_id: null
+    organism: Multiple Bacteria
+    organization: NCBI
+    custom: true
+    description: Contains multiple bacterial genomes from Genbank. Each genome is
+      added as a Chromosome and for species with Multiple chromosomes, the chromosome
+      name includes the species name as well.
+    downloader: Ashok Ragavendran
+    ensembl_release_number: null
+    accession:
+      genbank: null
+      refseq: null
+  levels:
+    references:
+    - component: primary
+      complete:
+        status: true
+        time: '2020-01-31 11:34:23.691251'
+      commands:
+      - rsync -av --progress /gpfs/data/cbc/references/Genbank_bacteria_all_2018_11_20_15_34/bacteria_2018_11_20_15_34_concat_part3.fa  .
+      - md5sum *.* > final_checksums.md5
+      location: /gpfs/data/shared/databases/refchef_refs/Genbank_bacteria_all_2018_11_20_15_34_part3/primary
+      files:
+      - bacteria_2018_11_20_15_34_concat_part3.fa
+      - metadata.txt
+      - final_checksums.md5
+      uuid: 34aaa373-6e32-394d-acad-ef7518200728
