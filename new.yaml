@@ -1,9 +1,42 @@
-rnor60:
+drosophila-melanogaster-bdgp6rel9:
+  levels:
     indices:
-    - component: gmap_db
+    - component: faidx
       complete:
         status: false
+      src: f00c482a-8550-31b9-89fb-803d4f9edbb5
       commands:
-      - /gpfs/runtime/cbc_conda/cbc_conda_v1_root/envs/bioflows/bin/gmap_make_ref.sh gsnap_2017-01-14_rnor60 /gpfs/data/shared/databases/refchef_refs/rnor60/primary/Rattus_norvegicus.Rnor_6.0.dna.toplevel.fa
-        /gpfs/data/shared/databases/refchef_refs/rnor60/Rattus_norvegicus.Rnor_6.0.98.gtf
+      - ln -s /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/primary/Drosophila_melanogaster.BDGP6.dna.toplevel.fa
+        /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/faidx/Drosophila_melanogaster.BDGP6.dna.toplevel.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/faidx
+      - samtools faidx Drosophila_melanogaster.BDGP6.dna.toplevel.fa
+      - awk -v OFS='\t' {'print $1,$2'} Drosophila_melanogaster.BDGP6.dna.toplevel.fa.fai > Drosophila_melanogaster.BDGP6.dna.toplevel.genomeFile.txt
+      - md5sum *.* > final_checksums.md5   
+Escherichia_coli_K12:
+  levels:
+    indices:
+    - component: faidx
+      complete:
+        status: false
+      src: c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
+      commands:
+      - ln -s /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/primary/Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
+        /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/faidx/Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/faidx
+      - samtools faidx Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
+      - awk -v OFS='\t' {'print $1,$2'} Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa.fai > Escherichia_coli_k_12.ASM80076v1.dna.toplevel.genomeFile.txt
+      - md5sum *.* > final_checksums.md5  
+saccer3:
+  levels:
+    indices:
+    - component: faidx
+      complete:
+        status: false
+      src: 2433f3a6-0a29-34bc-8868-2fb9609d4025
+      commands:
+      - ln -s /gpfs/data/shared/databases/refchef_refs/saccer3/primary/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
+        /gpfs/data/shared/databases/refchef_refs/saccer3/faidx/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/saccer3/faidx
+      - samtools faidx Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
+      - awk -v OFS='\t' {'print $1,$2'} Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa.fai > Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.genomeFile.txt
       - md5sum *.* > final_checksums.md5

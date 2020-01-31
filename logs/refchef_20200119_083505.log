@@ -1,0 +1,95 @@
+2020-01-19 08:35:05,700 INFO: 
+        ===========================================
+        REFCHEF 🐶
+        -------------------------------------------
+        - References will be downloaded to: /gpfs/data/shared/databases/refchef_refs
+        - Remote repository for master.yaml compbiocore/cbc-references-refchef
+        - Local repository for master.yaml /gpfs/data/shared/databases/cbc-references-refchef
+        - Logs files: /gpfs/data/shared/databases/cbc-references-refchef/logs/
+        -------------------------------------------
+        
+2020-01-19 08:35:05,700 DEBUG: parse kwarg method: 2 ...
+2020-01-19 08:35:08,727 INFO: 
+        No references to download.
+                    
+2020-01-19 08:35:08,727 INFO: 
+        No references to download.
+                    
+2020-01-19 08:35:08,727 INFO: 
+        No references to download.
+                    
+2020-01-19 08:35:08,727 INFO: 
+        No references to download.
+                    
+2020-01-19 08:35:08,727 INFO: 
+        No references to download.
+                    
+2020-01-19 08:35:08,727 INFO: 
+        No references to download.
+                    
+2020-01-19 08:35:08,727 INFO: 
+        No references to download.
+                    
+2020-01-19 08:35:08,727 INFO: 
+        No references to download.
+                    
+2020-01-19 08:35:08,727 INFO: 
+        No references to download.
+                    
+2020-01-19 08:35:08,727 INFO: 
+        No references to download.
+                    
+2020-01-19 08:35:08,728 INFO: 
+        No references to download.
+                    
+2020-01-19 08:35:08,728 INFO: 
+        No references to download.
+                    
+2020-01-19 08:35:08,728 INFO: 
+        No references to download.
+                    
+2020-01-19 08:35:08,728 INFO: 
+        No references to download.
+                    
+2020-01-19 08:35:08,728 INFO: 
+        No references to download.
+                    
+2020-01-19 08:35:08,728 INFO: 
+        No references to download.
+                    
+2020-01-19 08:35:08,728 INFO: 
+        No references to download.
+                    
+2020-01-19 08:35:08,728 INFO: 
+        No references to download.
+                    
+2020-01-19 08:35:08,728 INFO: 
+        No references to download.
+                    
+2020-01-19 08:35:08,728 INFO: 
+        No references to download.
+                    
+2020-01-19 08:35:08,728 INFO: 
+        No references to download.
+                    
+2020-01-19 08:35:08,728 INFO: 
+        No references to download.
+                    
+2020-01-19 08:35:08,728 INFO: 
+        No references to download.
+                    
+2020-01-19 08:35:08,728 INFO: 
+        No references to download.
+                    
+2020-01-19 08:35:08,728 INFO: 
+        No references to download.
+                    
+2020-01-19 08:35:08,728 INFO: 
+        No references to download.
+                    
+2020-01-19 08:35:09,265 INFO:  🐶 RefChef... getting index: drosophila-melanogaster-bdgp6rel9, component: faidx
+2020-01-19 08:35:09,265 INFO: Running command "ln -s /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/primary/Drosophila_melanogaster.BDGP6.dna.toplevel.fa /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/faidx/Drosophila_melanogaster.BDGP6.dna.toplevel.fa"
+2020-01-19 08:35:09,275 INFO: Running command "cd /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/faidx"
+2020-01-19 08:35:09,282 INFO: Running command "samtools faidx Drosophila_melanogaster.BDGP6.dna.toplevel.fa"
+2020-01-19 08:35:10,229 INFO: Running command "awk -v OFS='\t' {'print $1,$2'} Drosophila_melanogaster.BDGP6.dna.toplevel.fa.fai > Drosophila_melanogaster.BDGP6.dna.toplevel.genomeFile.txt"
+2020-01-19 08:35:10,239 INFO: Running command "md5sum *.* > final_checksums.md5"
