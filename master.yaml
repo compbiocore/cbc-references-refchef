@@ -271,60 +271,20 @@ drosophila-melanogaster-bdgp6rel9:
       - metadata.txt
       - final_checksums.md5
       uuid: 6206259e-fe61-35a2-9773-6a491c17aa11
-    - component: faidx
+    - component: bedtools_genome_file
       complete:
         status: true
-        time: '2020-01-19 08:24:09.250018'
+        time: '2020-01-31 08:41:47.494750'
       src: f00c482a-8550-31b9-89fb-803d4f9edbb5
       commands:
       - ln -s /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/primary/Drosophila_melanogaster.BDGP6.dna.toplevel.fa
-        /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/faidx/Drosophila_melanogaster.BDGP6.dna.toplevel.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/faidx
-      - samtools faidx Drosophila_melanogaster.BDGP6.dna.toplevel.fa
-      - awk -v OFS='\t' {'print $1,$2'} Drosophila_melanogaster.BDGP6.dna.toplevel.fa.fai
-        > Drosophila_melanogaster.BDGP6.dna.toplevel.genomeFile.txt
-      - final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/faidx
-      files:
-      - Drosophila_melanogaster.BDGP6.dna.toplevel.genomeFile.txt
-      - Drosophila_melanogaster.BDGP6.dna.toplevel.fa
-      - metadata.txt
-      uuid: f98764e4-3abe-11ea-8e40-ac1f6b627d58
-    - component: faidx
-      complete:
-        status: true
-        time: '2020-01-19 08:35:10.492633'
-      src: f00c482a-8550-31b9-89fb-803d4f9edbb5
-      commands:
-      - ln -s /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/primary/Drosophila_melanogaster.BDGP6.dna.toplevel.fa
-        /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/faidx/Drosophila_melanogaster.BDGP6.dna.toplevel.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/faidx
+        /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/bedtools_genome_file/Drosophila_melanogaster.BDGP6.dna.toplevel.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/bedtools_genome_file
       - samtools faidx Drosophila_melanogaster.BDGP6.dna.toplevel.fa
       - awk -v OFS='\t' {'print $1,$2'} Drosophila_melanogaster.BDGP6.dna.toplevel.fa.fai
         > Drosophila_melanogaster.BDGP6.dna.toplevel.genomeFile.txt
       - md5sum *.* > final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/faidx
-      files:
-      - Drosophila_melanogaster.BDGP6.dna.toplevel.fa.fai
-      - Drosophila_melanogaster.BDGP6.dna.toplevel.genomeFile.txt
-      - Drosophila_melanogaster.BDGP6.dna.toplevel.fa
-      - metadata.txt
-      - final_checksums.md5
-      uuid: 6206259e-fe61-35a2-9773-6a491c17aa11
-    - component: faidx
-      complete:
-        status: true
-        time: '2020-01-31 08:04:52.095915'
-      src: f00c482a-8550-31b9-89fb-803d4f9edbb5
-      commands:
-      - ln -s /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/primary/Drosophila_melanogaster.BDGP6.dna.toplevel.fa
-        /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/faidx/Drosophila_melanogaster.BDGP6.dna.toplevel.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/faidx
-      - samtools faidx Drosophila_melanogaster.BDGP6.dna.toplevel.fa
-      - awk -v OFS='\t' {'print $1,$2'} Drosophila_melanogaster.BDGP6.dna.toplevel.fa.fai
-        > Drosophila_melanogaster.BDGP6.dna.toplevel.genomeFile.txt
-      - md5sum *.* > final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/faidx
+      location: /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/bedtools_genome_file
       files:
       - Drosophila_melanogaster.BDGP6.dna.toplevel.fa.fai
       - Drosophila_melanogaster.BDGP6.dna.toplevel.genomeFile.txt
@@ -3700,60 +3660,20 @@ Escherichia_coli_K12:
       - metadata.txt
       - final_checksums.md5
       uuid: c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
-    - component: faidx
+    - component: bedtools_genome_file
       complete:
         status: true
-        time: '2020-01-19 08:24:09.345924'
+        time: '2020-01-31 08:41:47.634907'
       src: c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
       commands:
       - ln -s /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/primary/Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
-        /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/faidx/Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/faidx
-      - samtools faidx Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
-      - awk -v OFS='\t' {'print $1,$2'} Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa.fai
-        > Escherichia_coli_k_12.ASM80076v1.dna.toplevel.genomeFile.txt
-      - final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/faidx
-      files:
-      - Escherichia_coli_k_12.ASM80076v1.dna.toplevel.genomeFile.txt
-      - Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
-      - metadata.txt
-      uuid: f9914644-3abe-11ea-8e40-ac1f6b627d58
-    - component: faidx
-      complete:
-        status: true
-        time: '2020-01-19 08:35:10.605469'
-      src: c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
-      commands:
-      - ln -s /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/primary/Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
-        /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/faidx/Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/faidx
+        /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/bedtools_genome_file/Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/bedtools_genome_file
       - samtools faidx Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
       - awk -v OFS='\t' {'print $1,$2'} Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa.fai
         > Escherichia_coli_k_12.ASM80076v1.dna.toplevel.genomeFile.txt
       - md5sum *.* > final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/faidx
-      files:
-      - Escherichia_coli_k_12.ASM80076v1.dna.toplevel.genomeFile.txt
-      - Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
-      - Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa.fai
-      - metadata.txt
-      - final_checksums.md5
-      uuid: 25a17cdf-ef06-36ed-b43e-b1b608a4bbba
-    - component: faidx
-      complete:
-        status: true
-        time: '2020-01-31 08:04:52.241180'
-      src: c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
-      commands:
-      - ln -s /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/primary/Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
-        /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/faidx/Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/faidx
-      - samtools faidx Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
-      - awk -v OFS='\t' {'print $1,$2'} Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa.fai
-        > Escherichia_coli_k_12.ASM80076v1.dna.toplevel.genomeFile.txt
-      - md5sum *.* > final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/faidx
+      location: /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/bedtools_genome_file
       files:
       - Escherichia_coli_k_12.ASM80076v1.dna.toplevel.genomeFile.txt
       - Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
@@ -3943,60 +3863,20 @@ saccer3:
       - metadata.txt
       - final_checksums.md5
       uuid: e7428ca2-68e8-3356-90a8-e5016deea499
-    - component: faidx
+    - component: bedtools_genome_file
       complete:
         status: true
-        time: '2020-01-19 08:24:09.419119'
+        time: '2020-01-31 08:41:47.893731'
       src: 2433f3a6-0a29-34bc-8868-2fb9609d4025
       commands:
       - ln -s /gpfs/data/shared/databases/refchef_refs/saccer3/primary/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
-        /gpfs/data/shared/databases/refchef_refs/saccer3/faidx/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/saccer3/faidx
-      - samtools faidx Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
-      - awk -v OFS='\t' {'print $1,$2'} Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa.fai
-        > Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.genomeFile.txt
-      - final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/saccer3/faidx
-      files:
-      - Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.genomeFile.txt
-      - Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
-      - metadata.txt
-      uuid: f99c7140-3abe-11ea-8e40-ac1f6b627d58
-    - component: faidx
-      complete:
-        status: true
-        time: '2020-01-19 08:35:10.708253'
-      src: 2433f3a6-0a29-34bc-8868-2fb9609d4025
-      commands:
-      - ln -s /gpfs/data/shared/databases/refchef_refs/saccer3/primary/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
-        /gpfs/data/shared/databases/refchef_refs/saccer3/faidx/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/saccer3/faidx
+        /gpfs/data/shared/databases/refchef_refs/saccer3/bedtools_genome_file/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/saccer3/bedtools_genome_file
       - samtools faidx Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
       - awk -v OFS='\t' {'print $1,$2'} Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa.fai
         > Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.genomeFile.txt
       - md5sum *.* > final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/saccer3/faidx
-      files:
-      - Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.genomeFile.txt
-      - Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
-      - metadata.txt
-      - final_checksums.md5
-      - Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa.fai
-      uuid: 91b325e3-aaa0-3d8f-af1e-79716e343bfe
-    - component: faidx
-      complete:
-        status: true
-        time: '2020-01-31 08:04:52.481178'
-      src: 2433f3a6-0a29-34bc-8868-2fb9609d4025
-      commands:
-      - ln -s /gpfs/data/shared/databases/refchef_refs/saccer3/primary/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
-        /gpfs/data/shared/databases/refchef_refs/saccer3/faidx/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/saccer3/faidx
-      - samtools faidx Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
-      - awk -v OFS='\t' {'print $1,$2'} Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa.fai
-        > Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.genomeFile.txt
-      - md5sum *.* > final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/saccer3/faidx
+      location: /gpfs/data/shared/databases/refchef_refs/saccer3/bedtools_genome_file
       files:
       - Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.genomeFile.txt
       - Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
