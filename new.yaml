@@ -1,6 +1,6 @@
-Genbank_bacteria_all_2018_11_20_15_34_part1:
+Genbank_bacteria_all_2018_11_20_15_34_part2:
   metadata:
-    name: Genbank_bacteria_all_2018_11_20_15_34_part1
+    name: Genbank_bacteria_all_2018_11_20_15_34_part2
     common_name: None
     ncbi_taxon_id: 
     organism: Multiple Bacteria
@@ -18,5 +18,5 @@ Genbank_bacteria_all_2018_11_20_15_34_part1:
       complete:
         status: false
       commands:
-      - rsync -av --progress /gpfs/data/cbc/references/Genbank_bacteria_all_2018_11_20_15_34/bacteria_2018_11_20_15_34_concat_part1.fa  .
+      - rsync -av --progress /gpfs/data/cbc/references/Genbank_bacteria_all_2018_11_20_15_34/bacteria_2018_11_20_15_34_concat_part2.fa  .
       - md5sum *.* > final_checksums.md5
