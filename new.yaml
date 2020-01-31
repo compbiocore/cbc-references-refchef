@@ -19,4 +19,4 @@ Genbank_bacteria_all_2018_11_20_15_34_part1:
         status: false
       commands:
       - rsync -av --progress /gpfs/data/cbc/references/Genbank_bacteria_all_2018_11_20_15_34/bacteria_2018_11_20_15_34_concat_part1.fa  .
-      - md5 *.* > final_checksums.md5
+      - md5sum *.* > final_checksums.md5
