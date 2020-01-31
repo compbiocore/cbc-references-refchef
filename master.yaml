@@ -8695,3 +8695,16 @@ Genbank_bacteria_all_2018_11_20_15_34_part3:
       - metadata.txt
       - final_checksums.md5
       uuid: 34aaa373-6e32-394d-acad-ef7518200728
+    - component: primary
+      complete:
+        status: true
+        time: '2020-01-31 11:47:34.928704'
+      commands:
+      - rsync -av --progress /gpfs/data/cbc/references/Genbank_bacteria_all_2018_11_20_15_34/bacteria_2018_11_20_15_34_concat_part3.fa  .
+      - md5sum *.* > final_checksums.md5
+      location: /gpfs/data/shared/databases/refchef_refs/Genbank_bacteria_all_2018_11_20_15_34_part3/primary
+      files:
+      - bacteria_2018_11_20_15_34_concat_part3.fa
+      - metadata.txt
+      - final_checksums.md5
+      uuid: 34aaa373-6e32-394d-acad-ef7518200728
