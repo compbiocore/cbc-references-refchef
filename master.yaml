@@ -649,6 +649,28 @@ grcm38_p5:
       - Mus_musculus.GRCm38.cdna.all.salmon3.fa
       - final_checksums.md5
       uuid: 482c6e70-389e-3559-8c19-d86cac067060
+    - component: bwa_index
+      src: beed20fa-f897-35bf-808d-0c1ee6173274
+      complete:
+        status: true
+        time: '2020-01-31 13:14:58.874052'
+      commands:
+      - ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/primary/Mus_musculus.GRCm38.dna.primary_assembly.fa
+        /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bwa_index/Mus_musculus.GRCm38.dna.primary_assembly.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bwa_index
+      - bwa index us_musculus.GRCm38.dna.primary_assembly.fa
+      - md5sum *.* > final_checksums.md5
+      location: /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bwa_index
+      files:
+      - Mus_musculus.GRCm38.dna.primary_assembly.fa.ann
+      - Mus_musculus.GRCm38.dna.primary_assembly.fa.pac
+      - Mus_musculus.GRCm38.dna.primary_assembly.fa.bwt
+      - Mus_musculus.GRCm38.dna.primary_assembly.fa.amb
+      - Mus_musculus.GRCm38.dna.primary_assembly.fa
+      - metadata.txt
+      - Mus_musculus.GRCm38.dna.primary_assembly.fa.sa
+      - final_checksums.md5
+      uuid: 482c6e70-389e-3559-8c19-d86cac067060
 nt_db:
   metadata:
     name: nt_db
