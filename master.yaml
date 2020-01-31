@@ -694,6 +694,21 @@ grcm38_p5:
       - final_checksums.md5
       - grcm38_p5.3.bt2
       uuid: 482c6e70-389e-3559-8c19-d86cac067060
+    - component: bismark_index
+      src: beed20fa-f897-35bf-808d-0c1ee6173274
+      complete:
+        status: true
+        time: '2020-01-31 13:26:05.791519'
+      commands:
+      - ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/primary/Mus_musculus.GRCm38.dna.primary_assembly.fa
+        /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bismark_index/Mus_musculus.GRCm38.dna.primary_assembly.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bismark_index
+      - bismark_genome_preparation .
+      - md5sum *.* > final_checksums.md5
+      location: /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bismark_index
+      files:
+      - metadata.txt
+      uuid: 24c6e462-4457-11ea-8845-40f2e9026674
 nt_db:
   metadata:
     name: nt_db
