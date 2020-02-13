@@ -473,6 +473,44 @@ grch37_release87:
       - final_checksums.md5
       - Homo_sapiens.GRCh37.dna.primary_assembly.fa.pac
       uuid: 2161bca8-8c03-3b52-958a-a232158e2c71
+    - component: gmapdb_2017-01-14
+      complete:
+        status: true
+        time: '2020-02-13 14:37:35.306595'
+      src: ce1b1916-da1c-11e9-bf4d-40f2e9026674
+      commands:
+      - source /gpfs/runtime/cbc_conda/bin/activate_cbc_conda
+      - /gpfs/runtime/cbc_conda/cbc_conda_v1_root/envs/bioflows/bin/gmap_make_ref.sh
+        Ensembl_Homo_sapiens_GRCh37 /gpfs/data/shared/databases/refchef_refs/grch37_release87/primary/Homo_sapiens.GRCh37.dna.primary_assembly.fa
+        /gpfs/data/shared/databases/refchef_refs/grch37_release87/gtf/Homo_sapiens.GRCh37.87.gtf
+      location: /gpfs/data/shared/databases/refchef_refs/grch37_release87/gmapdb_2017-01-14
+      files:
+      - Ensembl_Homo_sapiens_GRCh37.maps
+      - Ensembl_Homo_sapiens_GRCh37.ref153offsets64meta
+      - Ensembl_Homo_sapiens_GRCh37.genomecomp
+      - Ensembl_Homo_sapiens_GRCh37.sachildexc
+      - Ensembl_Homo_sapiens_GRCh37.saindex64strm
+      - Ensembl_Homo_sapiens_GRCh37.ref153offsets64strm
+      - Ensembl_Homo_sapiens_GRCh37.chrsubset
+      - Ensembl_Homo_sapiens.GRCh37.87.introns
+      - Ensembl_Homo_sapiens_GRCh37.ref153positions
+      - Ensembl_Homo_sapiens.GRCh37.dna.primary_assembly.fa
+      - Ensembl_Homo_sapiens_GRCh37.version
+      - Ensembl_Homo_sapiens_GRCh37.chromosome
+      - Ensembl_Homo_sapiens_GRCh37.salcpchilddc
+      - Ensembl_Homo_sapiens_GRCh37.contig
+      - Ensembl_Homo_sapiens_GRCh37.sarray
+      - Ensembl_Homo_sapiens_GRCh37.saindex64meta
+      - Ensembl_Homo_sapiens_GRCh37.sachildguide1024
+      - Ensembl_Homo_sapiens_GRCh37.chromosome.iit
+      - Ensembl_Homo_sapiens_GRCh37.contig.iit
+      - Ensembl_Homo_sapiens.GRCh37.87.gtf
+      - Ensembl_Homo_sapiens.GRCh37.87.splicesites
+      - metadata.txt
+      - Ensembl_Homo_sapiens_GRCh37.salcpexc
+      - Ensembl_Homo_sapiens_GRCh37.genomebits128
+      - Ensembl_Homo_sapiens_GRCh37.salcpguide1024
+      uuid: 48e57f7a-4e98-11ea-b3b2-40f2e9026674
 grcm38_p5:
   metadata:
     name: grcm38_p5
