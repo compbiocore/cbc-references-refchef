@@ -1,0 +1,13 @@
+2020-03-10 13:24:59,703 INFO: 
+        ===========================================
+        REFCHEF 🐶
+        -------------------------------------------
+        - References will be downloaded to: /gpfs/data/shared/databases/refchef_refs
+        - Remote repository for master.yaml compbiocore/cbc-references-refchef
+        - Local repository for master.yaml /gpfs/data/shared/databases/cbc-references-refchef
+        - Logs files: /gpfs/data/shared/databases/cbc-references-refchef/logs/
+        -------------------------------------------
+        
+2020-03-10 13:24:59,703 DEBUG: parse kwarg method: 2 ...
+2020-03-10 13:25:00,676 ERROR: [Errno 2] No such file or directory: '/gpfs/data/shared/databases/cbc-references-refchef/test.yam-l'
+2020-03-10 13:25:00,676 ERROR: file not found: test.yam-l (/gpfs/data/shared/databases/cbc-references-refchef/test.yam-l)

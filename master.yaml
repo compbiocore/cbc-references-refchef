@@ -8840,3 +8840,33 @@ Genbank_UniVec_2018_11_28:
       - final_checksums.md5
       - UniVec_2018_11_28.fa
       uuid: a6f91011-e6c2-32c1-90c7-77b361881667
+test:
+  metadata:
+    name: test
+    common_name: test
+    ncbi_taxon_id: test
+    organism: test
+    organization: test
+    custom: false
+    description: none
+    downloader: joselynn wallace
+    ensembl_release_number: null
+    accession:
+      genbank: null
+      refseq: null
+  levels:
+    references:
+    - component: primary
+      complete:
+        status: true
+        time: '2020-03-10 13:25:25.194943'
+      commands:
+      - wget ftp://ftp.ensembl.org/pub/release-87/fasta/saccharomyces_cerevisiae/dna/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa.gz
+      - wget ftp://ftp.ensembl.org/pub/release-87/fasta/saccharomyces_cerevisiae/dna/CHECKSUMS
+      - md5sum *.gz > postdownload-checksums.md5
+      - gunzip Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa.gz > accharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
+      - md5sum *.* > final_checksums.md5
+      location: /gpfs/data/shared/databases/refchef_refs/test/primary
+      files:
+      - metadata.txt
+      uuid: 20ec0e60-62f4-11ea-8b54-40f2e9026674
