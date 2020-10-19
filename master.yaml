@@ -226,18 +226,18 @@ drosophila-melanogaster-bdgp6rel9:
       - final_checksums.md5
       uuid: e3e260a5-87ff-36a1-8526-c73a9b03ec44
     indices:
-    - component: bwa_index
+    - component: bwa_index_0_7_17
       complete:
         status: true
         time: '2019-09-27 10:40:18.828504'
       src: f00c482a-8550-31b9-89fb-803d4f9edbb5
       commands:
       - ln -s /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/primary/Drosophila_melanogaster.BDGP6.dna.toplevel.fa
-        /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/bwa_index/Drosophila_melanogaster.BDGP6.dna.toplevel.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/bwa_index
+        /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/bwa_index_0_7_17/Drosophila_melanogaster.BDGP6.dna.toplevel.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/bwa_index_0_7_17
       - bwa index Drosophila_melanogaster.BDGP6.dna.toplevel.fa
       - md5sum *.* > final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/bwa_index
+      location: /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/bwa_index_0_7_17
       files:
       - Drosophila_melanogaster.BDGP6.dna.toplevel.fa.ann
       - Drosophila_melanogaster.BDGP6.dna.toplevel.fa.pac
@@ -248,18 +248,18 @@ drosophila-melanogaster-bdgp6rel9:
       - metadata.txt
       - final_checksums.md5
       uuid: 6206259e-fe61-35a2-9773-6a491c17aa11
-    - component: bowtie2_index
+    - component: bowtie2_index_2_3_0
       complete:
         status: true
         time: '2019-10-29 16:24:40.073570'
       src: f00c482a-8550-31b9-89fb-803d4f9edbb5
       commands:
       - ln -s /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/primary/Drosophila_melanogaster.BDGP6.dna.toplevel.fa
-        /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/bowtie2_index/Drosophila_melanogaster.BDGP6.dna.toplevel.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/bowtie2_index
+        /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/bowtie2_index_2_3_0/Drosophila_melanogaster.BDGP6.dna.toplevel.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/bowtie2_index_2_3_0
       - bowtie2-build Drosophila_melanogaster.BDGP6.dna.toplevel.fa drosophila-melanogaster-bdgp6rel9
       - md5sum *.* > final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/bowtie2_index
+      location: /gpfs/data/shared/databases/refchef_refs/drosophila-melanogaster-bdgp6rel9/bowtie2_index_2_3_0
       files:
       - drosophila-melanogaster-bdgp6rel9.4.bt2
       - drosophila-melanogaster-bdgp6rel9.2.bt2
@@ -339,12 +339,12 @@ wbps8_ws256:
         ~ ">" ) {split($1,a,".");$1=a[1]; split($2,b,"."); $2=b[1];} print }' > caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.salmon2.fa
       - cat caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.fa | awk '{if($1
         ~ ">" ) {split($2,b,"."); $2=b[1];} print }' > caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.salmon3.fa
-      - mkdir salmon_index
+      - mkdir salmon_index_0_11_2
       - salmon index -t caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.fa
-        -i salmon_index/c_elegans_PRJNA13758_WBPS8_mRNA_orig_index  --type quasi -k
+        -i salmon_index_0_11_2/c_elegans_PRJNA13758_WBPS8_mRNA_orig_index  --type quasi -k
         25
       - salmon index -t caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.salmon2.fa
-        -i salmon_index/c_elegans_PRJNA13758_WBPS8_mRNA_transcripts_index --type quasi
+        -i salmon_index_0_11_2/c_elegans_PRJNA13758_WBPS8_mRNA_transcripts_index --type quasi
         -k 25
       - md5sum *.* > final_checksums.md5
       location: /gpfs/data/shared/databases/refchef_refs/wbps8_ws256/cdna-trandscriptome
@@ -352,7 +352,7 @@ wbps8_ws256:
       - caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.salmon.fa
       - caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.salmon3.fa
       - caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.fa.gz.1
-      - salmon_index_test
+      - salmon_index_0_11_2_test
       - provinence.txt
       - caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.fa.gz
       - caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.fa
@@ -397,8 +397,8 @@ grch37_release87:
       - gunzip -c Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz > Homo_sapiens.GRCh37.dna.primary_assembly.fa
       location: /gpfs/data/shared/databases/refchef_refs/grch37_release87/primary
       files:
-      - bwa_index
-      - bowtie2_index
+      - bwa_index_0_7_17
+      - bowtie2_index_2_3_0
       - provinence.txt
       - Homo_sapiens.GRCh37.87.gtf.gz
       - metadata.txt
@@ -424,19 +424,19 @@ grch37_release87:
       - Homo_sapiens.GRCh37.87.gtf
       uuid: 7c0adc0d-a657-3919-8b77-9bb294b7823c
     indices:
-    - component: bowtie2_index
+    - component: bowtie2_index_2_3_0
       complete:
         status: true
         time: '2019-11-11 11:26:29.370497'
       src: ce1b1916-da1c-11e9-bf4d-40f2e9026674
       commands:
       - ln -s /gpfs/data/shared/databases/refchef_refs/grch37_release87/primary/Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz
-        /gpfs/data/shared/databases/refchef_refs/grch37_release87/bowtie2_index/Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz
-      - cd /gpfs/data/shared/databases/refchef_refs/grch37_release87/bowtie2_index
+        /gpfs/data/shared/databases/refchef_refs/grch37_release87/bowtie2_index_2_3_0/Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz
+      - cd /gpfs/data/shared/databases/refchef_refs/grch37_release87/bowtie2_index_2_3_0
       - gunzip -c Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz > Homo_sapiens.GRCh37.dna.primary_assembly.fa
       - bowtie2-build Homo_sapiens.GRCh37.dna.primary_assembly.fa grch37_rel87
       - md5sum *.* > final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/grch37_release87/bowtie2_index
+      location: /gpfs/data/shared/databases/refchef_refs/grch37_release87/bowtie2_index_2_3_0
       files:
       - grch37_rel87.3.bt2
       - grch37_rel87.rev.1.bt2
@@ -449,19 +449,19 @@ grch37_release87:
       - final_checksums.md5
       - grch37_rel87.rev.2.bt2
       uuid: 24b510d3-0a73-3211-98da-274317c2a032
-    - component: bwa_index
+    - component: bwa_index_0_7_17
       complete:
         status: true
         time: '2019-11-11 12:42:06.679344'
       src: ce1b1916-da1c-11e9-bf4d-40f2e9026674
       commands:
       - ln -s /gpfs/data/shared/databases/refchef_refs/grch37_release87/primary/Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz
-        /gpfs/data/shared/databases/refchef_refs/grch37_release87/bwa_index/Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz
-      - cd /gpfs/data/shared/databases/refchef_refs/grch37_release87/bwa_index
+        /gpfs/data/shared/databases/refchef_refs/grch37_release87/bwa_index_0_7_17/Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz
+      - cd /gpfs/data/shared/databases/refchef_refs/grch37_release87/bwa_index_0_7_17
       - gunzip -c Homo_sapiens.GRCh37.dna.primary_assembly.fa.gz > Homo_sapiens.GRCh37.dna.primary_assembly.fa
       - bwa index Homo_sapiens.GRCh37.dna.primary_assembly.fa
       - md5sum *.* > final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/grch37_release87/bwa_index
+      location: /gpfs/data/shared/databases/refchef_refs/grch37_release87/bwa_index_0_7_17
       files:
       - Homo_sapiens.GRCh37.dna.primary_assembly.fa.ann
       - Homo_sapiens.GRCh37.dna.primary_assembly.fa.sa
@@ -597,15 +597,15 @@ grcm38_p5:
       - final_checksums.md5
       uuid: b04a1dd9-a779-3e2e-afba-e8c928bc6a9a
     indices:
-    - component: salmon_index
+    - component: salmon_index_0_11_2
       complete:
         status: true
         time: '2019-12-04 10:51:30.768189'
       src: 54a37969-f245-3a78-aec3-d2c6034bbd27
       commands:
       - ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/cdna-transcriptome/Mus_musculus.GRCm38.cdna.all.fa
-        /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index/Mus_musculus.GRCm38.cdna.all.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index
+        /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index_0_11_2/Mus_musculus.GRCm38.cdna.all.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index_0_11_2
       - cat Mus_musculus.GRCm38.cdna.all.fa | awk '{if($1 ~ ">" ) {split($1,a,".");$1=a[1]};
         print }' > Mus_musculus.GRCm38.cdna.all.salmon.fa
       - cat Mus_musculus.GRCm38.cdna.all.fa | awk '{if($1 ~ ">" ) {split($1,a,".");$1=a[1];
@@ -616,18 +616,18 @@ grcm38_p5:
         --type quasi -k 25
       - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i Mus_musculus.GRCm38.cdna.all_transcripts_index
         --type quasi -k 31
-      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_fmd_index
+      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i salmon_index_0_11_2/Mus_musculus.GRCm38.cdna.all_transcripts_fmd_index
         --type fmd
-      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon2.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_sal_index
+      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon2.fa -i salmon_index_0_11_2/Mus_musculus.GRCm38.cdna.all_transcripts_sal_index
         --type quasi -k 25
-      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon3.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_sal3_index
+      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon3.fa -i salmon_index_0_11_2/Mus_musculus.GRCm38.cdna.all_transcripts_sal3_index
         --type quasi -k 25
-      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_index
+      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i salmon_index_0_11_2/Mus_musculus.GRCm38.cdna.all_transcripts_index
         --type quasi -k 31
       - md5sum *.* > final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index
+      location: /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index_0_11_2
       files:
-      - salmon_index
+      - salmon_index_0_11_2
       - Mus_musculus.GRCm38.cdna.all_transcripts_index
       - Mus_musculus.GRCm38.cdna.all.salmon.fa
       - Mus_musculus.GRCm38.cdna.all_orig_index
@@ -637,15 +637,15 @@ grcm38_p5:
       - Mus_musculus.GRCm38.cdna.all.salmon3.fa
       - final_checksums.md5
       uuid: 482c6e70-389e-3559-8c19-d86cac067060
-    - component: salmon_index
+    - component: salmon_index_0_11_2
       complete:
         status: true
         time: '2019-12-04 11:02:53.817264'
       src: 54a37969-f245-3a78-aec3-d2c6034bbd27
       commands:
       - ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/cdna-transcriptome/Mus_musculus.GRCm38.cdna.all.fa
-        /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index/Mus_musculus.GRCm38.cdna.all.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index
+        /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index_0_11_2/Mus_musculus.GRCm38.cdna.all.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index_0_11_2
       - cat Mus_musculus.GRCm38.cdna.all.fa | awk '{if($1 ~ ">" ) {split($1,a,".");$1=a[1]};
         print }' > Mus_musculus.GRCm38.cdna.all.salmon.fa
       - cat Mus_musculus.GRCm38.cdna.all.fa | awk '{if($1 ~ ">" ) {split($1,a,".");$1=a[1];
@@ -656,18 +656,18 @@ grcm38_p5:
         --type quasi -k 25
       - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i Mus_musculus.GRCm38.cdna.all_transcripts_index
         --type quasi -k 31
-      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_fmd_index
+      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i salmon_index_0_11_2/Mus_musculus.GRCm38.cdna.all_transcripts_fmd_index
         --type fmd
-      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon2.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_sal_index
+      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon2.fa -i salmon_index_0_11_2/Mus_musculus.GRCm38.cdna.all_transcripts_sal_index
         --type quasi -k 25
-      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon3.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_sal3_index
+      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon3.fa -i salmon_index_0_11_2/Mus_musculus.GRCm38.cdna.all_transcripts_sal3_index
         --type quasi -k 25
-      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_index
+      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i salmon_index_0_11_2/Mus_musculus.GRCm38.cdna.all_transcripts_index
         --type quasi -k 31
       - md5sum *.* > final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index
+      location: /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index_0_11_2
       files:
-      - salmon_index
+      - salmon_index_0_11_2
       - Mus_musculus.GRCm38.cdna.all_transcripts_index
       - Mus_musculus.GRCm38.cdna.all.salmon.fa
       - Mus_musculus.GRCm38.cdna.all_orig_index
@@ -677,15 +677,15 @@ grcm38_p5:
       - Mus_musculus.GRCm38.cdna.all.salmon3.fa
       - final_checksums.md5
       uuid: 482c6e70-389e-3559-8c19-d86cac067060
-    - component: salmon_index
+    - component: salmon_index_0_11_2
       complete:
         status: true
         time: '2019-12-04 11:14:18.997289'
       src: 54a37969-f245-3a78-aec3-d2c6034bbd27
       commands:
       - ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/cdna-transcriptome/Mus_musculus.GRCm38.cdna.all.fa
-        /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index/Mus_musculus.GRCm38.cdna.all.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index
+        /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index_0_11_2/Mus_musculus.GRCm38.cdna.all.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index_0_11_2
       - cat Mus_musculus.GRCm38.cdna.all.fa | awk '{if($1 ~ ">" ) {split($1,a,".");$1=a[1]};
         print }' > Mus_musculus.GRCm38.cdna.all.salmon.fa
       - cat Mus_musculus.GRCm38.cdna.all.fa | awk '{if($1 ~ ">" ) {split($1,a,".");$1=a[1];
@@ -696,21 +696,21 @@ grcm38_p5:
         --type quasi -k 25
       - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i Mus_musculus.GRCm38.cdna.all_transcripts_index
         --type quasi -k 31
-      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_fmd_index
+      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i salmon_index_0_11_2/Mus_musculus.GRCm38.cdna.all_transcripts_fmd_index
         --type fmd
-      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon2.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_sal_index
+      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon2.fa -i salmon_index_0_11_2/Mus_musculus.GRCm38.cdna.all_transcripts_sal_index
         --type quasi -k 25
-      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon3.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_sal3_index
+      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon3.fa -i salmon_index_0_11_2/Mus_musculus.GRCm38.cdna.all_transcripts_sal3_index
         --type quasi -k 25
-      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i salmon_index/Mus_musculus.GRCm38.cdna.all_transcripts_index
+      - salmon index -t Mus_musculus.GRCm38.cdna.all.salmon.fa -i salmon_index_0_11_2/Mus_musculus.GRCm38.cdna.all_transcripts_index
         --type quasi -k 31
-      - mkdir /gpfs/data/shared/databases/refchef_refs/grcm38_p5/cdna-transcriptome/salmon_index
-      - ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index/*.*
-        /gpfs/data/shared/databases/refchef_refs/grcm38_p5/cdna-transcriptome/salmon_index/
+      - mkdir /gpfs/data/shared/databases/refchef_refs/grcm38_p5/cdna-transcriptome/salmon_index_0_11_2
+      - ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index_0_11_2/*.*
+        /gpfs/data/shared/databases/refchef_refs/grcm38_p5/cdna-transcriptome/salmon_index_0_11_2/
       - md5sum *.* > final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index
+      location: /gpfs/data/shared/databases/refchef_refs/grcm38_p5/salmon_index_0_11_2
       files:
-      - salmon_index
+      - salmon_index_0_11_2
       - Mus_musculus.GRCm38.cdna.all_transcripts_index
       - Mus_musculus.GRCm38.cdna.all.salmon.fa
       - Mus_musculus.GRCm38.cdna.all_orig_index
@@ -720,18 +720,18 @@ grcm38_p5:
       - Mus_musculus.GRCm38.cdna.all.salmon3.fa
       - final_checksums.md5
       uuid: 482c6e70-389e-3559-8c19-d86cac067060
-    - component: bwa_index
+    - component: bwa_index_0_7_17
       src: beed20fa-f897-35bf-808d-0c1ee6173274
       complete:
         status: true
         time: '2020-01-31 13:14:58.874052'
       commands:
       - ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/primary/Mus_musculus.GRCm38.dna.primary_assembly.fa
-        /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bwa_index/Mus_musculus.GRCm38.dna.primary_assembly.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bwa_index
+        /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bwa_index_0_7_17/Mus_musculus.GRCm38.dna.primary_assembly.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bwa_index_0_7_17
       - bwa index us_musculus.GRCm38.dna.primary_assembly.fa
       - md5sum *.* > final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bwa_index
+      location: /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bwa_index_0_7_17
       files:
       - Mus_musculus.GRCm38.dna.primary_assembly.fa.ann
       - Mus_musculus.GRCm38.dna.primary_assembly.fa.pac
@@ -742,18 +742,18 @@ grcm38_p5:
       - Mus_musculus.GRCm38.dna.primary_assembly.fa.sa
       - final_checksums.md5
       uuid: 482c6e70-389e-3559-8c19-d86cac067060
-    - component: bowtie2_index
+    - component: bowtie2_index_2_3_0
       src: beed20fa-f897-35bf-808d-0c1ee6173274
       complete:
         status: true
         time: '2020-01-31 13:22:15.174774'
       commands:
       - ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/primary/Mus_musculus.GRCm38.dna.primary_assembly.fa
-        /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bowtie2_index/Mus_musculus.GRCm38.dna.primary_assembly.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bowtie2_index
+        /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bowtie2_index_2_3_0/Mus_musculus.GRCm38.dna.primary_assembly.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bowtie2_index_2_3_0
       - bowtie2-build Mus_musculus.GRCm38.dna.primary_assembly.fa grcm38_p5
       - md5sum *.* > final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bowtie2_index
+      location: /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bowtie2_index_2_3_0
       files:
       - grcm38_p5.rev.2.bt2
       - grcm38_p5.4.bt2
@@ -765,18 +765,18 @@ grcm38_p5:
       - final_checksums.md5
       - grcm38_p5.3.bt2
       uuid: 482c6e70-389e-3559-8c19-d86cac067060
-    - component: bismark_index
+    - component: bismark_index_0_22_3
       src: beed20fa-f897-35bf-808d-0c1ee6173274
       complete:
         status: true
         time: '2020-01-31 13:26:05.791519'
       commands:
       - ln -s /gpfs/data/shared/databases/refchef_refs/grcm38_p5/primary/Mus_musculus.GRCm38.dna.primary_assembly.fa
-        /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bismark_index/Mus_musculus.GRCm38.dna.primary_assembly.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bismark_index
+        /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bismark_index_0_22_3/Mus_musculus.GRCm38.dna.primary_assembly.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bismark_index_0_22_3
       - bismark_genome_preparation .
       - md5sum *.* > final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bismark_index
+      location: /gpfs/data/shared/databases/refchef_refs/grcm38_p5/bismark_index_0_22_3
       files:
       - metadata.txt
       uuid: 24c6e462-4457-11ea-8845-40f2e9026674
@@ -3746,18 +3746,18 @@ Escherichia_coli_K12:
       - final_checksums.md5
       uuid: c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
     indices:
-    - component: bwa_index
+    - component: bwa_index_0_7_17
       complete:
         status: true
         time: '2019-10-01 14:56:45.712903'
       src: c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
       commands:
       - ln -s /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/primary/Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
-        /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/bwa_index/Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/bwa_index
+        /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/bwa_index_0_7_17/Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/bwa_index_0_7_17
       - bwa index Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
       - md5 *.* > final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/bwa_index
+      location: /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/bwa_index_0_7_17
       files:
       - Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa.ann
       - Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa.amb
@@ -3768,18 +3768,18 @@ Escherichia_coli_K12:
       - metadata.txt
       - final_checksums.md5
       uuid: c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
-    - component: bowtie2_index
+    - component: bowtie2_index_2_3_0
       complete:
         status: true
         time: '2019-11-12 16:22:13.334529'
       src: c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
       commands:
       - ln -s /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/primary/Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
-        /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/bowtie2_index/Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/bowtie2_index
+        /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/bowtie2_index_2_3_0/Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/bowtie2_index_2_3_0
       - bowtie2-build Escherichia_coli_k_12.ASM80076v1.dna.toplevel.fa Escherichia_coli_k12
       - md5sum *.* > final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/bowtie2_index
+      location: /gpfs/data/shared/databases/refchef_refs/Escherichia_coli_K12/bowtie2_index_2_3_0
       files:
       - Escherichia_coli_k12.rev.1.bt2
       - Escherichia_coli_k12.1.bt2
@@ -3848,18 +3848,18 @@ grch38_release98:
       - final_checksums.md5
       uuid: fd2286d4-e257-3225-94a7-cd773d331290
     indices:
-    - component: bowtie2_index
+    - component: bowtie2_index_2_3_0
       complete:
         status: true
         time: '2019-11-11 15:41:57.899454'
       src: fd2286d4-e257-3225-94a7-cd773d331290
       commands:
       - ln -s /gpfs/data/shared/databases/refchef_refs/grch38_release98/primary/Homo_sapiens.GRCh38.dna.primary_assembly.fa
-        /gpfs/data/shared/databases/refchef_refs/grch38_release98/bowtie2_index/Homo_sapiens.GRCh38.dna.primary_assembly.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/grch38_release98/bowtie2_index
+        /gpfs/data/shared/databases/refchef_refs/grch38_release98/bowtie2_index_2_3_0/Homo_sapiens.GRCh38.dna.primary_assembly.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/grch38_release98/bowtie2_index_2_3_0
       - bowtie2-build Homo_sapiens.GRCh38.dna.primary_assembly.fa grch38_rel98
       - md5sum *.* > final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/grch38_release98/bowtie2_index
+      location: /gpfs/data/shared/databases/refchef_refs/grch38_release98/bowtie2_index_2_3_0
       files:
       - grch38_rel98.rev.2.bt2
       - grch38_rel98.1.bt2
@@ -3871,18 +3871,18 @@ grch38_release98:
       - metadata.txt
       - final_checksums.md5
       uuid: ae68c4f8-8bec-30c6-8349-28be4036da24
-    - component: bwa_index
+    - component: bwa_index_0_7_17
       complete:
         status: true
         time: '2019-12-11 10:42:08.918601'
       src: fd2286d4-e257-3225-94a7-cd773d331290
       commands:
       - ln -s /gpfs/data/shared/databases/refchef_refs/grch38_release98/primary/Homo_sapiens.GRCh38.dna.primary_assembly.fa
-        /gpfs/data/shared/databases/refchef_refs/grch38_release98/bwa_index/Homo_sapiens.GRCh38.dna.primary_assembly.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/grch38_release98/bwa_index
+        /gpfs/data/shared/databases/refchef_refs/grch38_release98/bwa_index_0_7_17/Homo_sapiens.GRCh38.dna.primary_assembly.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/grch38_release98/bwa_index_0_7_17
       - bwa index Homo_sapiens.GRCh38.dna.primary_assembly.fa
       - md5sum *.* > final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/grch38_release98/bwa_index
+      location: /gpfs/data/shared/databases/refchef_refs/grch38_release98/bwa_index_0_7_17
       files:
       - Homo_sapiens.GRCh38.dna.primary_assembly.fa.amb
       - Homo_sapiens.GRCh38.dna.primary_assembly.fa.ann
@@ -3967,18 +3967,18 @@ saccer3:
       - Saccharomyces_cerevisiae.R64-1-1.98.gtf
       uuid: a8d15bf6-7a67-36b7-911d-4daf174f79af
     indices:
-    - component: bwa_index
+    - component: bwa_index_0_7_17
       complete:
         status: true
         time: '2019-11-14 14:36:09.687411'
       src: 2433f3a6-0a29-34bc-8868-2fb9609d4025
       commands:
       - ln -s /gpfs/data/shared/databases/refchef_refs/saccer3/primary/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
-        /gpfs/data/shared/databases/refchef_refs/saccer3/bwa_index/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/saccer3/bwa_index
+        /gpfs/data/shared/databases/refchef_refs/saccer3/bwa_index_0_7_17/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/saccer3/bwa_index_0_7_17
       - bwa index Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
       - md5sum *.* > final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/saccer3/bwa_index
+      location: /gpfs/data/shared/databases/refchef_refs/saccer3/bwa_index_0_7_17
       files:
       - Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa.bwt
       - Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa.pac
@@ -3989,18 +3989,18 @@ saccer3:
       - final_checksums.md5
       - Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa.sa
       uuid: 91b325e3-aaa0-3d8f-af1e-79716e343bfe
-    - component: bowtie2_index
+    - component: bowtie2_index_2_3_0
       complete:
         status: true
         time: '2019-11-14 14:36:16.700487'
       src: 2433f3a6-0a29-34bc-8868-2fb9609d4025
       commands:
       - ln -s /gpfs/data/shared/databases/refchef_refs/saccer3/primary/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
-        /gpfs/data/shared/databases/refchef_refs/saccer3/bowtie2_index/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
-      - cd /gpfs/data/shared/databases/refchef_refs/saccer3/bowtie2_index
+        /gpfs/data/shared/databases/refchef_refs/saccer3/bowtie2_index_2_3_0/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/saccer3/bowtie2_index_2_3_0
       - bowtie2-build Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa saccer3
       - md5sum *.* > final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/saccer3/bowtie2_index
+      location: /gpfs/data/shared/databases/refchef_refs/saccer3/bowtie2_index_2_3_0
       files:
       - saccer3.3.bt2
       - saccer3.rev.2.bt2
