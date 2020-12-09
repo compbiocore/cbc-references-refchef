@@ -536,6 +536,40 @@ grch37_release87:
       - final_checksums.md5
       - Homo_sapiens.GRCh37.5.ht2
       uuid: 1c86abd8-bd0a-3071-a1ab-9b5ff6a5cb36
+    - component: star_index_2_7_6a
+      complete:
+        status: true
+        time: '2020-12-09 11:50:28.930872'
+      src: 6afd026e-4e97-11ea-8dd6-40f2e9026674
+      commands:
+      - ln -s /gpfs/data/shared/databases/refchef_refs/grch37_release87/primary/Homo_sapiens.GRCh37.dna.primary_assembly.fa
+        /gpfs/data/shared/databases/refchef_refs/grch37_release87/star_index_2_7_6a/Homo_sapiens.GRCh37.dna.primary_assembly.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/grch37_release87/star_index_2_7_6a
+      - STAR --runMode genomeGenerate --genomeDir /gpfs/data/shared/databases/refchef_refs/grch37_release87/star_index_2_7_6a
+        --genomeFastaFiles /gpfs/data/shared/databases/refchef_refs/grch37_release87/star_index_2_7_6a/Homo_sapiens.GRCh37.dna.primary_assembly.fa
+        --sjdbGTFfile /gpfs/data/shared/databases/refchef_refs/grch37_release87/gtf/Homo_sapiens.GRCh37.87.gtf
+      - md5sum *.* > final_checksums.md5
+      location: /gpfs/data/shared/databases/refchef_refs/grch37_release87/star_index_2_7_6a
+      files:
+      - chrName.txt
+      - exonInfo.tab
+      - SAindex
+      - Genome
+      - geneInfo.tab
+      - sjdbList.out.tab
+      - sjdbInfo.txt
+      - transcriptInfo.tab
+      - sjdbList.fromGTF.out.tab
+      - chrLength.txt
+      - genomeParameters.txt
+      - chrStart.txt
+      - SA
+      - chrNameLength.txt
+      - metadata.txt
+      - Homo_sapiens.GRCh37.dna.primary_assembly.fa
+      - final_checksums.md5
+      - exonGeTrInfo.tab
+      uuid: 5c67d3d5-9fa7-39a6-9410-310ac1cc4385
 grcm38_p5:
   metadata:
     name: grcm38_p5
