@@ -341,11 +341,11 @@ wbps8_ws256:
         ~ ">" ) {split($2,b,"."); $2=b[1];} print }' > caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.salmon3.fa
       - mkdir salmon_index_0_11_2
       - salmon index -t caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.fa
-        -i salmon_index_0_11_2/c_elegans_PRJNA13758_WBPS8_mRNA_orig_index  --type quasi -k
-        25
+        -i salmon_index_0_11_2/c_elegans_PRJNA13758_WBPS8_mRNA_orig_index  --type
+        quasi -k 25
       - salmon index -t caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.salmon2.fa
-        -i salmon_index_0_11_2/c_elegans_PRJNA13758_WBPS8_mRNA_transcripts_index --type quasi
-        -k 25
+        -i salmon_index_0_11_2/c_elegans_PRJNA13758_WBPS8_mRNA_transcripts_index --type
+        quasi -k 25
       - md5sum *.* > final_checksums.md5
       location: /gpfs/data/shared/databases/refchef_refs/wbps8_ws256/cdna-trandscriptome
       files:
@@ -511,6 +511,31 @@ grch37_release87:
       - Ensembl_Homo_sapiens_GRCh37.genomebits128
       - Ensembl_Homo_sapiens_GRCh37.salcpguide1024
       uuid: 48e57f7a-4e98-11ea-b3b2-40f2e9026674
+    - component: hisat2_index_2_2_1
+      complete:
+        status: true
+        time: '2020-12-09 11:11:23.356131'
+      src: 6afd026e-4e97-11ea-8dd6-40f2e9026674
+      commands:
+      - ln -s /gpfs/data/shared/databases/refchef_refs/grch37_release87/primary/Homo_sapiens.GRCh37.dna.primary_assembly.fa
+        /gpfs/data/shared/databases/refchef_refs/grch37_release87/hisat2_index_2_2_1/Homo_sapiens.GRCh37.dna.primary_assembly.fa
+      - cd /gpfs/data/shared/databases/refchef_refs/grch37_release87/hisat2_index_2_2_1
+      - hisat2-build Homo_sapiens.GRCh37.dna.primary_assembly.fa Homo_sapiens.GRCh37
+      - md5sum *.* > final_checksums.md5
+      location: /gpfs/data/shared/databases/refchef_refs/grch37_release87/hisat2_index_2_2_1
+      files:
+      - Homo_sapiens.GRCh37.7.ht2
+      - Homo_sapiens.GRCh37.6.ht2
+      - Homo_sapiens.GRCh37.8.ht2
+      - Homo_sapiens.GRCh37.4.ht2
+      - Homo_sapiens.GRCh37.1.ht2
+      - Homo_sapiens.GRCh37.2.ht2
+      - Homo_sapiens.GRCh37.3.ht2
+      - metadata.txt
+      - Homo_sapiens.GRCh37.dna.primary_assembly.fa
+      - final_checksums.md5
+      - Homo_sapiens.GRCh37.5.ht2
+      uuid: 1c86abd8-bd0a-3071-a1ab-9b5ff6a5cb36
 grcm38_p5:
   metadata:
     name: grcm38_p5
