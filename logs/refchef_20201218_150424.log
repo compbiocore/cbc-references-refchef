@@ -1,0 +1,121 @@
+2020-12-18 15:04:25,581 INFO: 
+        ===========================================
+        REFCHEF 🐶
+        -------------------------------------------
+        - References will be downloaded to: /gpfs/data/shared/databases/refchef_refs
+        - Remote repository for master.yaml compbiocore/cbc-references-refchef
+        - Local repository for master.yaml /gpfs/data/shared/databases/cbc-references-refchef
+        - Logs files: /gpfs/data/shared/databases/cbc-references-refchef/logs/
+        -------------------------------------------
+        
+2020-12-18 15:04:25,581 DEBUG: parse kwarg method: 2 ...
+2020-12-18 15:04:31,066 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,066 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,066 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,066 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,066 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,066 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,067 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,067 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,067 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,067 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,067 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,067 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,067 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,067 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,067 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,067 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,068 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,068 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,068 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,068 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,068 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,068 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,068 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,068 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,068 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,068 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,069 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,069 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,069 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,069 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:31,069 INFO: 
+        No references to download.
+                    
+2020-12-18 15:04:32,213 INFO: References processed: ['spur31', 'cdubliniensis_cd36', 'broad_bundle_hg19', 'drosophila-melanogaster-bdgp6rel9', 'wbps8_ws256', 'grch37_release87', 'grcm38_p5', 'nt_db', 'nr_db', 'Escherichia_coli_K12', 'grch38_release98', 'saccer3', 'spur42', 'spur50', 'grcm38_p6', 'refseq_genomic', 'refseq_rna', 'refseq_protein', 'pr2_db', 'OM-RGC', 'silva_arbfiles', 'uniprot', 'rnor60', 'Genbank_bacteria_all_2018_11_20_15_34_part1', 'Genbank_bacteria_all_2018_11_20_15_34_part2', 'Genbank_bacteria_all_2018_11_20_15_34_part3', 'Genbank_UniVec_2018_11_28']
+2020-12-18 15:04:32,213 INFO: Location of references: /gpfs/data/shared/databases/refchef_refs
+2020-12-18 15:04:34,121 INFO: 
+           type                       name             component       organization                                  uuid
+0    references       Escherichia_coli_K12               primary   ensembl bacteria  c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
+1       indices       Escherichia_coli_K12      bwa_index_0_7_17   ensembl bacteria  c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
+2       indices       Escherichia_coli_K12   bowtie2_index_2_3_0   ensembl bacteria  c87ee674-4ddc-3efe-a74e-dfe25da5d7b3
+3       indices       Escherichia_coli_K12  bedtools_genome_file   ensembl bacteria  25a17cdf-ef06-36ed-b43e-b1b608a4bbba
+4    references  Genbank_UniVec_2018_11_28               primary               ncbi  a6f91011-e6c2-32c1-90c7-77b361881667
+..          ...                        ...                   ...                ...                                   ...
+58   references                     spur50               primary             refseq  f3ba430e-6857-3919-8b81-17ff20e05557
+59   references                    uniprot               primary        uniprot.org  36c1a962-d1e6-3852-a177-047435e79855
+60   references                wbps8_ws256               primary  wormbase_parasite  27010656-d97a-11e9-9007-40f2e9026890
+61   references                wbps8_ws256   cdna-trandscriptome  wormbase_parasite  2701712c-d97a-11e9-9007-40f2e9026890
+62  annotations                wbps8_ws256                   gtf  wormbase_parasite                                   NaN
+
+[63 rows x 5 columns]

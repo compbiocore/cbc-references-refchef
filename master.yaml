@@ -359,6 +359,13 @@ wbps8_ws256:
       - caenorhabditis_elegans.PRJNA13758.WBPS8.mRNA_transcripts.salmon2.fa
       - metadata.txt
       uuid: 2701712c-d97a-11e9-9007-40f2e9026890
+    annotations:
+    - component: gtf
+      commands:
+      - wget ftp://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/WBPS8/species/caenorhabditis_elegans/PRJNA13758/caenorhabditis_elegans.PRJNA13758.WBPS8.canonical_geneset.gtf.gz
+      - gunzip -c caenorhabditis_elegans.PRJNA13758.WBPS8.canonical_geneset.gtf.gz
+        > caenorhabditis_elegans.PRJNA13758.WBPS8.canonical_geneset.gtf
+      - md5sum *.* > final_checksums.md5
 grch37_release87:
   metadata:
     name: grch37_release87

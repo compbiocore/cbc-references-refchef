@@ -1,0 +1,8 @@
+wbps8_ws256:
+  levels:
+    annotations:
+    - component: gtf
+      commands:
+      - wget ftp://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/WBPS8/species/caenorhabditis_elegans/PRJNA13758/caenorhabditis_elegans.PRJNA13758.WBPS8.canonical_geneset.gtf.gz
+      - gunzip -c caenorhabditis_elegans.PRJNA13758.WBPS8.canonical_geneset.gtf.gz > caenorhabditis_elegans.PRJNA13758.WBPS8.canonical_geneset.gtf
+      - md5sum *.* > final_checksums.md5
