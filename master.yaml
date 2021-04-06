@@ -8977,3 +8977,35 @@ Genbank_bacteria_all_2018_11_20_15_34_part3:
       - metadata.txt
       - final_checksums.md5
       uuid: 34aaa373-6e32-394d-acad-ef7518200728
+cellranger_mm10:
+  metadata:
+    name: cellranger_mm10
+    common_name: mouse
+    ncbi_taxon_id: 10090
+    organism: Mus musculus
+    organization: 10x
+    custom: false
+    description: This is the mouse reference for use with cellranger - 'Mouse reference,
+      mm10 (GENCODE vM23/Ensembl 98).'
+    downloader: Joselynn Wallace
+    ensembl_release_number: 98
+    accession:
+      genbank: null
+      refseq: null
+  levels:
+    references:
+    - component: primary
+      complete:
+        status: true
+        time: '2021-04-06 11:22:15.469842'
+      commands:
+      - wget https://cf.10xgenomics.com/supp/cell-exp/refdata-gex-mm10-2020-A.tar.gz
+      - tar -xzf refdata-gex-mm10-2020-A.tar.gz
+      - md5sum *.* > final_checksums.md5
+      location: /gpfs/data/shared/databases/refchef_refs/cellranger_mm10/primary
+      files:
+      - refdata-gex-mm10-2020-A.tar.gz
+      - refdata-gex-mm10-2020-A
+      - metadata.txt
+      - final_checksums.md5
+      uuid: 3100132d-5373-3ab5-a704-1316c57008db
