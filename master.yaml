@@ -9048,16 +9048,17 @@ S_scrofa:
     - component: primary
       complete:
         status: true
-        time: '2021-07-15 13:05:49.957154'
+        time: '2021-07-15 13:12:09.891021'
+      src: 4ddaa6db-818f-3ddc-b5f5-f3032b8e63ec
       commands:
       - mkdir /gpfs/data/shared/databases/refchef_refs/S_scrofa/bismark_0_22_3
       - ln -s /gpfs/data/shared/databases/refchef_refs/S_scrofa/primary/Sus_scrofa.Sscrofa11.1.dna.toplevel.fa
         /gpfs/data/shared/databases/refchef_refs/S_scrofa/bismark_0_22_3/Sus_scrofa.Sscrofa11.1.dna.toplevel.fa
       - bismark_genome_preparation /gpfs/data/shared/databases/refchef_refs/S_scrofa/bismark_0_22_3/
-      - md5sum /gpfs/data/shared/databases/refchef_refs/S_scrofa/bismark_0_22_3/Bisulfite_Genome/CT_conversion/*
-        > final_checksums.md5
-      - md5sum /gpfs/data/shared/databases/refchef_refs/S_scrofa/bismark_0_22_3/Bisulfite_Genome/GA_conversion/*
-        >> final_checksums.md5
+      - md5sum /gpfs/data/shared/databases/refchef_refs/S_scrofa/bismark_0_22_3/Bisulfite_Genome/CT_conversion/*.bt2
+        > /gpfs/data/shared/databases/refchef_refs/S_scrofa/bismark_0_22_3/final_checksums.md5
+      - md5sum /gpfs/data/shared/databases/refchef_refs/S_scrofa/bismark_0_22_3/Bisulfite_Genome/GA_conversion/*.bt2
+        >> /gpfs/data/shared/databases/refchef_refs/S_scrofa/bismark_0_22_3/final_checksums.md5
       location: /gpfs/data/shared/databases/refchef_refs/S_scrofa/primary
       files:
       - bismark_index
