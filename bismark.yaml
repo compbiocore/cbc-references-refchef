@@ -1,20 +1,7 @@
 S_scrofa:
-  metadata:
-    name: S_scrofa
-    common_name: porcine
-    ncbi_taxon_id: 9823
-    organism: Sus scrofa
-    organization: ensembl
-    custom: no
-    description: The genome assembly represented here corresponds to genbank assembly id GCA_000003025.6
-    downloader: Jordan Lawson
-    ensembl_release_number: 104
-    accession:
-      genbank:
-      refseq:
   levels:
-    references:
-    - component: primary
+    indices:
+    - component: bismark_0_22_3
       complete:
         status: false
       src: 4ddaa6db-818f-3ddc-b5f5-f3032b8e63ec
