@@ -1,0 +1,120 @@
+2021-07-15 13:31:53,940 INFO: 
+        ===========================================
+        REFCHEF 🐶
+        -------------------------------------------
+        - References will be downloaded to: /gpfs/data/shared/databases/refchef_refs
+        - Remote repository for master.yaml compbiocore/cbc-references-refchef
+        - Local repository for master.yaml /gpfs/data/shared/databases/cbc-references-refchef
+        - Logs files: /gpfs/data/shared/databases/cbc-references-refchef/logs/
+        -------------------------------------------
+        
+2021-07-15 13:31:53,941 DEBUG: parse kwarg method: 2 ...
+2021-07-15 13:31:59,250 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,250 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,250 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,250 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,250 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,250 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,250 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,250 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,250 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,250 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,251 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,251 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,251 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,251 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,251 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,251 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,251 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,251 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,251 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,251 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,251 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,251 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,251 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,252 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,252 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,252 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,252 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,252 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,252 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,252 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,252 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,252 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,252 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,252 INFO: 
+        No references to download.
+                    
+2021-07-15 13:31:59,252 INFO: 
+        -------------------------------------------
+        The folowing references will be downloaded:
+            - S_scrofa
+        ===========================================
+            
+2021-07-15 13:32:00,112 INFO:  🐶 RefChef... getting reference: S_scrofa, component: primary

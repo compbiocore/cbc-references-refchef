@@ -9029,7 +9029,7 @@ S_scrofa:
     - component: primary
       complete:
         status: true
-        time: '2021-07-15 12:51:21.488760'
+        time: '2021-07-15 13:37:18.002663'
       commands:
       - wget ftp://ftp.ensembl.org/pub/release-104/fasta/sus_scrofa/dna/Sus_scrofa.Sscrofa11.1.dna.toplevel.fa.gz
       - wget ftp://ftp.ensembl.org/pub/release-104/fasta/sus_scrofa/dna/CHECKSUMS
@@ -9038,30 +9038,6 @@ S_scrofa:
       - md5sum *.fa > final_checksums.md5
       location: /gpfs/data/shared/databases/refchef_refs/S_scrofa/primary
       files:
-      - bismark_index
-      - postdownload-checksums.md5
-      - CHECKSUMS
-      - Sus_scrofa.Sscrofa11.1.dna.toplevel.fa
-      - metadata.txt
-      - final_checksums.md5
-      uuid: 4ddaa6db-818f-3ddc-b5f5-f3032b8e63ec
-    - component: primary
-      complete:
-        status: true
-        time: '2021-07-15 13:12:09.891021'
-      src: 4ddaa6db-818f-3ddc-b5f5-f3032b8e63ec
-      commands:
-      - mkdir /gpfs/data/shared/databases/refchef_refs/S_scrofa/bismark_0_22_3
-      - ln -s /gpfs/data/shared/databases/refchef_refs/S_scrofa/primary/Sus_scrofa.Sscrofa11.1.dna.toplevel.fa
-        /gpfs/data/shared/databases/refchef_refs/S_scrofa/bismark_0_22_3/Sus_scrofa.Sscrofa11.1.dna.toplevel.fa
-      - bismark_genome_preparation /gpfs/data/shared/databases/refchef_refs/S_scrofa/bismark_0_22_3/
-      - md5sum /gpfs/data/shared/databases/refchef_refs/S_scrofa/bismark_0_22_3/Bisulfite_Genome/CT_conversion/*.bt2
-        > /gpfs/data/shared/databases/refchef_refs/S_scrofa/bismark_0_22_3/final_checksums.md5
-      - md5sum /gpfs/data/shared/databases/refchef_refs/S_scrofa/bismark_0_22_3/Bisulfite_Genome/GA_conversion/*.bt2
-        >> /gpfs/data/shared/databases/refchef_refs/S_scrofa/bismark_0_22_3/final_checksums.md5
-      location: /gpfs/data/shared/databases/refchef_refs/S_scrofa/primary
-      files:
-      - bismark_index
       - postdownload-checksums.md5
       - CHECKSUMS
       - Sus_scrofa.Sscrofa11.1.dna.toplevel.fa
