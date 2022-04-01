@@ -9067,3 +9067,34 @@ S_scrofa:
       - Bisulfite_Genome
       - final_checksums.md5
       uuid: 9710bb9c-1696-3589-b29b-4763ca08b773
+alphafold_data:
+  metadata:
+    name: alphafold_data
+    common_name: NA
+    ncbi_taxon_id: null
+    organism: multiple
+    organization: embl-ebi
+    custom: false
+    description: AlphaFold DB provides open access to 992,316 protein structure predictions
+      for the human proteome and other key proteins of interest, to accelerate scientific
+      research.
+    downloader: Jordan Lawson
+    ensembl_release_number: null
+    accession:
+      genbank: null
+      refseq: null
+  levels:
+    references:
+    - component: primary
+      complete:
+        status: true
+        time: '2022-04-01 14:51:05.755643'
+      commands:
+      - git clone git@github.com:kalininalab/alphafold_non_docker.git
+      - cd alphafold_non_docker
+      - bash download_db.sh -d /gpfs/data/shared/databases/refchef_refs/alphafold_data
+      - md5sum *.* > final_checksums.md5
+      location: /gpfs/data/shared/databases/refchef_refs/alphafold_data/primary
+      files:
+      - metadata.txt
+      uuid: af939b94-b1ec-11ec-ac1a-ac1f6b1b78c8
