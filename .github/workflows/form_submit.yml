@@ -24,6 +24,4 @@ jobs:
       - uses: actions/checkout@v2
       # Runs a single command using the runners shell
       - name: Get POST
-        run: |
-          echo "hello"
-          echo $!
+        run: echo $!
