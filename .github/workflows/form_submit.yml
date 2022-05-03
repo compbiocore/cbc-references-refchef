@@ -4,12 +4,6 @@ name: yaml_form
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the to-upload branch
-  push:
-    branches: [ to-upload ]
-  pull_request:
-    branches: [ to-upload ]
-
   # Allows you to run this workflow manually from the Actions tab
   repository_dispatch:
     inputs:
