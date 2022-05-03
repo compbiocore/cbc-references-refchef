@@ -1,0 +1,120 @@
+2022-04-01 14:51:01,561 INFO: 
+        ===========================================
+        REFCHEF 🐶
+        -------------------------------------------
+        - References will be downloaded to: /gpfs/data/shared/databases/refchef_refs
+        - Remote repository for master.yaml compbiocore/cbc-references-refchef
+        - Local repository for master.yaml /gpfs/data/shared/databases/cbc-references-refchef
+        - Logs files: /gpfs/data/shared/databases/cbc-references-refchef/logs/
+        -------------------------------------------
+        
+2022-04-01 14:51:01,561 DEBUG: parse kwarg method: 2 ...
+2022-04-01 14:51:05,127 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,128 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,128 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,128 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,128 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,128 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,128 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,128 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,128 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,128 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,128 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,128 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,128 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,128 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,128 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,128 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,128 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,128 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,128 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,128 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,129 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,129 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,129 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,129 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,129 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,129 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,129 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,129 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,129 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,129 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,129 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,129 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,129 INFO: 
+        No references to download.
+                    
+2022-04-01 14:51:05,129 INFO: 
+        -------------------------------------------
+        The folowing references will be downloaded:
+            - alphafold_data
+        ===========================================
+            
+2022-04-01 14:51:05,754 INFO:  🐶 RefChef... getting reference: alphafold_data, component: primary
+2022-04-01 14:51:05,755 WARNING: No final_checksums.md found. UUID will not correspond to checksum.
+2022-04-01 14:51:05,940 INFO: References processed: ['spur31', 'cdubliniensis_cd36', 'broad_bundle_hg19', 'drosophila-melanogaster-bdgp6rel9', 'wbps8_ws256', 'grch37_release87', 'grcm38_p5', 'nt_db', 'nr_db', 'Escherichia_coli_K12', 'grch38_release98', 'saccer3', 'spur42', 'spur50', 'grcm38_p6', 'refseq_genomic', 'refseq_rna', 'refseq_protein', 'pr2_db', 'OM-RGC', 'silva_arbfiles', 'uniprot', 'rnor60', 'Genbank_UniVec_2018_11_28', 'Genbank_bacteria_all_2018_11_20_15_34_part1', 'Genbank_bacteria_all_2018_11_20_15_34_part2', 'Genbank_bacteria_all_2018_11_20_15_34_part3', 'cellranger_mm10', 'S_scrofa', 'alphafold_data']
+2022-04-01 14:51:05,942 INFO: Location of references: /gpfs/data/shared/databases/refchef_refs
