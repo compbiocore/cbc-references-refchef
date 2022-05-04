@@ -24,4 +24,4 @@ jobs:
       - uses: actions/checkout@v2
       # Runs a single command using the runners shell
       - name: GetPOST
-        run: echo "${{ github.event.inputs.message }}"
+        run: echo "$GITHUB_CONTEXT"
