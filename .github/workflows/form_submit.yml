@@ -30,7 +30,7 @@ jobs:
       - name: GetMD5
         run: md5sum new_ref.yaml > new_md5.txt
       - name: EchoMD5
-        run: echo (awk '{print $1}' new_md5.txt)
+        run: (awk '{print $1}' new_md5.txt)
         
 #      - name: NewBranch
 #        run: |
