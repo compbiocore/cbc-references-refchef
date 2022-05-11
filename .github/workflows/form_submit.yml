@@ -26,7 +26,7 @@ jobs:
       - name: GetPOST
         run: 'echo "payload: ${{github.event.client_payload.response}}"'
       - name: test
-        run: 'echo "${{github.event.client_payload.id}}"'
+        run: 'echo "${{toJson(github)}}"'
 #      - name: MakeYaml
 #        run: 'echo "payload: ${{ github.event.client_payload.response}}" > new_ref.yaml'
 #      - name: GitPush
