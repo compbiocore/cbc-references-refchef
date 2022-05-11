@@ -30,9 +30,7 @@ jobs:
       - name: GetMD5
         run: md5sum new_ref.yaml > new_md5.txt
       - name: CheckMD5
-        run: new_md5='echo "$(awk '{print $1}' new_md5.txt)"'
-      - name: EchoMD4
-        run: 'echo "${new_md5}"'
+        run: 'echo "$(awk '{print $1}' new_md5.txt)"'
 #      - name: NewBranch
 #        run: |
 #          git config --global user.email 'joselynn_wallace@brown.edu'
