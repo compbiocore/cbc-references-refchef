@@ -28,7 +28,7 @@ jobs:
       - name: MakeYaml
         run: 'echo "payload: ${{ github.event.client_payload.response}}" > new_ref.yaml'
       - name: GetMD5
-        run: md5sum new_ref.yaml
+        run: md5sum new_ref.yaml | awk '{print $1}'
 #      - name: GitPush
 #        run: |
 #          git config --global user.email 'joselynn_wallace@brown.edu'
