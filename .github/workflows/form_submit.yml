@@ -34,8 +34,7 @@ jobs:
       - name: assignMD5
         run: new_md5=(awk '{print $1}' new_md5.txt)
       - name: echoMD5
-        run: 'echo ${new_md5}'
-        
+        run: 'echo "${{new_md5}}"'
 #      - name: NewBranch
 #        run: |
 #          git config --global user.email 'joselynn_wallace@brown.edu'
