@@ -29,6 +29,8 @@ jobs:
         run: 'echo "payload: ${{ github.event.client_payload.response}}" > new_ref.yaml'
       - name: GitPush
         run: |
+          git config --global user.email 'joselynn_wallace@brown.edu'
+          git config --global user.name 'joselynn wallace'
           git add new_ref.yaml
           git commit -m 'adding new_ref.yaml'
           git push  
