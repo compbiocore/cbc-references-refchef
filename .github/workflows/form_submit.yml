@@ -35,7 +35,7 @@ jobs:
         run: |
           git config --global user.email 'joselynn_wallace@brown.edu'
           git config --global user.name 'joselynn wallace'
-          git checkout -b (awk '{print $1}' new_md5.txt)
+#          git checkout -b (awk '{print $1}' new_md5.txt)
 #          git add new_ref.yaml
 #          git commit -m 'adding new_ref.yaml'
 #          git push --set-upstream origin ${new_md5} 
