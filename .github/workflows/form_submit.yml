@@ -29,16 +29,13 @@ jobs:
         run: 'echo "payload: ${{ github.event.client_payload.response}}" > new_ref.yaml'
       - name: GetMD5
         run: md5sum new_ref.yaml > new_md5.txt
-      - name: AssignMD5
-        run: new_md5=(awk '{print $1}' new_md5.txt)
-      - name: echo
-        run: echo ${new_md5}     
-#      - name: GitPush
-#        run: |
-#          git config --global user.email 'joselynn_wallace@brown.edu'
-#          git config --global user.name 'joselynn wallace'
-#          git add new_ref.yaml
-#          git commit -m 'adding new_ref.yaml'
-#          git push  
-        
-
+      - name: CheckMD5
+        run: (awk '{print $1}' new_md5.txt)
+      - name: NewBranch
+        run: |
+          git config --global user.email 'joselynn_wallace@brown.edu'
+          git config --global user.name 'joselynn wallace'
+          git checkout -b (awk '{print $1}' new_md5.txt) 
+          git add new_ref.yaml
+          git commit -m 'adding new_ref.yaml'
+          git push --set-upstream origin (awk '{print $1}' new_md5.txt) 
