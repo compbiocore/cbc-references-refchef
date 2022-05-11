@@ -38,4 +38,4 @@ jobs:
           git checkout -b `(awk '{print $1}' new_md5.txt)`
           git add new_ref.yaml
           git commit -m 'adding new_ref.yaml'
-          git push --set-upstream origin testing_branch
+          git push --set-upstream origin `(awk '{print $1}' new_md5.txt)`
