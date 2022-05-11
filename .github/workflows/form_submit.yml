@@ -25,5 +25,10 @@ jobs:
       # Runs a single command using the runners shell
       - name: GetPOST
         run: 'echo "payload: ${{ github.event.client_payload.response}}"'
-      - name: GetName
-        run: 'echo "payload: ${{ github.event.client_payload.response.name}}"'
+      - name: MakeYaml
+        run: 'echo "payload: ${{ github.event.client_payload.response}}" > new_ref.yaml'
+      - name: GitPush
+        run: |
+          git add new_ref.yaml
+          git commit -m 'adding new_ref.yaml'
+          git push
