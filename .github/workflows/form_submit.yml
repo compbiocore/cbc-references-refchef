@@ -28,9 +28,9 @@ jobs:
       - name: MakeYaml
         run: 'echo "payload: ${{ github.event.client_payload.response}}" > new_ref.yaml'
       - name: GetMD5
-        run: md5hash=(md5sum new_ref.yaml | awk '{print $1}')
+        run: md5sum new_ref.yaml > new_md5.txt
       - name: echo
-        run: 'echo ${md5hash}'
+        run: (awk '{print $1}' new_md5.txt)
 #      - name: GitPush
 #        run: |
 #          git config --global user.email 'joselynn_wallace@brown.edu'
