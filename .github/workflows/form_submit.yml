@@ -31,8 +31,10 @@ jobs:
         run: md5sum new_ref.yaml > new_md5.txt
       - name: awkMD5
         run: (awk '{print $1}' new_md5.txt)
-      - name: EchoMD5
-        run: new_md5=(awk '{print $1}' new_md5.txt)        
+      - name: assignMD5
+        run: new_md5=(awk '{print $1}' new_md5.txt)
+      - name: echoMD5
+        run: 'echo ${new_md5}'
         
 #      - name: NewBranch
 #        run: |
