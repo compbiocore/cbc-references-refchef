@@ -28,7 +28,7 @@ jobs:
       - name: MakeYaml
         run: 'echo "payload: ${{ github.event.client_payload.response}}" > new_ref.yaml'
       - name: GetMD5
-        run: 'md5sum new_ref.yaml > new_md5.txt'
+        run: md5sum new_ref.yaml > new_md5.txt
       - name: CheckMD5
         run: 'echo $(awk '{print $1}' new_md5.txt)'
 #      - name: NewBranch
