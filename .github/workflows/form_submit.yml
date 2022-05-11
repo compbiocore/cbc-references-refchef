@@ -26,7 +26,7 @@ jobs:
       - name: GetPOST
         run: 'echo "${{ github.event.client_payload.response }}"'
       - name: GetMD5
-        run: 'echo  "${{ github.event.client_payload.response }} | md5sum "'
+        run: 'echo  "${{ github.event.client_payload.response }} " | md5sum '
 #      - name: MakeYaml
 #        run: 'echo "payload: ${{ github.event.client_payload.response}}" > new_ref.yaml'
 #      - name: GitPush
