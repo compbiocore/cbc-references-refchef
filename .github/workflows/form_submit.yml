@@ -26,4 +26,4 @@ jobs:
       - name: GetPOST
         run: 'echo "payload: ${{ github.event.client_payload.response}}"'
       - name: GetName
-        run: 'echo "payload: ${{ github.event.client_payload.response.name}}"
+        run: 'echo "payload: ${{ github.event.client_payload.response.name}}"'
