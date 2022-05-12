@@ -26,7 +26,7 @@ jobs:
       - name: GetPOST
         run: 'echo "${{ github.event.client_payload.response }}"'
       - name: MakeYaml
-        run: 'echo "payload: ${{ github.event.client_payload.response}}" > new_ref.yaml'
+        run: 'cat ${{ github.event.client_payload.response}} > new_ref.yaml'
       - name: GetMD5
         run: md5sum new_ref.yaml > new_md5.txt
       - name: awkMD5
