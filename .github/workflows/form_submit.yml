@@ -23,12 +23,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       # Runs a single command using the runners shell
-      - name: GetPOST
-        run: 'echo "${{ github.event.client_payload.response }}"'
       - name: MakeYaml
         run: "echo '${{ github.event.client_payload.response}}' > new_ref.yaml"
       - name: GetMD5
         run: md5sum new_ref.yaml > new_md5.txt
+      - name: testMD5
+        run: (md5sum new_ref.yaml | (awk '{print $1}'))       
       - name: awkMD5
         run: (awk '{print $1}' new_md5.txt)
       - name: NewBranch
