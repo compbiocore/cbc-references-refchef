@@ -25,17 +25,13 @@ jobs:
       # Runs a single command using the runners shell
       - name: MakeYaml
         run: "echo '${{ github.event.client_payload.response}}' > new_ref.yaml"
-      - name: GetMD5
-        run: md5sum new_ref.yaml > new_md5.txt
-      - name: testMD5
+      - name: checkMD5
         run: (md5sum new_ref.yaml | (awk '{print $1}'))       
-      - name: awkMD5
-        run: (awk '{print $1}' new_md5.txt)
       - name: NewBranch
         run: |
           git config --global user.email 'joselynn_wallace@brown.edu'
           git config --global user.name 'joselynn wallace'
-          git checkout -B `(awk '{print $1}' new_md5.txt)`
+          git checkout -B `(md5sum new_ref.yaml | (awk '{print $1}'))`
           git add new_ref.yaml
           git commit -m 'adding new_ref.yaml'
-          git push --set-upstream origin `(awk '{print $1}' new_md5.txt)`
+          git push --set-upstream origin `(md5sum new_ref.yaml | (awk '{print $1}'))`
