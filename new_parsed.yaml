@@ -1,0 +1,24 @@
+aaa:
+  metadata:
+    name: aaa
+    common_name: aaa
+    custom: 'No'
+    description: aaa
+    downloader: joselynn wallace
+    ncbi_taxon_id: null
+    ensembl_release_number: null
+    accession:
+      genbank: aaa
+      refseq: aaa
+    organism: aaa
+    organization: aaa
+    category: genomics
+  levels:
+    references:
+    - component: primary
+      complete:
+        status: 'false'
+      commands:
+      - ln -s /Users/jwalla12/references/S_cerevisiae/primary/Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa ./Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa
+      - bowtie2-build Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa S_cerevisiae
+      - md5 ./*.* > ./final_checksums.md5
