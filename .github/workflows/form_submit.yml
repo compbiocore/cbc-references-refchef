@@ -36,6 +36,6 @@ jobs:
           git config --global user.name 'joselynn wallace'
           git checkout -B `(md5sum new_ref.yaml | (awk '{print $1}'))`
           python parser.py 
-          git add new_parsed.yaml
+          git add .
           git commit -m 'adding new_parsed.yaml'
-          git push --set-upstream origin `(md5sum new_parsed.yaml | (awk '{print $1}'))`
+          git push --set-upstream origin `(md5sum new_ref.yaml | (awk '{print $1}'))`
