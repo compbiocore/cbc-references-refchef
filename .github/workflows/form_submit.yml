@@ -22,6 +22,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+        with:
+          python-version: 3.9      
       # Runs a single command using the runners shell
       - name: MakeYaml
         run: "echo '${{ github.event.client_payload.response}}' > new_ref.yaml"
@@ -32,6 +34,7 @@ jobs:
           git config --global user.email 'joselynn_wallace@brown.edu'
           git config --global user.name 'joselynn wallace'
           git checkout -B `(md5sum new_ref.yaml | (awk '{print $1}'))`
-          git add new_ref.yaml
-          git commit -m 'adding new_ref.yaml'
-          git push --set-upstream origin `(md5sum new_ref.yaml | (awk '{print $1}'))`
+          python parser.py 
+          git add new_parsed.yaml
+          git commit -m 'adding new_parsed.yaml'
+          git push --set-upstream origin `(md5sum new_parsed.yaml | (awk '{print $1}'))`
