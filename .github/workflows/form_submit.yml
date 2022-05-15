@@ -23,7 +23,8 @@ jobs:
       - name: Set up Python 
         uses: actions/setup-python@v2
         with:
-          python-version: 3.9      
+          python-version: 3.9  
+      - run: pip install -r requirements.txt
       # Runs a single command using the runners shell
       - name: MakeYaml
         run: "echo '${{ github.event.client_payload.response}}' > new_ref.yaml"
