@@ -1,0 +1,22 @@
+test:
+  metadata:
+    name: test
+    common_name: ''
+    custom: null
+    description: ''
+    downloader: joselynn wallace
+    ncbi_taxon_id: null
+    ensembl_release_number: null
+    accession:
+      genbank: ''
+      refseq: ''
+    organism: test
+    organization: ''
+    category: null
+  levels:
+    references:
+    - component: primary
+      complete:
+        status: 'false'
+      commands:
+      - test
