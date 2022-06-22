@@ -1,5 +1,3 @@
-# This is a basic workflow to help you get started with Actions
-
 name: yaml_form
 
 # Controls when the workflow will run
@@ -22,20 +20,22 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - name: Set up Python 
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9  
+      - run: pip install -r requirements.txt
       # Runs a single command using the runners shell
-      - name: GetPOST
-        run: 'echo "${{ github.event.client_payload.response }}"'
       - name: MakeYaml
-        run: 'echo "payload: ${{ github.event.client_payload.response}}" > new_ref.yaml'
-      - name: GetMD5
-        run: md5sum new_ref.yaml > new_md5.txt
-      - name: awkMD5
-        run: (awk '{print $1}' new_md5.txt)
+        run: "echo '${{ github.event.client_payload.response}}' > new_ref.yaml"
+      - name: CheckMD5
+        run: (md5sum new_ref.yaml | (awk '{print $1}'))       
       - name: NewBranch
         run: |
           git config --global user.email 'joselynn_wallace@brown.edu'
           git config --global user.name 'joselynn wallace'
-          git checkout -b testing_branch
-          git add new_ref.yaml
-          git commit -m 'adding new_ref.yaml'
-          git push --set-upstream origin testing_branch
+          git checkout -B `(md5sum new_ref.yaml | (awk '{print $1}'))`
+          python parser.py 
+          git add .
+          git commit -m 'adding new_parsed.yaml'
+          git push --set-upstream origin `(md5sum new_ref.yaml | (awk '{print $1}'))`
