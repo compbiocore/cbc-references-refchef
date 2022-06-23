@@ -12,6 +12,7 @@ spur31:
       refseq: null
     organism: Strongylocentrotus purpuratus
     organization: ensembl metazoa
+    category: genomics
   levels:
     references:
     - component: primary
@@ -62,6 +63,7 @@ cdubliniensis_cd36:
     accession:
       genbank: null
       refseq: null
+    category: genomics
   levels:
     references:
     - component: primary
@@ -92,6 +94,7 @@ broad_bundle_hg19:
       refseq: null
     organism: Homo sapiens
     organization: broad institute
+    category: genomics
   levels:
     references:
     - component: primary
@@ -180,6 +183,7 @@ drosophila-melanogaster-bdgp6rel9:
       refseq: null
     organism: Drosophila melanogaster
     organization: ensembl
+    category: genomics
   levels:
     references:
     - component: primary
@@ -306,6 +310,7 @@ wbps8_ws256:
     accession:
       genbank: null
       refseq: null
+    category: genomics
   levels:
     references:
     - component: primary
@@ -380,6 +385,7 @@ grch37_release87:
     accession:
       genbank: null
       refseq: null
+    category: genomics
   levels:
     references:
     - component: primary
@@ -591,6 +597,7 @@ grcm38_p5:
     accession:
       genbank: null
       refseq: null
+    category: genomics
   levels:
     references:
     - component: primary
@@ -861,6 +868,7 @@ nt_db:
     accession:
       genbank: null
       refseq: null
+    category: genomics
   levels:
     references:
     - component: blast_db
@@ -1867,6 +1875,7 @@ nr_db:
     accession:
       genbank: null
       refseq: null
+    category: genomics
   levels:
     references:
     - component: blast_db
@@ -3791,6 +3800,7 @@ Escherichia_coli_K12:
     accession:
       genbank: null
       refseq: null
+    category: genomics
   levels:
     references:
     - component: primary
@@ -3892,6 +3902,7 @@ grch38_release98:
     accession:
       genbank: null
       refseq: null
+    category: genomics
   levels:
     references:
     - component: primary
@@ -3991,6 +4002,7 @@ saccer3:
     accession:
       genbank: null
       refseq: null
+    category: genomics
   levels:
     references:
     - component: primary
@@ -4113,6 +4125,7 @@ spur42:
       refseq: GCF_000002235.4
     organism: Strongylocentrotus purpuratus
     organization: refseq
+    category: genomics
   levels:
     references:
     - component: primary
@@ -4148,6 +4161,7 @@ spur50:
       refseq: GCF_000002235.5
     organism: Strongylocentrotus purpuratus
     organization: refseq
+    category: genomics
   levels:
     references:
     - component: primary
@@ -4183,6 +4197,7 @@ grcm38_p6:
     accession:
       genbank: null
       refseq: null
+    category: genomics
   levels:
     references:
     - component: primary
@@ -4218,6 +4233,7 @@ refseq_genomic:
     accession:
       genbank: null
       refseq: null
+    category: genomics
   levels:
     references:
     - component: blast_db
@@ -7740,6 +7756,7 @@ refseq_rna:
     accession:
       genbank: null
       refseq: null
+    category: genomics
   levels:
     references:
     - component: blast_db
@@ -7934,6 +7951,7 @@ refseq_protein:
     accession:
       genbank: null
       refseq: null
+    category: genomics
   levels:
     references:
     - component: blast_db
@@ -8566,6 +8584,7 @@ pr2_db:
     accession:
       genbank: null
       refseq: null
+    category: genomics
   levels:
     references:
     - component: db
@@ -8620,6 +8639,7 @@ OM-RGC:
     accession:
       genbank: null
       refseq: null
+    category: genomics
   levels:
     references:
     - component: primary
@@ -8655,6 +8675,7 @@ silva_arbfiles:
     accession:
       genbank: null
       refseq: null
+    category: genomics
   levels:
     references:
     - component: arb_files
@@ -8701,6 +8722,7 @@ uniprot:
     accession:
       genbank: null
       refseq: null
+    category: genomics
   levels:
     references:
     - component: primary
@@ -8746,6 +8768,7 @@ rnor60:
       refseq: null
     organism: Rattus norvegicus
     organization: ensembl
+    category: genomics
   levels:
     references:
     - component: primary
@@ -8833,6 +8856,7 @@ Genbank_UniVec_2018_11_28:
     accession:
       genbank: null
       refseq: null
+    category: genomics
   levels:
     references:
     - component: primary
@@ -8864,6 +8888,7 @@ Genbank_bacteria_all_2018_11_20_15_34_part1:
     accession:
       genbank: null
       refseq: null
+    category: genomics
   levels:
     references:
     - component: primary
@@ -8907,6 +8932,7 @@ Genbank_bacteria_all_2018_11_20_15_34_part2:
     accession:
       genbank: null
       refseq: null
+    category: genomics
   levels:
     references:
     - component: primary
@@ -8950,6 +8976,7 @@ Genbank_bacteria_all_2018_11_20_15_34_part3:
     accession:
       genbank: null
       refseq: null
+    category: genomics
   levels:
     references:
     - component: primary
@@ -8992,6 +9019,7 @@ cellranger_mm10:
     accession:
       genbank: null
       refseq: null
+    category: genomics
   levels:
     references:
     - component: primary
@@ -9024,6 +9052,7 @@ S_scrofa:
     accession:
       genbank: null
       refseq: null
+    category: genomics
   levels:
     references:
     - component: primary
@@ -9083,6 +9112,7 @@ alphafold_data:
     accession:
       genbank: null
       refseq: null
+    category: genomics
   levels:
     references:
     - component: primary
@@ -9098,3 +9128,4 @@ alphafold_data:
       files:
       - metadata.txt
       uuid: af939b94-b1ec-11ec-ac1a-ac1f6b1b78c8
+
