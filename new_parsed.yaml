@@ -1,0 +1,30 @@
+orycun2:
+  metadata:
+    name: orycun2
+    common_name: rabbit
+    custom: 'No'
+    description: The genome assembly represented here corresponds to GenBank Assembly ID  GCA_000003625.1
+    downloader: joselynn wallace
+    ncbi_taxon_id: null
+    ensembl_release_number: null
+    accession:
+      genbank: none
+      refseq: none
+    organism: Oryctolagus cuniculus
+    organization: Ensembl
+    category: genomics
+  levels:
+    references:
+    - component: top_level
+      complete:
+        status: 'false'
+      commands:
+      - 'wget https://ftp.ensembl.org/pub/release-108/fasta/oryctolagus_cuniculus/dna/Oryctolagus_cuniculus.OryCun2.0.dna.toplevel.fa.gz
+
+        wget https://ftp.ensembl.org/pub/release-108/fasta/oryctolagus_cuniculus/dna/CHECKSUMS
+
+        md5sum *.gz > initial_checksums.md5
+
+        gunzip -c Oryctolagus_cuniculus.OryCun2.0.dna.toplevel.fa.gz > Oryctolagus_cuniculus.OryCun2.0.dna.toplevel.fa
+
+        md5sum *.fa > final_checksums.md5'
