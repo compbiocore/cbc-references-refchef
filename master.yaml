@@ -9128,4 +9128,36 @@ alphafold_data:
       files:
       - metadata.txt
       uuid: af939b94-b1ec-11ec-ac1a-ac1f6b1b78c8
-
+silva_fasta:
+  metadata:
+    name: silva_fasta
+    common_name: silva
+    custom: 'No'
+    description: SILVA database fasta files, release_138
+    downloader: joselynn wallace
+    ncbi_taxon_id: null
+    ensembl_release_number: null
+    accession:
+      genbank: none
+      refseq: none
+    organism: na
+    organization: arb-silva.de
+    category: genomics
+  levels:
+    references:
+    - component: primary
+      complete:
+        status: 'false'
+      commands:
+      - wget https://www.arb-silva.de/fileadmin/silva_databases/release_138/Exports/SILVA_138_SSURef_tax_silva.fasta.gz
+      - md5sum *.* >  postdownload-checksums.md5
+      - gunzip -c SILVA_138_SSURef_tax_silva.fasta.gz > SILVA_138_SSURef_tax_silva.fasta
+      - md5sum *.fasta > final_checksums.md5
+    - component: primary
+      complete:
+        status: 'false'
+      commands:
+      - wget https://www.arb-silva.de/fileadmin/silva_databases/release_138/Exports/SILVA_138_SSURef_tax_silva.fasta.gz
+      - md5sum *.* >  postdownload-checksums.md5
+      - gunzip -c SILVA_138_SSURef_tax_silva.fasta.gz > SILVA_138_SSURef_tax_silva.fasta
+      - md5sum *.fasta > final_checksums.md5
