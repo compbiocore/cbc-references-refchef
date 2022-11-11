@@ -19,12 +19,7 @@ silva_fasta:
       complete:
         status: 'false'
       commands:
-      - 'wget https://www.arb-silva.de/fileadmin/silva_databases/release_138/Exports/SILVA_138_SSURef_tax_silva.fasta.gz
-
-        md5sum *.* >  postdownload-checksums.md5
-
-        gunzip -c SILVA_138_SSURef_tax_silva.fasta.gz > SILVA_138_SSURef_tax_silva.fasta
-
-        md5sum *.fasta > final_checksums.md5
-
-        '
+      - wget https://www.arb-silva.de/fileadmin/silva_databases/release_138/Exports/SILVA_138_SSURef_tax_silva.fasta.gz
+      - md5sum *.* >  postdownload-checksums.md5
+      - gunzip -c SILVA_138_SSURef_tax_silva.fasta.gz > SILVA_138_SSURef_tax_silva.fasta
+      - md5sum *.fasta > final_checksums.md5
