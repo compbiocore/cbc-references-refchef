@@ -1,0 +1,28 @@
+T2T-CHM13:
+  metadata:
+    name: T2T-CHM13
+    common_name: Human
+    custom: 'No'
+    description: human genome telomere to telomere
+    downloader: joselynn wallace
+    ncbi_taxon_id: null
+    ensembl_release_number: null
+    accession:
+      genbank: none
+      refseq: GCF_009914755.1
+    organism: Homo sapiens
+    organization: RefSeq
+    category: genomics
+  levels:
+    references:
+    - component: unspecified
+      complete:
+        status: 'false'
+      commands:
+      - 'wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/914/755/GCF_009914755.1_T2T-CHM13v2.0/GCF_009914755.1_T2T-CHM13v2.0_genomic.fna.gz
+
+        md5sum *.* >  postdownload-checksums.md5
+
+        gunzip -c GCF_009914755.1_T2T-CHM13v2.0_genomic.fna.gz > GCF_009914755.1_T2T-CHM13v2.0_genomic.fna
+
+        md5sum *.fna > final_checksums.md5'
