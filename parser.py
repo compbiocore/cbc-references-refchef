@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import json
 import re
-import validators
+from urllib.request import urlopen
 
 import oyaml as yaml
 
@@ -93,11 +93,10 @@ def url_valid(commands: list) -> dict :
     for command in commands:
         for arg in command.split():
             if re.search("^http", arg):
-                if validators.url(arg):
-                    url_dict[arg] = True
-                else:
+                try:
+                    urlopen(arg)
+                except:
                     url_dict[arg] = False
+                    continue
+                url_dict[arg] = True
     return url_dict
-
-    
-
