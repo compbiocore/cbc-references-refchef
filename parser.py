@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-
 import json
+import re
+import validators
 
 import oyaml as yaml
 
@@ -9,7 +10,8 @@ with open('new_ref.yaml') as f:
     datajson = json.loads(data)
     # if yaml_level is indices,
     yaml_level = datajson.get('level')
-    yaml_commands = datajson.get('Commands')
+    yaml_commands = datajson.get('Commands').rstrip()
+    commands = re.split('\n|, ', yaml_commands)
     if 'src' in datajson:
         yaml_dict = {
             datajson.get('name'):
@@ -36,7 +38,7 @@ with open('new_ref.yaml') as f:
                                  'complete':
                                      {'status': 'false'},
                                  'src': datajson.get('src'),
-                                 'commands': datajson.get('Commands').split(', ')
+                                 'commands': commands
                              }
                          ]
                      }
@@ -67,7 +69,7 @@ with open('new_ref.yaml') as f:
                                  'component': datajson.get('component'),
                                  'complete':
                                      {'status': 'false'},
-                                 'commands': datajson.get('Commands').split(', ')
+                                 'commands': commands
                              }
                          ]
                      }
@@ -75,3 +77,27 @@ with open('new_ref.yaml') as f:
         }
     out = open('new_parsed.yaml', 'w+')
     yaml.dump(yaml_dict, out, allow_unicode=True, width=100000)
+
+
+def url_valid(commands: list) -> dict :
+    '''
+    Checks if the URL(s) in commands is still valid.
+
+    Parameters:
+    commands -- the list of commands within which the URL(s) are contained
+
+    Returns:
+    A dictionary containing the URL(s) as keys and a boolean of whether they are valid or not as the associated values
+    '''
+    url_dict = {}
+    for command in commands:
+        for arg in command.split():
+            if re.search("^http", arg):
+                if validators.url(arg):
+                    url_dict[arg] = True
+                else:
+                    url_dict[arg] = False
+    return url_dict
+
+    
+
