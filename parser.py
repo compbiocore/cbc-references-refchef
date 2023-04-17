@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-
 import json
+import re
 
 import oyaml as yaml
 
@@ -9,7 +9,8 @@ with open('new_ref.yaml') as f:
     datajson = json.loads(data)
     # if yaml_level is indices,
     yaml_level = datajson.get('level')
-    yaml_commands = datajson.get('Commands')
+    yaml_commands = datajson.get('Commands').rstrip()
+    commands = re.split('\n|, ', yaml_commands)
     if 'src' in datajson:
         yaml_dict = {
             datajson.get('name'):
@@ -36,7 +37,7 @@ with open('new_ref.yaml') as f:
                                  'complete':
                                      {'status': 'false'},
                                  'src': datajson.get('src'),
-                                 'commands': datajson.get('Commands').split(', ')
+                                 'commands': commands
                              }
                          ]
                      }
@@ -67,7 +68,7 @@ with open('new_ref.yaml') as f:
                                  'component': datajson.get('component'),
                                  'complete':
                                      {'status': 'false'},
-                                 'commands': datajson.get('Commands').split(', ')
+                                 'commands': commands
                              }
                          ]
                      }
