@@ -1,0 +1,23 @@
+HpulTranscriptome:
+  metadata:
+    name: HpulTranscriptome
+    common_name: Hp sea urchin
+    custom: 'No'
+    description: H. pulcherrimus protein translations of transcriptome
+    downloader: joselynn wallace
+    ncbi_taxon_id: null
+    ensembl_release_number: null
+    accession:
+      genbank: none
+      refseq: none
+    organism: Hemicentrotus pulcherrimus
+    organization: HpBase
+    category: genomics
+  levels:
+    references:
+    - component: protein
+      complete:
+        status: 'false'
+      commands:
+      - wget https://cell-innovation.nig.ac.jp/Hpul/download/HpulTranscriptome_prot.fa.zip --no-check-certificate
+      - md5sum * > final_checksums.md5
