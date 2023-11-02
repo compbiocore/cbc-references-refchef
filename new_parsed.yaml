@@ -5,7 +5,7 @@ GRCm38_gencode:
     custom: 'No'
     description: Gencode mouse genome GRCm38 release M25 primary assembly
     downloader: joselynn wallace
-    ncbi_taxon_id: null
+    ncbi_taxon_id: 10090
     ensembl_release_number: null
     accession:
       genbank: none
