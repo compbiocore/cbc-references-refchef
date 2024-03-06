@@ -1,0 +1,25 @@
+iphop:
+  metadata:
+    name: iphop
+    common_name: na
+    custom: 'No'
+    description: iPHoP (Integrated Phage HOst Prediction) is a bioinformatic tool for computational prediction of host taxonomy from phage genomes.
+    downloader: joselynn wallace
+    ncbi_taxon_id: null
+    ensembl_release_number: null
+    accession:
+      genbank: none
+      refseq: none
+    organism: na
+    organization: na
+    category: genomics
+  levels:
+    other:
+    - component: db
+      complete:
+        status: 'false'
+      commands:
+      - wget https://portal.nersc.gov/cfs/m342/iphop/db/iPHoP.latest_rw.tar.gz
+      - wget https://portal.nersc.gov/cfs/m342/iphop/db/iPHoP.latest_rw.tar.gz.md5
+      - tar -zxvf iPHoP.latest_rw.tar.gz
+      - md5sum *.* > final_checksums.md5
