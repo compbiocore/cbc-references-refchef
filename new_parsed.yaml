@@ -1,0 +1,25 @@
+interproscan_5-66-98-0:
+  metadata:
+    name: interproscan_5-66-98-0
+    common_name: NA
+    custom: 'No'
+    description: InterPro is a database which integrates together predictive information about proteins’ function from a number of partner resources, giving an overview of the families that a protein belongs to and the domains and sites it contains.
+    downloader: joselynn wallace
+    ncbi_taxon_id: null
+    ensembl_release_number: null
+    accession:
+      genbank: none
+      refseq: none
+    organism: NA
+    organization: EBI
+    category: genomics
+  levels:
+    other:
+    - component: db
+      complete:
+        status: 'false'
+      commands:
+      - curl -O http://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.66-98.0/alt/interproscan-data-5.66-98.0.tar.gz.md5
+      - md5sum -c interproscan-data-5.66-98.0.tar.gz.md5
+      - tar -pxzf interproscan-data-5.66-98.0.tar.gz
+      - md5sum * > final_checksums.md5
