@@ -19,7 +19,8 @@ interproscan_5-66-98-0:
       complete:
         status: 'false'
       commands:
-      - curl -O http://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.66-98.0/alt/interproscan-data-5.66-98.0.tar.gz.md5
+      - wget http://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.66-98.0/alt/interproscan-data-5.66-98.0.tar.gz.md5
+      - wget http://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.66-98.0/alt/interproscan-data-5.66-98.0.tar.gz
       - md5sum -c interproscan-data-5.66-98.0.tar.gz.md5
       - tar -pxzf interproscan-data-5.66-98.0.tar.gz
       - md5sum * > final_checksums.md5
