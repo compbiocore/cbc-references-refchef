@@ -1,7 +1,7 @@
 config-yaml:
   path-settings:
-    reference-directory: /gpfs/data/shared/databases/refchef_refs
-    git-directory: /gpfs/data/shared/databases/cbc-references-refchef
+    reference-directory: /oscar/data/shared/databases/refchef_refs
+    git-directory: /oscar/data/shared/databases/refchef_staging/cbc-references-refchef
     remote-repository: compbiocore/cbc-references-refchef
   log-settings:
     log: 'yes'
