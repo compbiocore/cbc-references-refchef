@@ -1,0 +1,24 @@
+GRCm38_gencode:
+  metadata:
+    name: GRCm38_gencode
+    common_name: Mouse
+    custom: 'No'
+    description: Gencode mouse genome GRCm38 release M25 primary assembly
+    downloader: joselynn wallace
+    ncbi_taxon_id: null
+    ensembl_release_number: null
+    accession:
+      genbank: none
+      refseq: none
+    organism: Mus musculus
+    organization: gencode
+    category: genomics
+  levels:
+    references:
+    - component: primary
+      complete:
+        status: 'false'
+      commands:
+      - wget https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M25/GRCm38.primary_assembly.genome.fa.gz
+      - gunzip -k GRCm38.primary_assembly.genome.fa.gz
+      - md5sum * > final_checksums.md5
